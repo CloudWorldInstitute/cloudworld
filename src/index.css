@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* =======================
+   Custom Theme Colors
+======================= */
+:root {
+  --primary: #17e06b;      /* Deep green */
+  --secondary: #8EC69E;    /* Soft mint */
+  --accent: #B0D7BB;       /* Light green */
+  --light: #f9f4f4;        /* Off-white */
+  --white: #ffffff;        /* Pure white */
+  --red: #dd5050;
+  /* Black & Gray Shades */
+  --black: #000000;
+  --gray-dark: #333333;
+  --gray: #555555;
+  --gray-light: #aaaaaa;
+  --green-dark: #001302;
+}
+
+/* =======================
+   Background Utilities
+======================= */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.bg-light { background-color: var(--light); }
+.bg-white { background-color: var(--white); }
+.bg-gray { background-color: var(--gray); }
+.bg-gray-dark { background-color: var(--gray-dark); }
+.bg-green-dark { background-color: var(--green-dark); }
+
+/* =======================
+   Text Color Utilities
+======================= */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }
+.text-light { color: var(--light); }
+.text-white { color: var(--white); }
+.text-gray { color: var(--gray); }
+.text-gray-dark { color: var(--gray-dark); }
+
+/* =======================
+   Border Utilities
+======================= */
+.border-primary { border: 1px solid var(--primary); }
+.border-secondary { border: 1px solid var(--secondary); }
+.border-accent { border: 1px solid var(--accent); }
+.border-gray { border: 1px solid var(--gray); }
+
+/* =======================
+   Hover Effects
+======================= */
+.hover-bg-primary:hover { background-color: var(--primary); color: var(--white); }
+.hover-bg-secondary:hover { background-color: var(--secondary); color: var(--white); }
+.hover-bg-gray-dark:hover { background-color: var(--gray-dark); color: var(--white); }
+.hover-text-primary:hover { color: var(--primary); }
+.hover-text-gray:hover { color: var(--gray); }
+
+/* =======================
+   Animation Keyframes
+======================= */
+@keyframes blob {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* =======================
+   Animation Utilities
+======================= */
+.animate-blob { animation: blob 7s infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.animate-fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+.animate-fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+/* Delay Utilities */
+.animation-delay-500 { animation-delay: 0.5s; }
+.animation-delay-1000 { animation-delay: 1s; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
