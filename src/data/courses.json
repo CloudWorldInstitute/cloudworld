@@ -2,7 +2,7 @@
   "courses": [
     {
       "id": 1,
-      "icon": "💻",
+      "icon": "/fstack.jpg",
       "title": "Full Stack Web Development Program",
       "duration": "6 Months",
       "enrolledStudents": "4,000+ Students Enrolled",
@@ -32,7 +32,7 @@
     },
     {
       "id": 2,
-      "icon": "/logo.png",
+      "icon": "/fstack.jpg",
       "title": "Cloud Computing & AWS Master Program",
       "duration": "5 Months",
       "enrolledStudents": "3,200+ Students Enrolled",
@@ -62,7 +62,7 @@
     },
     {
       "id": 3,
-      "icon": "⚡",
+      "icon": "/fstack.jpg",
       "title": "DevOps Engineering Program",
       "duration": "4 Months",
       "enrolledStudents": "2,800+ Students Enrolled",
@@ -92,7 +92,7 @@
     },
     {
       "id": 4,
-      "icon": "📊",
+      "icon": "/fstack.jpg",
       "title": "Data Science & Machine Learning Program",
       "duration": "7 Months",
       "enrolledStudents": "2,500+ Students Enrolled",
@@ -122,7 +122,7 @@
     },
     {
       "id": 5,
-      "icon": "🔐",
+      "icon": "/fstack.jpg",
       "title": "Cyber Security Specialist Program",
       "duration": "6 Months",
       "enrolledStudents": "1,800+ Students Enrolled",
@@ -152,7 +152,7 @@
     },
     {
       "id": 6,
-      "icon": "🤖",
+      "icon": "/fstack.jpg",
       "title": "AI & Machine Learning Engineering",
       "duration": "8 Months",
       "enrolledStudents": "1,200+ Students Enrolled",

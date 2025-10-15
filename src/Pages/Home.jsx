@@ -51,7 +51,7 @@ const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
               <button
-                className="group bg-gradient-to-r from-indigo-600 to-blue-7 00 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-indigo-600 to-teal-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
                 aria-label="Start your journey with CloudWorld"
               >
                 Start Your Journey
@@ -80,19 +80,37 @@ const Home = () => {
 
 
             {/* Stats Card */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-2xl border border-gray-100">
+            {/* <div className="absolute -bottom-3 -right-6 bg-amber-50  rounded-2xl p-4 shadow-2xl border border-gray-100">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">100%</div>
+                <div className="text-sm  text-gray-600 font-medium">Placement Support</div>
+              </div>
+            </div> */}
+
+
+<div className="absolute -bottom-3 -right-6 animate-glow bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
+  <div className="text-center">
+    <div className="text-2xl font-bold text-blue-600">100%</div>
+    <div className="text-sm text-gray-600 font-medium">Placement Support</div>
+  </div>
+</div>
+
+
+            {/* <div className="absolute -bottom-3 -right-6 bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-glow">
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-600">100%</div>
                 <div className="text-sm text-gray-600 font-medium">Placement Support</div>
               </div>
-            </div>
+            </div> */}
+
+
           </div>
         </div>
 
 
       </section>
 
-      <CoursesComponent/>
+      <CoursesComponent />
       <OurJourney />
 
       {/* About Section - Enhanced with better layout and image */}
@@ -253,7 +271,7 @@ const Home = () => {
         </div>
       </section>
 
-      
+
 
       {/* Final CTA Section */}
       <section className="py-24 bg-gray-900 text-white relative overflow-hidden">

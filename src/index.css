@@ -111,3 +111,38 @@
 .animation-delay-1000 { animation-delay: 1s; }
 .animation-delay-2000 { animation-delay: 2s; }
 .animation-delay-4000 { animation-delay: 4s; }
+
+
+/* Add to your global CSS */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(202, 134, 88, 0.788);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(109, 98, 175, 0.8);
+  }
+}
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+

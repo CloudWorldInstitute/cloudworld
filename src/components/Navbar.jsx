@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav  
-      className="bg-white/5   backdrop-blur-md rounded-xl text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-500 shadow-2xl rounded-2xl transition-all duration-300"
+      className="bg-white/10    backdrop-blur-md rounded-xl text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-500 shadow-2xl rounded-2xl transition-all duration-300"
     >
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
         {/* Logo */}
@@ -24,7 +24,7 @@ const Navbar = () => {
             <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
 
-          <span className="self-center text-lg sm:text-xl md:text-2xl font-extrabold text-white tracking-wide">
+          <span className="self-center text-lg sm:text-xl md:text-2xl font-extrabold text-primary tracking-wide">
             Cloud<span className="text-teal-900">World</span>
           </span>
         </NavLink>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-300 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-900 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)} // Toggle menu state
@@ -75,8 +75,8 @@ const Navbar = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
+                    ? "text-cyan-900 text-lg bg-teal-200 md:bg-transparent"
+                    : "text-teal-800 hover:text-white hover:bg-indigo-300 transition-all rounded"
                   }`
                 }
               >
@@ -88,8 +88,8 @@ const Navbar = () => {
                 to="/about"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
+                    ? "text-rose-900 text-lg bg-teal-800 md:bg-transparent"
+                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
@@ -101,8 +101,8 @@ const Navbar = () => {
                 to="/success-stories"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
+                    ? "text-gray-900 text-lg bg-teal-800 md:bg-transparent"
+                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
@@ -114,8 +114,8 @@ const Navbar = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
+                    ? "text-gray-900 text-lg bg-teal-800 md:bg-transparent"
+                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >

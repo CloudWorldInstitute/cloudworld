@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <section className="py-20 pt-30 bg-gradient-to-br from-gray-50 to-teal-50 relative overflow-hidden">
+    <section className="py-20 pt-30 bg-gradient-to-br from-indigo-100 to-indigo-100 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 right-10 w-32 h-32 bg-teal-400 rounded-full animate-pulse"></div>
@@ -26,14 +26,14 @@ const AboutPage = () => {
               />
 
               {/* Floating Stats */}
-              <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-6 shadow-2xl border border-gray-100">
+              <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-6 shadow-2xl border border-gray-100 animate-bounce-slow">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-teal-600">500+</div>
                   <div className="text-sm text-gray-600 font-medium">Students Trained</div>
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-2xl p-6 shadow-2xl">
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-2xl p-6 shadow-2xl animate-bounce-slow">
                 <div className="text-center">
                   <div className="text-3xl font-bold">100%</div>
                   <div className="text-sm font-medium opacity-90">Placement Support</div>
@@ -108,7 +108,7 @@ const AboutPage = () => {
 
 
         {/* Key Highlights */}
-        <div className="mt-18 grid bg-indigo-100 px-15 pt-5 pb-5 grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-18 grid bg-indigo-100 px-15 pt-5 pb-5 grid-cols-2 lg:grid-cols-4 gap-8 ">
           {[
             {
               icon: (
@@ -151,8 +151,8 @@ const AboutPage = () => {
               bgColor: "bg-green-50"
             }
           ].map((item, index) => (
-            <div key={index} className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 group">
-              <div className={`w-12 h-12 ${item.bgColor} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}>
+            <div key={index} className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-sm border animate-glow border-gray-100 hover:shadow-md transition-all duration-300 group">
+              <div className={`w-12 h-12 ${item.bgColor} rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 `}>
                 <span className={item.color}>
                   {item.icon}
                 </span>

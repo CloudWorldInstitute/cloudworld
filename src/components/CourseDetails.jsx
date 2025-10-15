@@ -11,7 +11,7 @@ const CourseDetails = () => {
 
   if (!course) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-indigo-50 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h2>
           <button 
@@ -41,7 +41,7 @@ const CourseDetails = () => {
 
       <div className="container mx-auto px-4 py-8">
         {/* Course Header */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+        <div className="bg-teal-100 rounded-2xl shadow-xl p-8 mb-8">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
             <div className="flex-1">
               <div className="flex items-center mb-4">
@@ -123,7 +123,7 @@ const CourseDetails = () => {
         </div>
 
         {/* Course Curriculum */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+        <div className="bg-sky-100 rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Course Curriculum
           </h2>
@@ -149,7 +149,7 @@ const CourseDetails = () => {
         </div>
 
         {/* Projects Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-fuchsia-100 rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Real-World Projects
           </h2>
