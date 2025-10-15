@@ -1,76 +1,96 @@
 import React from "react";
 import { FaCloud, FaRocket, FaTools, FaLaptop, FaUserTie, FaUserMd } from 'react-icons/fa'; // Font Awesome icons
+import TypewriterText from "../components/TypewriterText";
+import OurJourney from "../components/OurJourney";
 
 const Home = () => {
   return (
-    <div className="bg-accent">
-      {/* Hero Section - Enhanced with gradient and animations */}
-      <section 
-  id="home" 
-  className="relative min-h-screen flex flex-col justify-center items-center text-center p-8 overflow-hidden bg-gradient-to-br from-light via-white to-quaternary"
-  aria-labelledby="hero-title"
->
-  {/* Animated background elements - Enhanced for responsiveness and depth */}
-  <div className="absolute inset-0 opacity-20 md:opacity-30">
-    <div className="absolute top-1/4 left-1/4 w-72 h-72 md:w-96 md:h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-    <div className="absolute top-3/4 right-1/4 w-80 h-80 md:w-96 md:h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-    <div className="absolute bottom-1/4 left-3/4 w-72 h-72 md:w-80 md:h-80 bg-tertiary rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-  </div>
-  
-  {/* Floating icons for tech feel - Added hover effects and responsiveness */}
-  <div 
-    className="absolute top-20 left-10 w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-2xl animate-float md:animate-pulse-slow hidden md:block" // Hidden on mobile for better UX
-    onMouseEnter="this.style.transform='scale(1.2)'" 
-    onMouseLeave="this.style.transform='scale(1)'"
-    style={{ transition: 'transform 0.3s ease' }} // Inline for simplicity; use CSS file in production
-  >
-    <FaCloud className="text-2xl" aria-hidden="true" /> {/* Decorative icon */}
-  </div>
-  <div 
-    className="absolute bottom-32 right-20 w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center text-2xl animate-float animation-delay-1000 hidden md:block" // Hidden on mobile
-    onMouseEnter="this.style.transform='scale(1.2)'" 
-    onMouseLeave="this.style.transform='scale(1)'"
-    style={{ transition: 'transform 0.3s ease' }}
-  >
-    <FaRocket className="text-2xl" aria-hidden="true" />
-  </div>
-  
-  <div className="relative z-10 max-w-5xl mx-auto px-4 text-center animate-fade-in-up" id="hero-content">
-    <div className="animate-fade-in-up animation-delay-200">
-      <h1 
-        id="hero-title" 
-        className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight text-shadow-sm" // Added subtle text shadow for depth
-      >
-        CloudWorld
-      </h1>
-      <p className="text-xl md:text-2xl text-gray-700 mb-2 font-semibold animate-fade-in-up animation-delay-400">
-        Empowering IT Careers,
-      </p>
-      <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in-up animation-delay-600">
-        Shaping the Future
-      </p>
-      <p className="text-lg md:text-xl text-secondary mb-10 max-w-3xl mx-auto leading-relaxed opacity-90 animate-fade-in-up animation-delay-800">
-        Unlock your potential with cutting-edge cloud solutions. From expert training to seamless career placements, we're here to elevate your IT journey in the digital era.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-1000">
-        <button 
-          className="group bg-primary text-gray-dark px-10 py-4 rounded-xl font-bold text-lg hover:from-secondary hover:to-tertiary transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1 aria-pressed:aria-announce"
-          aria-label="Start your journey with CloudWorld"
-        >
-          Start Your Journey
-          <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
-        </button>
-        <button 
-          className="border-2 border-primary text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-          aria-label="Explore our services"
-        >
-          Explore Services
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
+    <div className="">
 
+      <section
+        id="home"
+        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-100"
+        aria-labelledby="hero-title"
+      >
+        {/* Animated background elements */}
+        <div className="absolute inset-0  opacity-20">
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-1/4 left-3/4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+
+        {/* Content Section */}
+        <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left animate-fade-in-up">
+          <div className="animate-fade-in-up animation-delay-200">
+            {/* Badge */}
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+              India's Leading Cloud Training Platform
+            </div>
+
+            <h1
+              id="hero-title"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight"
+            >
+              <TypewriterText
+                texts={[
+                  "Welcome to Cloud World Institute",
+                  "We are Turning Aspirations into IT Careers."
+                ]}
+                speed={50}
+                delay={1000}
+              />
+            </h1>
+
+            <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
+              India's leading platform for mastering <span className="font-semibold text-blue-600">Cloud Computing, AWS, Azure, and DevOps</span>.
+              We don't just teach — we transform beginners into industry-ready professionals with <span className="font-semibold text-green-600">100% placement support</span> and real-world training.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
+              <button
+                className="group bg-gradient-to-r from-indigo-600 to-blue-7 00 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+                aria-label="Start your journey with CloudWorld"
+              >
+                Start Your Journey
+                <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+              </button>
+              <button
+                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                aria-label="Explore our services"
+              >
+                Explore Services
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Image Section */}
+        <div className="relative z-10 w-full lg:w-1/2 mt-12 lg:mt-0 flex justify-center animate-fade-in-up animation-delay-400">
+          <div className="relative">
+            {/* Main Image */}
+            <img
+              src="https://donedigital.au/wp-content/uploads/2023/10/61f8024d4a5157485a2f4596_mls.png"
+              alt="Student learning cloud computing with laptop"
+              className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+            />
+
+
+
+            {/* Stats Card */}
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-2xl border border-gray-100">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">100%</div>
+                <div className="text-sm text-gray-600 font-medium">Placement Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <OurJourney />
 
       {/* About Section - Enhanced with better layout and image */}
       <section className="py-24 bg-white">
@@ -95,8 +115,8 @@ const Home = () => {
                   5+ Years Experience
                 </span>
               </div>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="inline-block bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Get in Touch
@@ -104,9 +124,9 @@ const Home = () => {
             </div>
             <div className="lg:order-1 relative animate-fade-in-right">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="CloudWorld Innovation" 
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="CloudWorld Innovation"
                   className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
@@ -149,8 +169,8 @@ const Home = () => {
                 color: "from-tertiary to-quaternary"
               }
             ].map((service, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 animate-fade-in-up animation-delay-500"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
@@ -197,8 +217,8 @@ const Home = () => {
                 avatar: <FaUserMd className="text-6xl mb-4 opacity-50" /> // Replaced 🧑‍🔬
               }
             ].map((testimonial, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
@@ -241,14 +261,14 @@ const Home = () => {
             Don't wait for opportunities—create them with CloudWorld. Start your transformation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Contact Us Now
             </a>
-            <a 
-              href="https://cloudworld.co.in/" 
+            <a
+              href="https://cloudworld.co.in/"
               className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300"
               target="_blank" rel="noopener noreferrer"
             >

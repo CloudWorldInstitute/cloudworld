@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     // If you defined custom colors in tailwind.config.js
-    <footer className="bg-gradient-to-b from-green-950 to-black text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-b from-indigo-950 to-black text-white relative overflow-hidden">
       
             {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -77,8 +77,8 @@ const Footer = () => {
                 href="tel:+917498539362"
                 className="flex items-center group hover:text-cyan-300 transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-green-500/30 transition-colors">
-                  <FaPhone className="text-2xl text-green-400" />
+                <div className="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-indigo-500/30 transition-colors">
+                  <FaPhone className="text-2xl text-indigo-400" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>

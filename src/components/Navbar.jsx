@@ -6,34 +6,35 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-gradient-to-r from-green-800 to-green-600 text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-800 shadow-md rounded-2xl transition-all duration-300"
+      className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-800 shadow-md rounded-2xl transition-all duration-300"
     >
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
         {/* Logo */}
         <NavLink
           to="/"
-          className="flex items-center space-x-3 hover:opacity-80 transition-all"
+          className="flex items-center gap-3 hover:opacity-90 transition-all duration-300 group"
         >
-          <img
-            src="/logo.png" // Ensure this path is correct
-            alt="CloudWorld Logo"
-            className="h-12 w-12 object-contain rounded-full" // Slightly larger and rounded for a modern feel
-          />
-          <span className="self-center text-2xl font-bold whitespace-nowrap">
-            CloudWorld
+          <div className="relative">
+            <img
+              src="/logo.png" // ✅ Make sure this file is in the public folder
+              alt="CloudWorld Logo"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
+            />
+            {/* Optional hover ring effect */}
+            <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
+          </div>
+
+          <span className="self-center text-lg sm:text-xl md:text-2xl font-extrabold text-white tracking-wide">
+            Cloud<span className="text-teal-900">World</span>
           </span>
         </NavLink>
 
+
         {/* Buttons and Mobile Toggle */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <NavLink
-            to="/login"
-            className="text-white bg-green-900 hover:bg-green-800 font-medium rounded-lg text-sm px-8 py-3 transition-all duration-300 shadow-sm hover:shadow-md"
-          >
-            Login
-          </NavLink>
 
-      
+
+
 
           <button
             data-collapse-toggle="navbar-sticky"
@@ -74,8 +75,8 @@ const Navbar = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-green-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-green-600 transition-all rounded"
+                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
+                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
@@ -87,8 +88,8 @@ const Navbar = () => {
                 to="/about"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-green-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-green-600 transition-all rounded"
+                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
+                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
@@ -100,8 +101,8 @@ const Navbar = () => {
                 to="/success-stories"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-green-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-green-600 transition-all rounded"
+                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
+                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
@@ -113,14 +114,18 @@ const Navbar = () => {
                 to="/contact"
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 bg-green-800 md:bg-transparent"
-                    : "text-gray-300 hover:text-white hover:bg-green-600 transition-all rounded"
+                    ? "text-gray-900 bg-teal-800 md:bg-transparent"
+                    : "text-gray-300 hover:text-white hover:bg-teal-600 transition-all rounded"
                   }`
                 }
               >
                 Contact
               </NavLink>
             </li>
+
+
+           
+
           </ul>
         </div>
       </div>
