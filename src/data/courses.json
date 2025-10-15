@@ -1,0 +1,200 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "icon": "💻",
+      "title": "Full Stack Web Development Program",
+      "duration": "6 Months",
+      "enrolledStudents": "4,000+ Students Enrolled",
+      "description": "Build complete web applications from start to finish. Master HTML, CSS, JavaScript, React, Node.js, MongoDB, and APIs — the most in-demand developer skills in today's tech world.",
+      "highlights": [
+        "Days FREE Demo",
+        "Learn Frontend + Backend + Database development",
+        "Work on 5+ real-world web app projects",
+        "Master modern frameworks like React & Node.js",
+        "Live mentor-led classes with code reviews",
+        "Lifetime access to materials & updates",
+        "Placement-focused training & interview prep",
+        "Certification on course completion"
+      ],
+      "price": {
+        "original": 45000,
+        "discounted": 34999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "Web Development",
+      "rating": 4.8,
+      "reviews": 1247,
+      "instructor": "Senior Full Stack Developer",
+      "tags": ["Frontend", "Backend", "Database", "React", "Node.js"]
+    },
+    {
+      "id": 2,
+      "icon": "/logo.png",
+      "title": "Cloud Computing & AWS Master Program",
+      "duration": "5 Months",
+      "enrolledStudents": "3,200+ Students Enrolled",
+      "description": "Master cloud computing fundamentals and AWS services. Learn to deploy, manage, and scale applications on the world's leading cloud platform.",
+      "highlights": [
+        "AWS Certified Solutions Architect preparation",
+        "Hands-on with EC2, S3, RDS, Lambda",
+        "Real-world cloud migration projects",
+        "Industry expert instructors",
+        "Live lab sessions",
+        "Resume and interview preparation",
+        "100% placement assistance",
+        "AWS certification guidance"
+      ],
+      "price": {
+        "original": 52000,
+        "discounted": 39999,
+        "currency": "₹"
+      },
+      "level": "Intermediate",
+      "mode": ["Online", "Offline"],
+      "category": "Cloud Computing",
+      "rating": 4.9,
+      "reviews": 892,
+      "instructor": "AWS Certified Professional",
+      "tags": ["AWS", "Cloud", "DevOps", "Infrastructure"]
+    },
+    {
+      "id": 3,
+      "icon": "⚡",
+      "title": "DevOps Engineering Program",
+      "duration": "4 Months",
+      "enrolledStudents": "2,800+ Students Enrolled",
+      "description": "Become a DevOps engineer by mastering CI/CD, Docker, Kubernetes, Jenkins, and infrastructure automation tools.",
+      "highlights": [
+        "Docker and Kubernetes deep dive",
+        "CI/CD pipeline implementation",
+        "Infrastructure as Code with Terraform",
+        "Monitoring and logging tools",
+        "Real-time project deployment",
+        "Mentorship from industry experts",
+        "Job placement support",
+        "DevOps certification"
+      ],
+      "price": {
+        "original": 48000,
+        "discounted": 37999,
+        "currency": "₹"
+      },
+      "level": "Intermediate to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "DevOps",
+      "rating": 4.7,
+      "reviews": 756,
+      "instructor": "Senior DevOps Engineer",
+      "tags": ["Docker", "Kubernetes", "CI/CD", "Automation"]
+    },
+    {
+      "id": 4,
+      "icon": "📊",
+      "title": "Data Science & Machine Learning Program",
+      "duration": "7 Months",
+      "enrolledStudents": "2,500+ Students Enrolled",
+      "description": "Learn data analysis, machine learning algorithms, and AI concepts to build intelligent data-driven applications.",
+      "highlights": [
+        "Python for Data Science",
+        "Machine Learning algorithms",
+        "Data visualization with Tableau",
+        "Real-world data projects",
+        "AI and Deep Learning basics",
+        "Industry case studies",
+        "Portfolio building",
+        "Job interview preparation"
+      ],
+      "price": {
+        "original": 55000,
+        "discounted": 42999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "Data Science",
+      "rating": 4.6,
+      "reviews": 634,
+      "instructor": "Data Scientist",
+      "tags": ["Python", "ML", "AI", "Data Analysis"]
+    },
+    {
+      "id": 5,
+      "icon": "🔐",
+      "title": "Cyber Security Specialist Program",
+      "duration": "6 Months",
+      "enrolledStudents": "1,800+ Students Enrolled",
+      "description": "Become a cybersecurity expert by learning ethical hacking, network security, and threat protection techniques.",
+      "highlights": [
+        "Ethical hacking techniques",
+        "Network security fundamentals",
+        "Vulnerability assessment",
+        "Cyber forensics basics",
+        "Hands-on penetration testing",
+        "Industry certification preparation",
+        "Security tools mastery",
+        "Career guidance"
+      ],
+      "price": {
+        "original": 50000,
+        "discounted": 39999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Intermediate",
+      "mode": ["Online", "Offline"],
+      "category": "Cyber Security",
+      "rating": 4.8,
+      "reviews": 423,
+      "instructor": "Security Analyst",
+      "tags": ["Security", "Ethical Hacking", "Networking"]
+    },
+    {
+      "id": 6,
+      "icon": "🤖",
+      "title": "AI & Machine Learning Engineering",
+      "duration": "8 Months",
+      "enrolledStudents": "1,200+ Students Enrolled",
+      "description": "Comprehensive AI and ML engineering program covering advanced algorithms, neural networks, and real-world AI applications.",
+      "highlights": [
+        "Deep Learning with TensorFlow",
+        "Natural Language Processing",
+        "Computer Vision applications",
+        "AI model deployment",
+        "Capstone AI projects",
+        "Research paper discussions",
+        "Industry expert mentorship",
+        "Advanced certification"
+      ],
+      "price": {
+        "original": 65000,
+        "discounted": 49999,
+        "currency": "₹"
+      },
+      "level": "Advanced",
+      "mode": ["Online"],
+      "category": "Artificial Intelligence",
+      "rating": 4.9,
+      "reviews": 298,
+      "instructor": "AI Research Scientist",
+      "tags": ["AI", "Deep Learning", "NLP", "Computer Vision"]
+    }
+  ],
+  "categories": [
+    "All",
+    "Web Development",
+    "Cloud Computing",
+    "DevOps",
+    "Data Science",
+    "Cyber Security",
+    "Artificial Intelligence"
+  ],
+  "levels": [
+    "Beginner",
+    "Intermediate",
+    "Advanced",
+    "Beginner to Advanced",
+    "Intermediate to Advanced"
+  ]
+}

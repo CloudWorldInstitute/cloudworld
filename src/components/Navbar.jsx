@@ -5,8 +5,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
 
   return (
-    <nav
-      className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-800 shadow-md rounded-2xl transition-all duration-300"
+    <nav  
+      className="bg-white/5   backdrop-blur-md rounded-xl text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-500 shadow-2xl rounded-2xl transition-all duration-300"
     >
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
         {/* Logo */}

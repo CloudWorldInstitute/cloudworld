@@ -2,6 +2,7 @@ import React from "react";
 import { FaCloud, FaRocket, FaTools, FaLaptop, FaUserTie, FaUserMd } from 'react-icons/fa'; // Font Awesome icons
 import TypewriterText from "../components/TypewriterText";
 import OurJourney from "../components/OurJourney";
+import CoursesComponent from "../components/CoursesComponent";
 
 const Home = () => {
   return (
@@ -90,6 +91,8 @@ const Home = () => {
 
 
       </section>
+
+      <CoursesComponent/>
       <OurJourney />
 
       {/* About Section - Enhanced with better layout and image */}
@@ -249,6 +252,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      
 
       {/* Final CTA Section */}
       <section className="py-24 bg-gray-900 text-white relative overflow-hidden">

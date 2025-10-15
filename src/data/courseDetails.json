@@ -1,0 +1,580 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "icon": "💻",
+      "title": "Full Stack Web Development Program",
+      "duration": "6 Months",
+      "enrolledStudents": "4,000+ Students Enrolled",
+      "description": "Build complete web applications from start to finish. Master HTML, CSS, JavaScript, React, Node.js, MongoDB, and APIs — the most in-demand developer skills in today's tech world.",
+      "fullDescription": "Transform from beginner to professional full-stack developer in just 6 months! Our comprehensive program covers everything from basic HTML to advanced React and Node.js. You'll build real-world projects, learn industry best practices, and get 100% placement support to launch your career as a web developer.",
+      "highlights": [
+        "Days FREE Demo",
+        "Learn Frontend + Backend + Database development",
+        "Work on 5+ real-world web app projects",
+        "Master modern frameworks like React & Node.js",
+        "Live mentor-led classes with code reviews",
+        "Lifetime access to materials & updates",
+        "Placement-focused training & interview prep",
+        "Certification on course completion"
+      ],
+      "price": {
+        "original": 45000,
+        "discounted": 34999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "Web Development",
+      "rating": 4.8,
+      "reviews": 1247,
+      "instructor": "Senior Full Stack Developer",
+      "tags": ["Frontend", "Backend", "Database", "React", "Node.js"],
+      "curriculum": [
+        {
+          "month": "Month 1: Web Fundamentals",
+          "content": [
+            "HTML5, CSS3, JavaScript ES6+",
+            "Responsive Web Design",
+            "Git & GitHub version control",
+            "Build 3 responsive websites"
+          ]
+        },
+        {
+          "month": "Month 2: Frontend Development",
+          "content": [
+            "React.js fundamentals",
+            "State management with Redux",
+            "Modern CSS with Tailwind",
+            "Build 2 React applications"
+          ]
+        },
+        {
+          "month": "Month 3: Backend Development",
+          "content": [
+            "Node.js & Express.js",
+            "RESTful API development",
+            "Authentication & Authorization",
+            "Build REST APIs"
+          ]
+        },
+        {
+          "month": "Month 4: Database & Deployment",
+          "content": [
+            "MongoDB & Mongoose",
+            "SQL databases with PostgreSQL",
+            "Deployment on AWS/Heroku",
+            "Full-stack project deployment"
+          ]
+        },
+        {
+          "month": "Month 5: Advanced Concepts",
+          "content": [
+            "TypeScript",
+            "GraphQL APIs",
+            "WebSockets & Real-time apps",
+            "Microservices architecture"
+          ]
+        },
+        {
+          "month": "Month 6: Capstone Projects",
+          "content": [
+            "E-commerce platform",
+            "Social media application",
+            "Real-time chat application",
+            "Portfolio development"
+          ]
+        }
+      ],
+      "projects": [
+        "E-commerce Website with Payment Gateway",
+        "Social Media Platform with Real-time Features",
+        "Project Management Tool",
+        "Blogging Platform with CMS",
+        "Weather Application with APIs",
+        "Portfolio Website with Admin Panel"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "☁️",
+      "title": "Cloud Computing & AWS Master Program",
+      "duration": "5 Months",
+      "enrolledStudents": "3,200+ Students Enrolled",
+      "description": "Master cloud computing fundamentals and AWS services. Learn to deploy, manage, and scale applications on the world's leading cloud platform.",
+      "fullDescription": "Become an AWS cloud expert with our comprehensive program designed by industry professionals. Learn to design, deploy, and manage scalable cloud infrastructure while preparing for AWS certifications. Hands-on labs and real-world projects will make you job-ready for cloud roles.",
+      "highlights": [
+        "AWS Certified Solutions Architect preparation",
+        "Hands-on with EC2, S3, RDS, Lambda",
+        "Real-world cloud migration projects",
+        "Industry expert instructors",
+        "Live lab sessions",
+        "Resume and interview preparation",
+        "100% placement assistance",
+        "AWS certification guidance"
+      ],
+      "price": {
+        "original": 52000,
+        "discounted": 39999,
+        "currency": "₹"
+      },
+      "level": "Intermediate",
+      "mode": ["Online", "Offline"],
+      "category": "Cloud Computing",
+      "rating": 4.9,
+      "reviews": 892,
+      "instructor": "AWS Certified Professional",
+      "tags": ["AWS", "Cloud", "DevOps", "Infrastructure"],
+      "curriculum": [
+        {
+          "month": "Month 1: Cloud Fundamentals",
+          "content": [
+            "Cloud Computing Concepts",
+            "AWS Global Infrastructure",
+            "IAM & Security Fundamentals",
+            "EC2 & Auto Scaling"
+          ]
+        },
+        {
+          "month": "Month 2: Storage & Databases",
+          "content": [
+            "S3 & Glacier Storage",
+            "RDS & DynamoDB",
+            "Elastic Block Store",
+            "Database Migration Service"
+          ]
+        },
+        {
+          "month": "Month 3: Networking & Security",
+          "content": [
+            "VPC & Network Security",
+            "Route 53 & CloudFront",
+            "Security Groups & NACLs",
+            "AWS WAF & Shield"
+          ]
+        },
+        {
+          "month": "Month 4: Advanced Services",
+          "content": [
+            "Lambda & Serverless",
+            "Elastic Beanstalk",
+            "CloudFormation & Terraform",
+            "Monitoring with CloudWatch"
+          ]
+        },
+        {
+          "month": "Month 5: Certification Prep & Projects",
+          "content": [
+            "Solutions Architect Associate Prep",
+            "Real-world migration projects",
+            "Cost optimization strategies",
+            "Interview preparation"
+          ]
+        }
+      ],
+      "projects": [
+        "Multi-tier Web Application Deployment",
+        "Disaster Recovery Setup",
+        "Serverless Application Architecture",
+        "Cost Optimization Implementation",
+        "Auto-scaling Infrastructure",
+        "Secure Cloud Network Design"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "⚡",
+      "title": "The Ultimate 6-Month DevOps & SRE Roadmap",
+      "duration": "6 Months",
+      "enrolledStudents": "2,800+ Students Enrolled",
+      "description": "Become a DevOps engineer by mastering CI/CD, Docker, Kubernetes, Jenkins, and infrastructure automation tools.",
+      "fullDescription": "Get ready for the most addictive, industry-grade DevOps program on the market! This isn't just a course—it's a transformation journey into the most sought-after skills, packed with real corporate scenarios, hands-on mastery, and associate-level tool certifications. By the end, you'll not only ace interviews—you'll have a showstopping DevOps portfolio with 12 full-fledged, production-grade projects using the hottest tech in the field.",
+      "highlights": [
+        "Docker and Kubernetes deep dive",
+        "CI/CD pipeline implementation",
+        "Infrastructure as Code with Terraform",
+        "Monitoring and logging tools",
+        "Real-time project deployment",
+        "Mentorship from industry experts",
+        "Job placement support",
+        "DevOps certification"
+      ],
+      "price": {
+        "original": 65000,
+        "discounted": 49999,
+        "currency": "₹"
+      },
+      "level": "Intermediate to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "DevOps",
+      "rating": 4.9,
+      "reviews": 756,
+      "instructor": "Senior DevOps Engineer",
+      "tags": ["Docker", "Kubernetes", "CI/CD", "Automation"],
+      "curriculum": [
+        {
+          "month": "Month 1: AWS Cloud Wizardry",
+          "content": [
+            "AWS Solutions Architect Associate (SAA): Design scalable, resilient and secure cloud architectures: VPC, S3, RDS, IAM, Lambda, CloudFront.",
+            "AWS SysOps Administrator Associate: Operational automation, CloudWatch, CloudFormation, blue/green deployments, provisioning, security controls.",
+            "Mini-Projects: Launch auto-scaling apps, real-time monitoring dashboards."
+          ]
+        },
+        {
+          "month": "Month 2: Container Engineering",
+          "content": [
+            "Docker Certified Associate: Multi-stage builds, registries, scanning, networking, Compose, Swarm.",
+            "Kubernetes CKA & CKAD: Production cluster management, Helm, RBAC, secrets, persistent volumes, application rollout/rollback, chaos engineering.",
+            "Mini-Projects: Secure microservice pipelines, Kubernetes self-healing apps."
+          ]
+        },
+        {
+          "month": "Month 3: DevOps Automation",
+          "content": [
+            "Jenkins (CI/CD Guru): Advanced Pipelines, rollback/promotion flows, integrated security checks.",
+            "GitLab CI / GitHub Actions: Multi-cloud deploys, dynamic environments, GitOps rollouts, parallel pipelines.",
+            "Mini-Projects: Multi-cloud deploy pipeline, full Git-driven artifact promotion."
+          ]
+        },
+        {
+          "month": "Month 4: Infrastructure as Code & Automation",
+          "content": [
+            "Terraform Associate: HCL modules, zero-downtime rollouts, remote state, DR, cloud-agnostic infra.",
+            "Ansible Automation: Idempotent config, dynamic inventories, patch management, continuous compliance.",
+            "Mini-Projects: Multi-cloud IaC portfolio, auto-patcher for production fleets."
+          ]
+        },
+        {
+          "month": "Month 5: Corporate Observability",
+          "content": [
+            "Prometheus Certified Associate: PromQL, exporters, advanced alerting, custom dashboards, SLI/SLO tracking.",
+            "Loki, Tempo, Alloy stack: Centralized logging, distributed tracing, unified telemetry.",
+            "Mini-Projects: Trace-root cause pipeline, business-metric Grafana boards."
+          ]
+        },
+        {
+          "month": "Month 6: Cloud-Native Security & Edge",
+          "content": [
+            "DevSecOps: Secure-by-design pipelines, vulnerability scans, secrets vaults, automated audits.",
+            "Serverless & Innovation: Multi-cloud Lambda, event-driven workflows, auto-scaling, serverless CI/CD.",
+            "Mini-Projects: Secure serverless CI/CD, event-driven end-to-end workflow."
+          ]
+        }
+      ],
+      "projects": [
+        "GitOps-powered Enterprise Platform",
+        "Production Service Mesh with Istio & Kiali",
+        "Canary & Blue/Green Automated Releases",
+        "Cloud Infrastructure as Code on Steroids",
+        "Monitoring and Distributed Tracing at Scale",
+        "Slack-Driven Incident Response (ChatOps)",
+        "Enterprise-Grade CI/CD Security Pipeline",
+        "Alloy-Powered Multi-Cloud Telemetry",
+        "Disaster Recovery & High-Availability Experiments",
+        "Self-Healing, Auto-Remediating Production Environments",
+        "Serverless Event-Driven App Suite",
+        "Real-Time Business Metrics and Intelligence"
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "📊",
+      "title": "Data Science & Machine Learning Program",
+      "duration": "7 Months",
+      "enrolledStudents": "2,500+ Students Enrolled",
+      "description": "Learn data analysis, machine learning algorithms, and AI concepts to build intelligent data-driven applications.",
+      "fullDescription": "Master the complete data science lifecycle from data collection to deployment. Learn statistical analysis, machine learning algorithms, and AI concepts through hands-on projects with real datasets. Become industry-ready for data scientist and ML engineer roles.",
+      "highlights": [
+        "Python for Data Science",
+        "Machine Learning algorithms",
+        "Data visualization with Tableau",
+        "Real-world data projects",
+        "AI and Deep Learning basics",
+        "Industry case studies",
+        "Portfolio building",
+        "Job interview preparation"
+      ],
+      "price": {
+        "original": 55000,
+        "discounted": 42999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Advanced",
+      "mode": ["Online", "Offline"],
+      "category": "Data Science",
+      "rating": 4.6,
+      "reviews": 634,
+      "instructor": "Data Scientist",
+      "tags": ["Python", "ML", "AI", "Data Analysis"],
+      "curriculum": [
+        {
+          "month": "Month 1: Python & Statistics",
+          "content": [
+            "Python programming for data science",
+            "NumPy, Pandas, Matplotlib",
+            "Statistical analysis fundamentals",
+            "Data cleaning and preprocessing"
+          ]
+        },
+        {
+          "month": "Month 2: Data Visualization",
+          "content": [
+            "Advanced data visualization",
+            "Tableau and Power BI",
+            "Storytelling with data",
+            "Interactive dashboards"
+          ]
+        },
+        {
+          "month": "Month 3: Machine Learning Fundamentals",
+          "content": [
+            "Supervised learning algorithms",
+            "Regression and classification",
+            "Model evaluation metrics",
+            "Scikit-learn mastery"
+          ]
+        },
+        {
+          "month": "Month 4: Advanced ML & Feature Engineering",
+          "content": [
+            "Ensemble methods",
+            "Feature engineering techniques",
+            "Hyperparameter tuning",
+            "ML pipeline development"
+          ]
+        },
+        {
+          "month": "Month 5: Deep Learning",
+          "content": [
+            "Neural networks fundamentals",
+            "TensorFlow and Keras",
+            "CNN for computer vision",
+            "RNN for time series"
+          ]
+        },
+        {
+          "month": "Month 6: NLP & Deployment",
+          "content": [
+            "Natural Language Processing",
+            "Transformers and BERT",
+            "Model deployment with Flask",
+            "MLOps fundamentals"
+          ]
+        },
+        {
+          "month": "Month 7: Capstone Projects",
+          "content": [
+            "End-to-end data science projects",
+            "Real-world business problems",
+            "Portfolio development",
+            "Interview preparation"
+          ]
+        }
+      ],
+      "projects": [
+        "Predictive Analytics for Sales",
+        "Customer Segmentation Analysis",
+        "Sentiment Analysis for Reviews",
+        "Image Classification System",
+        "Time Series Forecasting",
+        "Recommendation Engine",
+        "Fraud Detection System",
+        "Chatbot Development"
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "🔐",
+      "title": "Cyber Security Specialist Program",
+      "duration": "6 Months",
+      "enrolledStudents": "1,800+ Students Enrolled",
+      "description": "Become a cybersecurity expert by learning ethical hacking, network security, and threat protection techniques.",
+      "fullDescription": "Our comprehensive cybersecurity program transforms you into a security professional capable of protecting organizations from modern cyber threats. Learn ethical hacking, network security, vulnerability assessment, and digital forensics through hands-on labs and real-world scenarios.",
+      "highlights": [
+        "Ethical hacking techniques",
+        "Network security fundamentals",
+        "Vulnerability assessment",
+        "Cyber forensics basics",
+        "Hands-on penetration testing",
+        "Industry certification preparation",
+        "Security tools mastery",
+        "Career guidance"
+      ],
+      "price": {
+        "original": 50000,
+        "discounted": 39999,
+        "currency": "₹"
+      },
+      "level": "Beginner to Intermediate",
+      "mode": ["Online", "Offline"],
+      "category": "Cyber Security",
+      "rating": 4.8,
+      "reviews": 423,
+      "instructor": "Security Analyst",
+      "tags": ["Security", "Ethical Hacking", "Networking"],
+      "curriculum": [
+        {
+          "month": "Month 1: Security Fundamentals",
+          "content": [
+            "Cybersecurity concepts",
+            "Network protocols and security",
+            "Cryptography basics",
+            "Security policies and compliance"
+          ]
+        },
+        {
+          "month": "Month 2: Network Security",
+          "content": [
+            "Firewall configuration",
+            "Intrusion Detection Systems",
+            "VPN and remote access security",
+            "Wireless network security"
+          ]
+        },
+        {
+          "month": "Month 3: Ethical Hacking",
+          "content": [
+            "Penetration testing methodology",
+            "Vulnerability assessment",
+            "Social engineering attacks",
+            "Web application security"
+          ]
+        },
+        {
+          "month": "Month 4: Advanced Threats",
+          "content": [
+            "Malware analysis",
+            "Advanced persistent threats",
+            "Incident response",
+            "Digital forensics"
+          ]
+        },
+        {
+          "month": "Month 5: Cloud & Application Security",
+          "content": [
+            "Cloud security best practices",
+            "Secure coding principles",
+            "API security",
+            "Mobile security"
+          ]
+        },
+        {
+          "month": "Month 6: Capstone & Certification",
+          "content": [
+            "Security operations center simulation",
+            "Red team vs Blue team exercises",
+            "Certification preparation",
+            "Career readiness"
+          ]
+        }
+      ],
+      "projects": [
+        "Network Vulnerability Assessment",
+        "Web Application Penetration Test",
+        "Security Operations Center Setup",
+        "Incident Response Simulation",
+        "Secure Network Architecture Design",
+        "Malware Analysis Report",
+        "Security Policy Development",
+        "Digital Forensics Investigation"
+      ]
+    },
+    {
+      "id": 6,
+      "icon": "🤖",
+      "title": "AI & Machine Learning Engineering",
+      "duration": "8 Months",
+      "enrolledStudents": "1,200+ Students Enrolled",
+      "description": "Comprehensive AI and ML engineering program covering advanced algorithms, neural networks, and real-world AI applications.",
+      "fullDescription": "Dive deep into artificial intelligence and machine learning engineering. Master advanced algorithms, neural networks, deep learning, and AI deployment. Work on cutting-edge projects and prepare for roles in AI research and development.",
+      "highlights": [
+        "Deep Learning with TensorFlow",
+        "Natural Language Processing",
+        "Computer Vision applications",
+        "AI model deployment",
+        "Capstone AI projects",
+        "Research paper discussions",
+        "Industry expert mentorship",
+        "Advanced certification"
+      ],
+      "price": {
+        "original": 75000,
+        "discounted": 59999,
+        "currency": "₹"
+      },
+      "level": "Advanced",
+      "mode": ["Online"],
+      "category": "Artificial Intelligence",
+      "rating": 4.9,
+      "reviews": 298,
+      "instructor": "AI Research Scientist",
+      "tags": ["AI", "Deep Learning", "NLP", "Computer Vision"],
+      "curriculum": [
+        {
+          "month": "Month 1-2: Advanced ML & Math",
+          "content": [
+            "Advanced machine learning algorithms",
+            "Linear algebra for ML",
+            "Probability and statistics",
+            "Optimization techniques"
+          ]
+        },
+        {
+          "month": "Month 3-4: Deep Learning Fundamentals",
+          "content": [
+            "Neural networks architecture",
+            "TensorFlow and PyTorch",
+            "Convolutional Neural Networks",
+            "Recurrent Neural Networks"
+          ]
+        },
+        {
+          "month": "Month 5: Natural Language Processing",
+          "content": [
+            "Transformers and BERT",
+            "Text classification and generation",
+            "Sentiment analysis",
+            "Chatbot development"
+          ]
+        },
+        {
+          "month": "Month 6: Computer Vision",
+          "content": [
+            "Object detection and recognition",
+            "Image segmentation",
+            "GANs for image generation",
+            "Video analysis"
+          ]
+        },
+        {
+          "month": "Month 7: AI Deployment & MLOps",
+          "content": [
+            "Model deployment strategies",
+            "MLOps pipeline development",
+            "Model monitoring and maintenance",
+            "Cloud AI services"
+          ]
+        },
+        {
+          "month": "Month 8: Advanced Projects & Research",
+          "content": [
+            "Research paper implementation",
+            "Advanced AI projects",
+            "Portfolio development",
+            "Industry readiness"
+          ]
+        }
+      ],
+      "projects": [
+        "AI-Powered Chatbot with NLP",
+        "Real-time Object Detection System",
+        "Image Generation with GANs",
+        "Speech Recognition System",
+        "AI-based Recommendation Engine",
+        "Autonomous Vehicle Simulation",
+        "Medical Image Analysis",
+        "AI Stock Prediction System"
+      ]
+    }
+  ]
+}

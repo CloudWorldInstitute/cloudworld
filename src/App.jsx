@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import AboutPage from "./Pages/About";
 import ErrorPage from "./Pages/ErrorPage";
 import SuccessStories from "./Pages/SuccessStories";
+import CourseDetails from "./components/CourseDetails";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/course/:courseId" element={<CourseDetails />} />
+
           <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
         </Route>
       </Routes>
