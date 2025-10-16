@@ -9,6 +9,7 @@ import CourseDetails from "./components/CourseDetails";
 
 const App = () => {
   return (
+<<<<<<< HEAD
 
      <React.StrictMode>
     <BrowserRouter>
@@ -27,6 +28,26 @@ const App = () => {
     </BrowserRouter>
       </React.StrictMode>
     
+=======
+
+    <React.StrictMode>
+      <BrowserRouter>
+
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="/success-stories" element={<SuccessStories />} />
+            <Route path="/course/:courseId" element={<CourseDetails />} />
+
+            <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
+          </Route>
+        </Routes>
+
+      </BrowserRouter>
+    </React.StrictMode>
+
+>>>>>>> d5995318989c5d3fb3eab012cfa1ee07e775b2c1
   );
 };
 
