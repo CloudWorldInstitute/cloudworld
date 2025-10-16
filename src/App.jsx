@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout";
 import Home from "./Pages/Home";
 import AboutPage from "./Pages/About";
@@ -9,11 +9,7 @@ import CourseDetails from "./components/CourseDetails";
 
 const App = () => {
   return (
-<<<<<<< HEAD
-
-     <React.StrictMode>
-    <BrowserRouter>
-    
+    <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
@@ -24,30 +20,7 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
         </Route>
       </Routes>
-    
-    </BrowserRouter>
-      </React.StrictMode>
-    
-=======
-
-    <React.StrictMode>
-      <BrowserRouter>
-
-        <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="/success-stories" element={<SuccessStories />} />
-            <Route path="/course/:courseId" element={<CourseDetails />} />
-
-            <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
-          </Route>
-        </Routes>
-
-      </BrowserRouter>
-    </React.StrictMode>
-
->>>>>>> d5995318989c5d3fb3eab012cfa1ee07e775b2c1
+    </Router>
   );
 };
 
