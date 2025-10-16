@@ -3,6 +3,7 @@ import { FaCloud, FaRocket, FaTools, FaLaptop, FaUserTie, FaUserMd } from 'react
 import TypewriterText from "../components/TypewriterText";
 import OurJourney from "../components/OurJourney";
 import CoursesComponent from "../components/CoursesComponent";
+import TestComponent from "../components/TestComponent";
 
 const Home = () => {
   return (
@@ -88,12 +89,12 @@ const Home = () => {
             </div> */}
 
 
-<div className="absolute -bottom-3 -right-6 animate-glow bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
-  <div className="text-center">
-    <div className="text-2xl font-bold text-blue-600">100%</div>
-    <div className="text-sm text-gray-600 font-medium">Placement Support</div>
-  </div>
-</div>
+            <div className="absolute -bottom-3 -right-6 animate-glow bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">100%</div>
+                <div className="text-sm text-gray-600 font-medium">Placement Support</div>
+              </div>
+            </div>
 
 
             {/* <div className="absolute -bottom-3 -right-6 bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-glow">
@@ -109,7 +110,7 @@ const Home = () => {
 
 
       </section>
-
+<TestComponent/>
       <CoursesComponent />
       <OurJourney />
 
