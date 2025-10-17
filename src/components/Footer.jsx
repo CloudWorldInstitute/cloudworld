@@ -15,7 +15,6 @@ const Footer = () => {
 
   return (
     <>
-    // If you defined custom colors in tailwind.config.js
       <footer className="bg-gradient-to-b from-indigo-950 to-black text-white relative overflow-hidden">
 
         {/* Background Pattern */}

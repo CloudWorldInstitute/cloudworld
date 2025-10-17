@@ -119,41 +119,41 @@ const SuccessStories = () => {
     </section>
 
       {/* Statistics Section */}
-      <section className="py-12 bg-gray-100 text-center">
+      <section className="py-12 bg-rose-50 text-center">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h2 className="text-2xl font-bold text-primary mb-6 flex items-center justify-center">
+          <h2 className="text-2xl font-bold text-teal-400 mb-6 flex items-center justify-center">
             <FaChartBar className="mr-2" /> Why CloudWorld Success Stories Matter
           </h2>
-          <p className="text-gray-700 mb-8 max-w-4xl mx-auto">
+          <p className="text-primary mb-8 max-w-4xl mx-auto">
             At CloudWorld, we're proud of our track record. Over 1,000 professionals have graduated from our programs, with a 98% placement rate. Here's a snapshot:
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-              <h3 className="text-3xl font-bold text-primary">1,000+</h3>
-              <p className="text-gray-600">Alumni Trained</p>
+              <h3 className="text-3xl font-bold text-orange-400">1,000+</h3>
+              <p className="text-orange-400">Alumni Trained</p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-              <h3 className="text-3xl font-bold text-secondary">98%</h3>
-              <p className="text-gray-600">Placement Success</p>
+              <h3 className="text-3xl font-bold text-blue-700">98%</h3>
+              <p className="text-blue-600">Placement Success</p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-              <h3 className="text-3xl font-bold text-primary">50+</h3>
-              <p className="text-gray-600">Partner Companies</p>
+              <h3 className="text-3xl font-bold text-lime-500">50+</h3>
+              <p className="text-lime-500">Partner Companies</p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-              <h3 className="text-3xl font-bold text-secondary">7+</h3>
-              <p className="text-gray-600">Years of Excellence</p>
+              <h3 className="text-3xl font-bold text-red-500">7+</h3>
+              <p className="text-red-500">Years of Excellence</p>
             </div>
             <div className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
-              <h3 className="text-3xl font-bold text-primary">35%</h3>
-              <p className="text-gray-600">Average Salary Hike</p>
+              <h3 className="text-3xl font-bold text-purple-700">35%</h3>
+              <p className="text-purple-700">Average Salary Hike</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Alumni Spotlight Section - New Addition */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-emerald-400">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold text-center text-primary mb-6">Alumni Spotlight</h2>
           <p className="text-gray-700 text-center mb-8 max-w-2xl mx-auto">
@@ -186,7 +186,7 @@ const SuccessStories = () => {
       </section>
 
       {/* Stories Grid Section with Filter */}
-      <section className="py-16 bg-gray-50" id="stories">
+      <section className="py-16 bg-indigo-300" id="stories">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold text-center text-primary mb-6">Featured Alumni Stories</h2>
           <div className="mb-8 text-center flex justify-center items-center">
@@ -234,7 +234,7 @@ const SuccessStories = () => {
       </section>
 
       {/* Submit Your Story Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 m-5 rounded-2xl bg-teal-500">
         <div className="container mx-auto px-4 max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-primary mb-6 flex items-center justify-center">
             <FaEdit className="mr-2" /> Share Your Success Story
@@ -281,7 +281,7 @@ const SuccessStories = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-secondary to-primary text-white text-center">
+      <section className="py-20 bg-rose-50 text-teal-700 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Write Your Success Story?</h2>
           <p className="text-xl mb-8 opacity-90">

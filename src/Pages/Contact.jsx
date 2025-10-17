@@ -105,8 +105,8 @@ const Contact = () => {
   
 
 
-      <section className="bg-gradient-to-br from-indigo-700 via-purple-600 to-pink-500 min-h-screen py-12 flex items-center justify-center px-4">
-        <div className="max-w-7xl w-full bg-white bg-opacity-90 backdrop-blur-lg rounded-xl shadow-lg p-8">
+      <section className="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 min-h-screen py-12 flex items-center justify-center px-4">
+        <div className="max-w-7xl w-full bg-cyan-100 bg-opacity-90 backdrop-blur-lg rounded-xl shadow-lg p-8">
           {/* Header */}
           <header className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h1>
@@ -146,11 +146,11 @@ const Contact = () => {
           <div className="mt-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl p-8 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
             <p className="mb-6">Stay updated with the latest cloud solutions and tech insights by subscribing to our newsletter or following us on social media!</p>
-            <form className="flex flex-col md:flex-row justify-center gap-4">
+            <form className="flex flex-col md:flex-row  justify-center gap-4">
               <input
                 type="email"
                 placeholder="Your email"
-                className="p-3 rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
+                className="p-3 rounded-xl bg-teal-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
               />
               <button className="px-6 py-3 bg-white text-purple-600 rounded-xl font-semibold hover:bg-gray-100 transition">Subscribe</button>
             </form>
