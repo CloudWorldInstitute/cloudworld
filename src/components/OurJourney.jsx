@@ -43,8 +43,8 @@ const journeyData = [
 
 const JourneySection = () => {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto max-w-6xl px-6">
+    <section className="py-20 bg-indigo-50">
+      <div className="container bg-gradient-to-r from-indigo-300 to-violet-300 rounded-3xl mx-auto max-w-6xl p-6">
         <h2 className="text-4xl font-bold text-center text-primary mb-16">
           Our Journey Through the Years
         </h2>

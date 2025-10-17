@@ -186,13 +186,13 @@ const SuccessStories = () => {
       </section>
 
       {/* Stories Grid Section with Filter */}
-      <section className="py-16 bg-indigo-300" id="stories">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="py-16"  id="stories">
+        <div className="container mx-auto px-4 rounded-2xl max-w-7xl">
           <h2 className="text-3xl font-bold text-center text-primary mb-6">Featured Alumni Stories</h2>
           <div className="mb-8 text-center flex justify-center items-center">
             <FaSearch className="mr-2" />
             <select
-              className="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              className="px-4 py-2 border border-gray-900 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
               onChange={(e) => setFilter(e.target.value)}
               value={filter}
               aria-label="Filter success stories"
@@ -208,7 +208,7 @@ const SuccessStories = () => {
             {filteredStories.map((story) => (
               <div
                 key={story.id}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up"
+                className="bg-violet-300 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${story.id * 100}ms` }}
               >
                 <div className="flex items-center mb-4">
@@ -234,8 +234,8 @@ const SuccessStories = () => {
       </section>
 
       {/* Submit Your Story Section */}
-      <section className="py-16 m-5 rounded-2xl bg-teal-500">
-        <div className="container mx-auto px-4 max-w-7xl text-center">
+      <section className="py-16 m-5 rounded-2xl max-w-md items-center bg-indigo-300">
+        <div className="container mx-auto px-4 max-w-md text-center">
           <h2 className="text-3xl font-bold text-primary mb-6 flex items-center justify-center">
             <FaEdit className="mr-2" /> Share Your Success Story
           </h2>

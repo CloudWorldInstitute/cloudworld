@@ -78,14 +78,14 @@ const CareerGuidanceModal = () => {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="backdrop-blur-2xl shadow-[inset_0px_0px_25px_6px_rgba(59,_130,_246,_0.5)] rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
+            className="bg-violet-800  rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold text-teal-700">Get Career Guidance</h2>
+              <h2 className="text-2xl font-bold text-lime-500">Get Career Guidance</h2>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-gray-500 hover:text-gray-700 text-2xl"
+                className="text-lime-500 hover:text-lime-600 text-2xl"
                 aria-label="Close modal"
               >
                 &times;
@@ -94,7 +94,7 @@ const CareerGuidanceModal = () => {
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="block text-sm font-medium text-lime-500">
                   Name
                 </label>
                 <input
@@ -103,13 +103,13 @@ const CareerGuidanceModal = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                 />
                 {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="email" className="block text-sm font-medium text-lime-500">
                   Email
                 </label>
                 <input
@@ -118,13 +118,13 @@ const CareerGuidanceModal = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                 />
                 {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
               </div>
 
               <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="phone" className="block text-sm font-medium text-lime-500">
                   Phone
                 </label>
                 <input
@@ -133,7 +133,7 @@ const CareerGuidanceModal = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
                 />
                 {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
               </div>
@@ -141,7 +141,7 @@ const CareerGuidanceModal = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-700 transition-all shadow-md disabled:opacity-50"
+                className="w-full bg-lime-500 text-white py-2 px-4 rounded-lg hover:bg-lime-600 transition-all shadow-md disabled:opacity-50"
               >
                 {isSubmitting ? "Submitting..." : "Submit"}
               </button>

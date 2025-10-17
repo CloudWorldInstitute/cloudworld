@@ -38,8 +38,8 @@ const StudentsWorkingIn = () => {
 
 
   return (
-    <section className="py-16 bg-light min-h-screen">
-      <div className="container bg-accent mx-auto px-4 text-center">
+    <section className="py-16 bg-gradient-to-tr    from-indigo-500 to-violet-600 min-h-screen">
+      <div className=" bg-indigo-200 rounded-3xl mx-auto p-4 text-center">
         <h1 className="text-5xl text-primary text-shadow-black font-bold mb-8">Our Students Are Working In</h1>
         <p className="text-2xl mb-12 text-gray-800">
           Discover the top IT companies where our graduates are making an impact.

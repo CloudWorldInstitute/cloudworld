@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-5 inset-x-4 bg-black/20 backdrop-blur-md text-white z-50 border-b border-gray-900 shadow-[inset_0px_0px_17px_0px_#1a202c] rounded-xl transition-all duration-300 mx-15">
+    <nav className="fixed top-5 inset-x-4 bg-indigo/20 backdrop-blur-md text-white z-50 border-b border-gray-900 shadow-[inset_0px_0px_17px_0px_#615fff] rounded-xl transition-all duration-300 mx-15">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
 
         {/* Logo */}
@@ -30,8 +30,8 @@ const Navbar = () => {
             />
             <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
-          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-white">
-            Cloud<span className="text-teal-400">World</span>
+          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-gray-950">
+            Cloud<span className="text-indigo-600">World</span>
           </span>
         </NavLink>
 
@@ -44,8 +44,8 @@ const Navbar = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   `relative px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${isActive
-                    ? "text-white bg-teal-600 shadow-lg"
-                    : "text-teal-300 hover:text-white hover:bg-teal-500/30"
+                    ? "text-white bg-violet-600 shadow-lg"
+                    : "text-indigo-500 hover:text-white hover:bg-teal-500/30"
                   }`
                 }
               >

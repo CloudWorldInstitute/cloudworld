@@ -6,7 +6,6 @@ import CoursesComponent from "../components/CoursesComponent";
 import TestComponent from "../components/TestComponent";
 import StudentsWorkingIn from "../components/StudentsWorkingIn";
 import AlumniTestimonials from "../components/AlumniTestimonials";
-import SectionDivider from "../components/SectionDivider";
 
 const Home = () => {
   return (
@@ -14,10 +13,9 @@ const Home = () => {
 
       <section
         id="home"
-        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-100"
+        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-violet-300 via-white to-indigo-500"
         aria-labelledby="hero-title"
       >
-                                 <SectionDivider src="/public/sectionDivider.svg" position="top" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0  opacity-20">
@@ -37,7 +35,7 @@ const Home = () => {
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-700 to-cyan-700 bg-clip-text text-transparent leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -57,7 +55,7 @@ const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
               <button
-                className="group bg-gradient-to-r from-accent to-teal-700 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-indigo-500 to-violet-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
                 aria-label="Start your journey with CloudWorld"
               >
                 Start Your Journey
@@ -124,15 +122,17 @@ const Home = () => {
 
 
       {/* Services Section - Card hover effects */}
-      <section className="py-24 bg-light">
+      <section className="py-24 bg-white-50">
         <div className="container bg-accent mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-5xl font-bold mb-4 text-primary">Our Core Services</h2>
+<h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent inline-block">
+  Our Core Services
+</h2>
             <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
               Tailored solutions to propel your IT career and business forward with confidence.
             </p>
           </div>
-          <div className="grid grid-cols-1 p-5 bg-primary rounded-3xl md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 p-5 bg-gradient-to-r from-indigo-500 to-violet-600  rounded-3xl md:grid-cols-3 gap-8">
             {[
               {
                 icon: <FaCloud className="text-5xl" />, // Replaced ☁️
@@ -181,7 +181,7 @@ const Home = () => {
       <AlumniTestimonials/>
 
      {/* Stats Section - Enhanced Design */}
-<section className="relative py-24 bg-gradient-to-br from-cyan-100 via-cyan-300 to-cyan-500 text-primary">
+<section className="relative py-24 bg-gradient-to-br from-indigo-500 via-teal-300 to-indigo-500 text-primary">
   <div className="container mx-auto px-6 md:px-12 text-center">
     
     {/* Heading */}
@@ -199,10 +199,10 @@ const Home = () => {
       ].map((stat, index) => (
         <div
           key={index}
-          className="bg-white/70 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
+          className="bg-white/90 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
           style={{ animationDelay: `${index * 150}ms` }}
         >
-          <div className="text-5xl font-extrabold text-cyan-800 mb-2">
+          <div className="text-5xl font-extrabold text-teal-800 mb-2">
             {stat.num}
           </div>
           <p className="text-lg font-semibold text-gray-700">

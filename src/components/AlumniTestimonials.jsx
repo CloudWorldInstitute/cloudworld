@@ -66,13 +66,13 @@ const AlumniTestimonials = () => {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-sky-50 via-cyan-100 to-white overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-teal-50 via-teal-100 to-white overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-cyan-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-4">
             Hear From Our Proud Alumni
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-indigo-600 max-w-2xl mx-auto">
             Transforming careers and empowering learners to achieve their IT dreams.
           </p>
         </div>
@@ -127,7 +127,7 @@ const AlumniTestimonials = () => {
             <FaArrowRight />          </button>
         </div>
 
-        
+
       </div>
       {/* Decorative background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(59,130,246,0.08),transparent_70%)] pointer-events-none" />
