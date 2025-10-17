@@ -11,7 +11,6 @@ const AboutPage = () => {
 
       {/* Hero Section with Image and Stats */}
       <section className="py-20 pt-30 bg-gradient-to-br from-indigo-100 to-indigo-100 relative overflow-hidden">
-         <SectionDivider src="/public/sectionDivider.svg" position="top" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-32 h-32 bg-teal-400 rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-40 h-40 bg-cyan-400 rounded-full animate-pulse animation-delay-2000"></div>
