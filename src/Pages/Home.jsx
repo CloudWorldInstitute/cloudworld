@@ -116,7 +116,6 @@ const Home = () => {
 
 
       </section>
-      <TestComponent />
 
       <CoursesComponent />
 
