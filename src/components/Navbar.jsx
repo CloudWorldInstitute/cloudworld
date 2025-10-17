@@ -1,131 +1,131 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { GiTabletopPlayers } from "react-icons/gi";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Navigation items data
+  const navItems = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/success-stories", label: "Success Stories" },
+    { path: "/contact", label: "Contact" }
+  ];
 
   return (
-    <nav  
-      className="bg-white/10    backdrop-blur-md rounded-xl text-white fixed top-5 left-15 right-15 m-0 z-20 border-b border-gray-500 shadow-2xl rounded-2xl transition-all duration-300"
-    >
+    <nav className="fixed top-5 inset-x-4 bg-black/20 backdrop-blur-md text-white z-50 border-b border-gray-900 shadow-[inset_0px_0px_17px_0px_#1a202c] rounded-xl transition-all duration-300 mx-15">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
+
         {/* Logo */}
         <NavLink
           to="/"
-          className="flex items-center gap-3 hover:opacity-90 transition-all duration-300 group"
+          className="flex items-center gap-3 group hover:opacity-90 transition-all duration-300"
         >
           <div className="relative">
             <img
-              src="/logo.png" // ✅ Make sure this file is in the public folder
+              src="/logo.png"
               alt="CloudWorld Logo"
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
+              className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
             />
-            {/* Optional hover ring effect */}
             <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
-
-          <span className="self-center text-lg sm:text-xl md:text-2xl font-extrabold text-primary tracking-wide">
-            Cloud<span className="text-teal-900">World</span>
+          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-white">
+            Cloud<span className="text-teal-400">World</span>
           </span>
         </NavLink>
 
+        {/* Desktop Navigation - Always visible on medium screens and up */}
+        <div className="hidden md:flex  rounded-2xl items-center space-x-8">
+          <div className=" bg-gray-800 rounded-2xl items-center p-3 space-x-8">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  `relative px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${isActive
+                    ? "text-white bg-teal-600 shadow-lg"
+                    : "text-teal-300 hover:text-white hover:bg-teal-500/30"
+                  }`
+                }
+              >
+                {item.label}
+                {/* Active indicator line */}
+                {({ isActive }) => isActive && (
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-teal-400 rounded-full"></span>
+                )}
+              </NavLink>
+            ))}
+          </div>
 
-        {/* Buttons and Mobile Toggle */}
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          {/* Additional CTA Button for Desktop */}
 
 
-
-
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-900 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded={isOpen}
-            onClick={() => setIsOpen(!isOpen)} // Toggle menu state
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+          <button className="p-[3px] relative ">
+            <div className="absolute  inset-0 bg-gradient-to-r from-lime-500 to-teal-500 rounded-2xl" />
+            <div className="p-2   flex items-center  bg-gray-800 rounded-2xl  relative group transition duration-200 text-lime-300 font-bold hover:bg-transparent">
+              <GiTabletopPlayers /> Get career guidance
+            </div>
           </button>
         </div>
 
-        {/* Navigation Links */}
-        <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isOpen ? "block" : "hidden"
-            }`} // Toggle visibility based on state
-          id="navbar-sticky"
+        {/* Mobile toggle button - Hidden on desktop */}
+        <button
+          type="button"
+          aria-controls="navbar-sticky"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+          className="inline-flex items-center justify-center p-2 w-10 h-10 text-white rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
         >
-          <ul className="flex flex-col p-8 md:p-0 mt-10 font-medium border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-cyan-900 text-lg bg-teal-200 md:bg-transparent"
-                    : "text-teal-800 hover:text-white hover:bg-indigo-300 transition-all rounded"
-                  }`
-                }
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-rose-900 text-lg bg-teal-800 md:bg-transparent"
-                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
-                  }`
-                }
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/success-stories"
-                className={({ isActive }) =>
-                  `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 text-lg bg-teal-800 md:bg-transparent"
-                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
-                  }`
-                }
-              >
-                Success Stories
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `block py-2 px-3 rounded md:p-0 ${isActive
-                    ? "text-gray-900 text-lg bg-teal-800 md:bg-transparent"
-                    : "text-teal-900 hover:text-white hover:bg-teal-600 transition-all rounded"
-                  }`
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            {isOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18M3 6h18M3 18h18" />
+            )}
+          </svg>
+        </button>
 
+        {/* Mobile Navigation Menu - Only shows on mobile */}
+        <div
+          id="navbar-sticky"
+          className={`w-full md:hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            } overflow-hidden`}
+        >
+          <ul className="flex flex-col mt-4 font-medium bg-gray-800/95 backdrop-blur-md rounded-lg p-6 border border-gray-700 space-y-3">
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <NavLink
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `block py-3 px-4 rounded-lg transition-all duration-300 ${isActive
+                      ? "bg-teal-600 text-white font-bold shadow-md"
+                      : "text-teal-300 hover:text-white hover:bg-teal-500/30"
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
 
-           
-
+            {/* Mobile CTA Button */}
+            <li className="pt-2">
+              <button className="p-[3px] relative ">
+            <div className="absolute  inset-0 bg-gradient-to-r from-lime-500 to-teal-500 rounded-2xl" />
+            <div className="p-2   flex items-center  bg-gray-800 rounded-2xl  relative group transition duration-200 text-lime-300 font-bold hover:bg-transparent">
+              <GiTabletopPlayers /> Get career guidance
+            </div>
+          </button>
+            </li>
           </ul>
         </div>
       </div>

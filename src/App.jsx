@@ -6,6 +6,7 @@ import AboutPage from "./Pages/About";
 import ErrorPage from "./Pages/ErrorPage";
 import SuccessStories from "./Pages/SuccessStories";
 import CourseDetails from "./components/CourseDetails";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/course/:courseId" element={<CourseDetails />} />
+          <Route path="/contact" element={<Contact />} />
 
           <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
         </Route>

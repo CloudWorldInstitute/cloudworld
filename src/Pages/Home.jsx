@@ -4,6 +4,8 @@ import TypewriterText from "../components/TypewriterText";
 import OurJourney from "../components/OurJourney";
 import CoursesComponent from "../components/CoursesComponent";
 import TestComponent from "../components/TestComponent";
+import StudentsWorkingIn from "../components/StudentsWorkingIn";
+import AlumniTestimonials from "../components/AlumniTestimonials";
 
 const Home = () => {
   return (
@@ -32,7 +34,7 @@ const Home = () => {
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-700 to-cyan-700 bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -52,7 +54,7 @@ const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
               <button
-                className="group bg-gradient-to-r from-indigo-600 to-teal-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+                className="group bg-gradient-to-r from-accent to-teal-700 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
                 aria-label="Start your journey with CloudWorld"
               >
                 Start Your Journey
@@ -110,67 +112,22 @@ const Home = () => {
 
 
       </section>
-<TestComponent/>
+      <TestComponent />
       <CoursesComponent />
       <OurJourney />
 
-      {/* About Section - Enhanced with better layout and image */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="lg:order-2 space-y-6 animate-fade-in-left">
-              <h2 className="text-5xl font-bold mb-6 text-primary">About CloudWorld</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Based in the heart of Pune, India, CloudWorld is more than just a platform—it's a catalyst for transformation. We specialize in bridging the skills gap in IT by offering world-class cloud training, strategic consulting, and unmatched career opportunities.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Our team of industry experts is committed to your success, providing personalized guidance that turns aspirations into achievements.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <span className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                  <FaCloud className="mr-2 text-xl" /> {/* Replaced ☁️ */} AWS Certified
-                </span>
-                <span className="inline-flex items-center px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">
-                  Azure Expertise
-                </span>
-                <span className="inline-flex items-center px-4 py-2 bg-tertiary/10 text-tertiary rounded-full text-sm font-medium">
-                  5+ Years Experience
-                </span>
-              </div>
-              <a
-                href="#contact"
-                className="inline-block bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Get in Touch
-              </a>
-            </div>
-            <div className="lg:order-1 relative animate-fade-in-right">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="CloudWorld Innovation"
-                  className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white text-lg font-semibold">
-                  Innovating the Cloud Future
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Services Section - Card hover effects */}
-      <section className="py-24 bg-gradient-to-b from-light to-white">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="py-24 bg-light">
+        <div className="container bg-accent mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-5xl font-bold mb-4 text-primary">Our Core Services</h2>
             <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
               Tailored solutions to propel your IT career and business forward with confidence.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 p-5 bg-primary rounded-3xl md:grid-cols-3 gap-8">
             {[
               {
                 icon: <FaCloud className="text-5xl" />, // Replaced ☁️
@@ -215,62 +172,46 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section - New addition for credibility */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold mb-4 text-primary">What Our Clients Say</h2>
-            <p className="text-lg text-secondary">Join thousands who've transformed their careers with us.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "CloudWorld's training was life-changing. Landed my dream job in just 3 months!",
-                author: "Priya S., AWS Developer",
-                avatar: <FaLaptop className="text-6xl mb-4 opacity-50" /> // Replaced 👩‍💻
-              },
-              {
-                quote: "Exceptional consulting services. Our cloud infrastructure is now 40% more efficient.",
-                author: "Rajesh K., CTO at TechCorp",
-                avatar: <FaUserTie className="text-6xl mb-4 opacity-50" /> // Replaced 👨‍💼
-              },
-              {
-                quote: "The placement support is unmatched. Highly recommend for IT professionals.",
-                author: "Amit M., Cloud Architect",
-                avatar: <FaUserMd className="text-6xl mb-4 opacity-50" /> // Replaced 🧑‍🔬
-              }
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-light p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                {testimonial.avatar}
-                <p className="text-gray-700 italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
-                <p className="font-semibold text-primary">- {testimonial.author}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
+      <AlumniTestimonials/>
 
-      {/* Stats Section - Enhanced visuals */}
-      <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { num: "1,000+", label: "Trained Professionals" },
-              { num: "100+", label: "Partner Companies" },
-              { num: "98%", label: "Placement Success" },
-              { num: "7+", label: "Years of Excellence" }
-            ].map((stat, index) => (
-              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
-                <div className="text-5xl font-bold mb-2">{stat.num}</div>
-                <p className="text-white/90 font-medium">{stat.label}</p>
-              </div>
-            ))}
+     {/* Stats Section - Enhanced Design */}
+<section className="relative py-24 bg-gradient-to-br from-cyan-100 via-cyan-300 to-cyan-500 text-primary">
+  <div className="container mx-auto px-6 md:px-12 text-center">
+    
+    {/* Heading */}
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-gray-800">
+      Our Achievements at a Glance
+    </h2>
+
+    {/* Stats Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+      {[
+        { num: "1,000+", label: "Trained Professionals" },
+        { num: "100+", label: "Partner Companies" },
+        { num: "98%", label: "Placement Success" },
+        { num: "7+", label: "Years of Excellence" }
+      ].map((stat, index) => (
+        <div
+          key={index}
+          className="bg-white/70 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
+          style={{ animationDelay: `${index * 150}ms` }}
+        >
+          <div className="text-5xl font-extrabold text-cyan-800 mb-2">
+            {stat.num}
           </div>
+          <p className="text-lg font-semibold text-gray-700">
+            {stat.label}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+
+  {/* Decorative Background Element */}
+  <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.2)_0%,_rgba(0,0,0,0)_70%)]"></div>
+</section>
+
 
 
 
@@ -301,6 +242,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <StudentsWorkingIn />
+
     </div>
   );
 };
