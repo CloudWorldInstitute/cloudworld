@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLightbulb, FaHandHoldingHeart } from 'react-icons/fa';
+import SectionDivider from '../components/SectionDivider';
 
 const visionImg = "https://images.unsplash.com/photo-1503676382389-4809596c7abe?auto=format&fit=crop&w=400&q=80";
 const missionImg = "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80";
@@ -7,8 +8,11 @@ const missionImg = "https://images.unsplash.com/photo-1513258496099-48168024aec0
 const AboutPage = () => {
   return (
     <>
+                
+
       {/* Hero Section with Image and Stats */}
       <section className="py-20 pt-30 bg-gradient-to-br from-indigo-100 to-indigo-100 relative overflow-hidden">
+         <SectionDivider src="/public/sectionDivider.svg" position="top" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-32 h-32 bg-teal-400 rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-40 h-40 bg-cyan-400 rounded-full animate-pulse animation-delay-2000"></div>
@@ -99,6 +103,7 @@ const AboutPage = () => {
 
           {/* Key Highlights Section */}
           <section className="bg-gradient-to-bl mt-10 from-indigo-200 via-indigo-50 to-cyan-100 py-16 px-6 rounded-2xl shadow-xl">
+            
             <div className="max-w-7xl mx-auto">
               <h2 className="text-4xl font-extrabold text-center text-indigo-900 mb-12">
                 Key Highlights of Our Institute
@@ -183,10 +188,18 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
+          
+
+                
+                
+
 
           {/* Our Values Section */}
           <section className="py-16 bg-gray-100 min-h-[60vh]">
+
             <div className="container mx-auto px-4 text-center animate-fade-in-up animation-delay-500 max-w-7xl">
+                      
+
               <h2 className="text-4xl font-extrabold mb-8 text-primary">
                 Our Values
               </h2>
@@ -211,8 +224,11 @@ const AboutPage = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> 
+            
           </section>
+
+
 
           {/* Bottom CTA */}
           <div className="text-center mt-16 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-2xl p-8 shadow-2xl text-white max-w-4xl mx-auto">
@@ -225,6 +241,8 @@ const AboutPage = () => {
             </button>
           </div>
         </div>
+                                 <SectionDivider src="/public/sectionDivider.svg" position="bottom" />
+
       </section>
     </>
   );

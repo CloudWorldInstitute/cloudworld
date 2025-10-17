@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import SectionDivider from '../components/SectionDivider';
 
 const Contact = () => {
   const [faqs, setFaqs] = useState([
@@ -17,7 +18,8 @@ const Contact = () => {
 
   return (
     <>
-     
+                  <SectionDivider src="/public/sectionDivider.svg" position="top"  />
+
     <section className="bg-gray-50 py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-lg p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
         

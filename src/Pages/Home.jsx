@@ -6,6 +6,7 @@ import CoursesComponent from "../components/CoursesComponent";
 import TestComponent from "../components/TestComponent";
 import StudentsWorkingIn from "../components/StudentsWorkingIn";
 import AlumniTestimonials from "../components/AlumniTestimonials";
+import SectionDivider from "../components/SectionDivider";
 
 const Home = () => {
   return (
@@ -16,6 +17,8 @@ const Home = () => {
         className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-100"
         aria-labelledby="hero-title"
       >
+                                 <SectionDivider src="/public/sectionDivider.svg" position="top" />
+
         {/* Animated background elements */}
         <div className="absolute inset-0  opacity-20">
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -109,14 +112,17 @@ const Home = () => {
 
           </div>
         </div>
+                               
 
 
       </section>
       <TestComponent />
+
       <CoursesComponent />
+
       <OurJourney />
 
-     
+
 
       {/* Services Section - Card hover effects */}
       <section className="py-24 bg-light">
