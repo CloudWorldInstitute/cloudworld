@@ -78,7 +78,7 @@ const CareerGuidanceModal = () => {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="bg-violet-600  rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
+            className="bg-gradient-to-r from-violet-500 to-indigo-600  rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-4">
