@@ -80,7 +80,14 @@ const CareerGuidanceModal = () => {
           <div
             className="bg-gradient-to-r from-violet-500 to-indigo-600  rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
             onClick={(e) => e.stopPropagation()}
-          >
+          > 
+{/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-2 right-2 w-8 h-8 bg-white rounded-full"></div>
+          <div className="absolute bottom-2 left-2 w-6 h-6 bg-white rounded-full"></div>
+        </div>
+
+
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-2xl font-bold text-lime-500">Get Career Guidance</h2>
               <button
