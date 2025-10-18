@@ -85,11 +85,6 @@ const CareerGuidanceModal = () => {
 
             <div className="flex justify-between items-center mb-4">
 
-{/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-2 right-2 w-8 h-8 bg-white rounded-full"></div>
-          <div className="absolute bottom-2 left-2 w-6 h-6 bg-white rounded-full"></div>
-        </div>
 
               <h2 className="text-2xl font-bold text-lime-500">Get Career Guidance</h2>
               <button
