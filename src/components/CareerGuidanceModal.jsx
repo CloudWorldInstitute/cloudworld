@@ -65,7 +65,7 @@ const CareerGuidanceModal = () => {
       if (!sessionStorage.getItem("formSubmitted")) {
         setIsOpen(true);
       }
-    }, 4000); // 40 seconds
+    }, 30000); // 30 seconds
 
     return () => clearInterval(interval);
   }, []);
