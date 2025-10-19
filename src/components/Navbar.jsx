@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-5 inset-x-4 bg-indigo/20 backdrop-blur-md text-white z-50 border-b border-gray-900 shadow-[inset_0px_0px_17px_0px_#615fff] rounded-xl transition-all duration-300 mx-15">
+    <nav className="fixed top-5 inset-x-4 bg-indigo/20 backdrop-blur-md text-white z-50 border-b border-gray-900 shadow-[inset_0px_0px_17px_0px_#615fff] rounded-xl transition-all duration-300 mx-10">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
 
         {/* Logo */}
