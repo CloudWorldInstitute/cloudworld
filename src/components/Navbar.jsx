@@ -76,7 +76,7 @@ const Navbar = () => {
           aria-controls="navbar-sticky"
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center justify-center p-2 w-10 h-10 text-white rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
+          className="inline-flex items-center justify-center p-2 w-10 h-10 text-indigo-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
