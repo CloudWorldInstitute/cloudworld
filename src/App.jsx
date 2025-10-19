@@ -7,6 +7,8 @@ import ErrorPage from "./Pages/ErrorPage";
 import SuccessStories from "./Pages/SuccessStories";
 import CourseDetails from "./components/CourseDetails";
 import Contact from "./Pages/Contact";
+import BlogSection from "./Pages/Blog";
+import Login from "./admin/AdminLogin";
 
 const App = () => {
   return (
@@ -18,6 +20,9 @@ const App = () => {
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/course/:courseId" element={<CourseDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<BlogSection />} />
+          <Route path="/admin" element={<Login />} />
+
 
           <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}
         </Route>
