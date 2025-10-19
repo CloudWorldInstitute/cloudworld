@@ -156,13 +156,13 @@ const Footer = () => {
         href="https://wa.me/917498539362"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-1 right-8 z-50 transition-transform transform hover:scale-110 vibrate"
+        className="fixed bottom-1 right-3 z-50 transition-transform transform hover:scale-150 vibrate"
         aria-label="Chat with us on WhatsApp"
       >
         <img
           src="/pngwing.com.png"
           alt="WhatsApp Chat"
-          className="w-40 h-40 object-contain"
+          className="w-35 h-35 object-contain"
         />
       </a>
 
