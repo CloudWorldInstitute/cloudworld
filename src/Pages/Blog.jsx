@@ -22,7 +22,7 @@ const BlogSection = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-black text-white py-12 px-6">
+        <div className="min-h-screen bg-gradient-to-br from-slate-100 via-indigo-100 to-black text-white py-12 px-6">
             {/* Sticky Categories */}
             <nav className="sticky top-19 z-10 bg-slate-900 bg-opacity-90 backdrop-blur-sm py-4 mt-15 mb-8 max-w-6xl mx-auto rounded-xl shadow-lg flex flex-wrap justify-center gap-4">
                 {categories.map((category) => (
