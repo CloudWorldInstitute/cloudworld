@@ -40,7 +40,7 @@ const BlogSection = () => {
                 {currentBlogs.map((blog) => (
                     <article
                         key={blog.id}
-                        className="backdrop-blur-xl bg-white/10 rounded-2xl shadow-lg overflow-hidden border border-white/10 hover:scale-[1.03] transition-transform duration-300"
+                        className="bg-gradient-to-br from-slate-900 via-indigo-900 to-black rounded-2xl shadow-lg overflow-hidden border border-white/10 hover:scale-[1.03] transition-transform duration-300"
                     >
                         <img
                             src={blog.coverImage}
