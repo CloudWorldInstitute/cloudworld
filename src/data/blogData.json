@@ -21,7 +21,7 @@
       "content": "Visual Studio Code offers thousands of extensions that boost developer productivity. Here are the ones every coder should install...",
       "categoryId": 3,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?code,developer",
+      "coverImage": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-10-15T10:30:00Z",
       "likes": 134,
       "comments": [{ "user": "TechFan21", "text": "Prettier is a game changer!", "date": "2025-10-16T14:00:00Z" }]
@@ -32,7 +32,7 @@
       "content": "Goa’s hidden beaches offer calm escapes away from crowds. Explore Butterfly Beach, Cola, and Kakolem...",
       "categoryId": 1,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?beach,goa",
+      "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-09-25T09:15:00Z",
       "likes": 256,
       "comments": [{ "user": "TravelerQueen", "text": "Loved Butterfly Beach!", "date": "2025-09-26T11:30:00Z" }]
@@ -43,7 +43,7 @@
       "content": "Docker has transformed how we develop and deploy apps. This beginner-friendly guide explains containers, images, and volumes...",
       "categoryId": 4,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?docker,containers",
+      "coverImage": "https://images.unsplash.com/photo-1581092787765-8dabbf6f53b6?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-10-01T11:00:00Z",
       "likes": 198,
       "comments": [{ "user": "DevOpsPro", "text": "Very clear explanation!", "date": "2025-10-03T08:00:00Z" }]
@@ -54,7 +54,7 @@
       "content": "Comparing AWS and Azure in terms of services, pricing, and performance to help businesses choose the right fit...",
       "categoryId": 2,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?aws,azure",
+      "coverImage": "https://images.unsplash.com/photo-1614064644324-1b1a2b8f4a67?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-10-02T10:00:00Z",
       "likes": 342,
       "comments": [{ "user": "CloudGeek", "text": "AWS still dominates!", "date": "2025-10-04T09:15:00Z" }]
@@ -65,7 +65,7 @@
       "content": "Serverless architecture frees developers from backend management. Learn how AWS Lambda and Google Cloud Functions work...",
       "categoryId": 2,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?serverless,cloud",
+      "coverImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-09-12T12:20:00Z",
       "likes": 278,
       "comments": [{ "user": "CloudCoder", "text": "Perfect intro to serverless!", "date": "2025-09-13T08:45:00Z" }]
@@ -76,7 +76,7 @@
       "content": "GitHub Actions simplify continuous integration and delivery. Here’s how to automate your deployments efficiently...",
       "categoryId": 4,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?github,CI-CD",
+      "coverImage": "https://images.unsplash.com/photo-1517430816045-df4b7de01f1b?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-08-21T09:20:00Z",
       "likes": 312,
       "comments": [{ "user": "AutoDev", "text": "Saved me so much time!", "date": "2025-08-22T10:10:00Z" }]
@@ -87,7 +87,7 @@
       "content": "TypeScript continues to dominate frontend development. Find out why it’s crucial for robust and scalable codebases...",
       "categoryId": 3,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?typescript,webdev",
+      "coverImage": "https://images.unsplash.com/photo-1590608897129-79da98d159d4?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-07-30T13:45:00Z",
       "likes": 410,
       "comments": [{ "user": "JSNinja", "text": "TS took my code quality to another level.", "date": "2025-07-31T08:20:00Z" }]
@@ -98,7 +98,7 @@
       "content": "Containers are great—but how do you manage them? Dive into Pods, Services, and scaling using Kubernetes basics...",
       "categoryId": 4,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?kubernetes,containers",
+      "coverImage": "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-09-15T12:15:00Z",
       "likes": 389,
       "comments": [{ "user": "CloudOps", "text": "K8s explained beautifully!", "date": "2025-09-17T17:30:00Z" }]
@@ -109,7 +109,7 @@
       "content": "Planning to upskill in cloud tech? Explore AWS, GCP, and Azure certifications that pay the highest this year...",
       "categoryId": 2,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?cloud,certification",
+      "coverImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-06-22T08:50:00Z",
       "likes": 472,
       "comments": [{ "user": "LearnerPro", "text": "Going for AWS Solutions Architect now!", "date": "2025-06-25T10:00:00Z" }]
@@ -120,7 +120,7 @@
       "content": "APIs power modern apps. In this post, learn the fundamentals of RESTful architecture and HTTP methods...",
       "categoryId": 3,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?api,code",
+      "coverImage": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-05-12T07:40:00Z",
       "likes": 223,
       "comments": [{ "user": "RESTFan", "text": "Clear and concise!", "date": "2025-05-13T07:55:00Z" }]
@@ -131,7 +131,7 @@
       "content": "Networking is the backbone of cloud infrastructure. Explore VPC, subnets, and security groups in AWS...",
       "categoryId": 2,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?aws,network",
+      "coverImage": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-06-11T09:30:00Z",
       "likes": 210,
       "comments": [{ "user": "NetGuru", "text": "Loved the visual examples!", "date": "2025-06-12T09:44:00Z" }]
@@ -142,7 +142,7 @@
       "content": "Microservice architectures help build modular systems. Learn how to design microservices using Express and Docker...",
       "categoryId": 3,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?nodejs,microservice",
+      "coverImage": "https://images.unsplash.com/photo-1623795581250-6af9b4d87f02?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-06-03T08:00:00Z",
       "likes": 332,
       "comments": [{ "user": "BackendBoss", "text": "This helped my startup a lot.", "date": "2025-06-04T08:45:00Z" }]
@@ -153,7 +153,7 @@
       "content": "Artificial Intelligence is redefining automation in the cloud. Learn how AI optimizes auto-scaling and resource management...",
       "categoryId": 5,
       "authorId": 1,
-      "coverImage": "https://source.unsplash.com/featured/?ai,cloud",
+      "coverImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
       "createdAt": "2025-05-01T12:00:00Z",
       "likes": 277,
       "comments": [{ "user": "AIDev", "text": "Exciting times for AI in DevOps!", "date": "2025-05-03T12:45:00Z" }]
