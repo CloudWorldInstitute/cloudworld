@@ -100,7 +100,7 @@ const Navbar = () => {
           className={`w-full md:hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             } overflow-hidden`}
         >
-          <ul className="flex flex-col mt-4 font-medium bg-gray-800/95 backdrop-blur-md rounded-lg p-6 border border-gray-700 space-y-3">
+          <ul className="flex flex-col mt-3 font-medium bg-gray-800/95 backdrop-blur-md rounded-lg p-2 border border-gray-700 space-y-3">
             {navItems.map((item) => (
               <li key={item.path}>
                 <NavLink
