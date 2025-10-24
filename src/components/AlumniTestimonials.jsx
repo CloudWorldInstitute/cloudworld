@@ -66,72 +66,67 @@ const AlumniTestimonials = () => {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-teal-50 via-teal-100 to-white overflow-hidden">
-      <div className="container mx-auto px-4 max-w-7xl relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-4">
-            Hear From Our Proud Alumni
-          </h2>
-          <p className="text-indigo-600 max-w-2xl mx-auto">
-            Transforming careers and empowering learners to achieve their IT dreams.
-          </p>
-        </div>
+ <section className="relative mt-3 py-14 bg-white overflow-hidden">
+  <div className="container mx-auto px-4 max-w-7xl relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">
+        Hear From Our Proud Alumni
+      </h2>
+      <p className="text-secondary max-w-2xl mx-auto">
+        Transforming careers and empowering learners to achieve their IT dreams.
+      </p>
+    </div>
 
-        
-
-        {/* Horizontal Scrollable Row */}
+    <div
+      ref={scrollRef}
+      className="flex space-x-8 overflow-x-auto no-scrollbar pb-2"
+      style={{ scrollSnapType: "x mandatory" }}
+    >
+      {testimonials.map((item, index) => (
         <div
-          ref={scrollRef}
-          className="flex space-x-8 overflow-x-auto no-scrollbar pb-2"
-          style={{ scrollSnapType: "x mandatory" }}
+          key={index}
+          className="min-w-[300px] max-w-xs flex-shrink-0 snap-center bg-emerald-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border-t-4 border-primary"
         >
-          {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="min-w-[300px] max-w-xs flex-shrink-0 snap-center bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border-t-4 border-cyan-400"
-            >
-              <div className="flex flex-col items-center -mt-12 mb-2">
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover"
-                />
-                <h3 className="text-lg font-semibold text-cyan-700 mt-4 mb-2">{item.name}</h3>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
-                “{item.text.length > 120 ? item.text.slice(0, 120) + '...' : item.text}”
-              </p>
-              <button className="text-cyan-600 font-semibold hover:underline text-sm flex items-center justify-center gap-1">
-                Learn More
-                <span>
-                  <i className="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          ))}
-          
-        </div>
-
-        {/* Arrows */}
-        <div className="flex justify-between items-center mb-8">
-          <button
-            onClick={() => scroll('left')}
-            className="p-3 w-12 h-12 rounded-full border border-cyan-400 text-cyan-600 hover:bg-cyan-600 hover:text-white transition"
-          >
-            <FaArrowLeft />
+          <div className="flex flex-col items-center -mt-12 mb-2">
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover"
+            />
+            <h3 className="text-lg font-semibold text-primary mt-4 mb-2">{item.name}</h3>
+          </div>
+          <p className="text-zinc-800 text-sm leading-relaxed mb-6 italic">
+            “{item.text.length > 120 ? item.text.slice(0, 120) + '...' : item.text}”
+          </p>
+          <button className="text-secondary font-semibold hover:text-primary text-sm flex items-center justify-center gap-1">
+            Learn More
+            <span>
+              <i className="fas fa-arrow-right"></i>
+            </span>
           </button>
-          <button
-            onClick={() => scroll('right')}
-            className="p-3 w-12 h-12 rounded-full border border-cyan-400 text-cyan-600 hover:bg-cyan-600 hover:text-white transition"
-          >
-            <FaArrowRight />          </button>
         </div>
+      ))}
+    </div>
 
+    <div className="flex justify-between  items-center mx-20">
+      <button
+        onClick={() => scroll('left')}
+        className="p-3 w-12 h-12 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition"
+      >
+        <FaArrowLeft />
+      </button>
+      <button
+        onClick={() => scroll('right')}
+        className="p-3 w-12 h-12 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition"
+      >
+        <FaArrowRight />
+      </button>
+    </div>
+  </div>
 
-      </div>
-      {/* Decorative background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(59,130,246,0.08),transparent_70%)] pointer-events-none" />
-    </section>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(250,122,9,0.08),transparent_70%)] pointer-events-none" />
+</section>
+
   );
 };
 

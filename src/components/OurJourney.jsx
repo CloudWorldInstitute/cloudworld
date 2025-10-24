@@ -43,44 +43,49 @@ const journeyData = [
 
 const JourneySection = () => {
   return (
-    <section className="py-20 bg-indigo-50">
-      <div className="container bg-gradient-to-r from-indigo-300 to-violet-300 rounded-3xl mx-auto max-w-6xl p-6">
-        <h2 className="text-4xl font-bold text-center text-primary mb-16">
+    <section className="py-20 bg-white">
+
+       <h2 className="text-5xl font-extrabold text-center text-primary mb-20 drop-shadow-md">
           Our Journey Through the Years
         </h2>
+      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-amber-300 to-orange-300 shadow-lg">
+       
 
-        <div className="relative border-l-4 border-cyan-400">
+        <div className="relative border-l-4 border-cyan-400 pl-8 sm:pl-12">
           {journeyData.map((item, index) => (
             <div
               key={index}
-              className="mb-12 ml-6 relative animate-fade-in-up"
-              style={{ animationDelay: `${index * 200}ms` }}
+              className="mb-16 relative animate-fade-in-up"
+              style={{ animationDelay: `${index * 250}ms` }}
             >
               {/* Icon */}
               <span
-                className={`absolute -left-9 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br ${item.color} text-white shadow-md`}
+                className={`absolute -left-12 top-2 flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br ${item.color} text-white shadow-lg`}
               >
                 {item.icon}
               </span>
 
               {/* Content */}
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                  <h3 className="text-2xl font-semibold text-cyan-700">
+              <div className="bg-white p-7 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+                  <h3 className="text-3xl font-bold text-cyan-700 leading-tight">
                     {item.title}
                   </h3>
-                  <span className="text-sm font-bold text-gray-500 md:ml-4">
+                  <span className="text-xl font-bold text-gray-700 md:ml-6 mt-2 md:mt-0">
                     {item.year}
                   </span>
                 </div>
-                <h4 className="text-lg text-gray-600 mb-3">{item.subtitle}</h4>
-                <p className="text-gray-700 mb-3">{item.description}</p>
+                <h4 className="text-lg text-gray-700 mb-4 tracking-wide font-medium">
+                  {item.subtitle}
+                </h4>
+                <p className="text-gray-800 leading-relaxed mb-4">{item.description}</p>
+
                 {item.programs && (
-                  <div className="flex flex-wrap gap-2 mt-3">
+                  <div className="flex flex-wrap gap-3 mt-4">
                     {item.programs.map((prog, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-sm font-semibold"
+                        className="bg-cyan-100 text-cyan-700 font-semibold text-sm px-4 py-1 rounded-full drop-shadow-sm"
                       >
                         {prog}
                       </span>
@@ -95,5 +100,6 @@ const JourneySection = () => {
     </section>
   );
 };
+
 
 export default JourneySection;

@@ -13,29 +13,29 @@ const Home = () => {
 
       <section
         id="home"
-        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-violet-300 via-white to-indigo-500"
+        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-white"
         aria-labelledby="hero-title"
       >
 
         {/* Animated background elements */}
-        <div className="absolute inset-0  opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-1/4 left-3/4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-        </div>
+        {/* <div className="absolute inset-0  opacity-20">
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-1/4 left-3/4 w-72 h-72 bg-orange-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div> */}
 
         {/* Content Section */}
         <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left animate-fade-in-up">
           <div className="animate-fade-in-up animation-delay-200">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+            <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-primary rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
+              <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
               India's Leading Cloud Training Platform
             </div>
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -48,21 +48,21 @@ const Home = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
-              India's leading platform for mastering <span className="font-semibold text-blue-600">Cloud Computing, AWS, Azure, and DevOps</span>.
+              India's leading platform for mastering <span className="font-semibold text-orange-600">Cloud Computing, AWS, Azure, and DevOps</span>.
               We don't just teach — we transform beginners into industry-ready professionals with <span className="font-semibold text-green-600">100% placement support</span> and real-world training.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
               <button
-                className="group bg-gradient-to-r from-indigo-500 to-violet-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+                className="group bg-emerald-100 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
                 aria-label="Start your journey with CloudWorld"
               >
                 Start Your Journey
                 <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
               </button>
               <button
-                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="border-2 border-orange-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 aria-label="Explore our services"
               >
                 Explore Services
@@ -92,10 +92,10 @@ const Home = () => {
             </div> */}
 
 
-            <div className="absolute -bottom-3 -right-6 animate-glow bg-amber-50 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
+            <div className="absolute -bottom-3 -right-6 animate-glow bg-emerald-100 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">100%</div>
-                <div className="text-sm text-gray-600 font-medium">Placement Support</div>
+                <div className="text-2xl font-bold text-orange-600">100%</div>
+                <div className="text-sm text-orange-600 font-medium">Placement Support</div>
               </div>
             </div>
 
@@ -122,17 +122,17 @@ const Home = () => {
 
 
       {/* Services Section - Card hover effects */}
-      <section className="py-24 bg-white-50">
-        <div className="container bg-accent mx-auto px-4 max-w-7xl">
+      <section className=" bg-white-50">
+        <div className="container bg-white mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16 animate-fade-in-up">
-<h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent inline-block">
+<h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent inline-block">
   Our Core Services
 </h2>
-            <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
               Tailored solutions to propel your IT career and business forward with confidence.
             </p>
           </div>
-          <div className="grid grid-cols-1 p-5 bg-gradient-to-r from-indigo-500 to-violet-600  rounded-3xl md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 p-5 bg-amber-200  rounded-3xl md:grid-cols-3 gap-8">
             {[
               {
                 icon: <FaCloud className="text-5xl" />, // Replaced ☁️
@@ -155,7 +155,7 @@ const Home = () => {
             ].map((service, index) => (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 animate-fade-in-up animation-delay-500"
+                className="group bg-emerald-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-primary animate-fade-in-up animation-delay-500"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -181,11 +181,11 @@ const Home = () => {
       <AlumniTestimonials/>
 
      {/* Stats Section - Enhanced Design */}
-<section className="relative py-24 bg-gradient-to-br from-indigo-500 via-teal-300 to-indigo-500 text-primary">
+<section className="relative py-24 bg-white text-primary">
   <div className="container mx-auto px-6 md:px-12 text-center">
     
     {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-gray-800">
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-orange-600">
       Our Achievements at a Glance
     </h2>
 
@@ -199,10 +199,10 @@ const Home = () => {
       ].map((stat, index) => (
         <div
           key={index}
-          className="bg-white/90 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
+          className="bg-emerald-100 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
           style={{ animationDelay: `${index * 150}ms` }}
         >
-          <div className="text-5xl font-extrabold text-teal-800 mb-2">
+          <div className="text-5xl font-extrabold text-orange-600 mb-2">
             {stat.num}
           </div>
           <p className="text-lg font-semibold text-gray-700">
@@ -221,7 +221,7 @@ const Home = () => {
 
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
+      <section className="py-24 bg-gray-900 text-orange-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         </div>
@@ -233,13 +233,13 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
-              className="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="bg-emerald-100 text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Contact Us Now
             </a>
             <a
               href="https://cloudworld.co.in/"
-              className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300"
+              className="border-2 border-primary text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300"
               target="_blank" rel="noopener noreferrer"
             >
               Visit Website

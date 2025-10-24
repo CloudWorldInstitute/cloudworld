@@ -2,121 +2,138 @@ import React, { useState } from "react";
 import blogData from "../data/blogData.json";
 
 const BlogSection = () => {
-    const { admin, categories, blogs } = blogData;
+  const { categories, blogs } = blogData;
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 6;
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const blogsPerPage = 6;
+  const findCategory = (id) =>
+    categories.find((c) => c.id === id)?.name || "Unknown";
 
-    const findCategory = (id) =>
-        categories.find((c) => c.id === id)?.name || "Unknown";
+  const totalPages = Math.ceil(blogs.length / blogsPerPage);
+  const startIdx = (currentPage - 1) * blogsPerPage;
+  const currentBlogs = blogs.slice(startIdx, startIdx + blogsPerPage);
 
-    // Pagination logic
-    const totalPages = Math.ceil(blogs.length / blogsPerPage);
-    const startIdx = (currentPage - 1) * blogsPerPage;
-    const currentBlogs = blogs.slice(startIdx, startIdx + blogsPerPage);
+  const handlePageClick = (page) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-    const handlePageClick = (page) => {
-        if (page < 1 || page > totalPages) return;
-        setCurrentPage(page);
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top on page change
-    };
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-100 text-gray-900 py-16 px-6">
+      {/* Sticky Categories */}
+      <nav className="sticky top-20 z-10 bg-white bg-opacity-90 backdrop-blur-md py-4 mb-12 max-w-6xl mx-auto rounded-2xl shadow-lg flex flex-wrap justify-center gap-4">
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-400 text-white font-semibold shadow-md transition hover:scale-105 hover:shadow-lg"
+          >
+            {category.name}
+          </button>
+        ))}
+      </nav>
 
-    return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-100 to-indigo-100 text-white py-12 px-6">
-            {/* Sticky Categories */}
-            <nav className="sticky top-19 z-10 bg-slate-900 bg-opacity-90 backdrop-blur-sm py-4 mt-15 mb-8 max-w-6xl mx-auto rounded-xl shadow-lg flex flex-wrap justify-center gap-4">
-                {categories.map((category) => (
-                    <button
-                        key={category.id}
-                        className="px-3 py-2 mt- rounded-full bg-indigo-600/30 text-indigo-200 border border-indigo-700 hover:bg-indigo-600 hover:text-white cursor-pointer transition"
-                    >
-                        {category.name}
-                    </button>
-                ))}
-            </nav>
+      {/* Blog Grid */}
+      <section className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {currentBlogs.map((blog) => (
+          <article
+            key={blog.id}
+            className="bg-white rounded-2xl shadow-md hover:shadow-2xl overflow-hidden border border-orange-100 group transition-transform duration-300 hover:-translate-y-2"
+          >
+            <img
+              src={blog.coverImage}
+              alt={blog.title}
+              className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div className="p-6">
+              <div className="flex justify-between items-center text-sm text-amber-600 font-medium">
+                <span>{findCategory(blog.categoryId)}</span>
+                <time dateTime={blog.createdAt}>
+                  {new Date(blog.createdAt).toLocaleDateString()}
+                </time>
+              </div>
 
-            {/* Blog Grid */}
-            <section className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                {currentBlogs.map((blog) => (
-                    <article
-                        key={blog.id}
-                        className="bg-gradient-to-br from-slate-900 via-indigo-900 to-black rounded-2xl shadow-lg overflow-hidden border border-white/10 hover:scale-[1.03] transition-transform duration-300"
-                    >
-                        <img
-                            src={blog.coverImage}
-                            alt={blog.title}
-                            className="w-full h-56 object-cover"
-                            loading="lazy"
-                        />
-                        <div className="p-6">
-                            <div className="flex justify-between items-center text-sm text-indigo-300 font-mono">
-                                <span>{findCategory(blog.categoryId)}</span>
-                                <time dateTime={blog.createdAt}>
-                                    {new Date(blog.createdAt).toLocaleDateString()}
-                                </time>
-                            </div>
-                            <h2 className="mt-3 text-2xl font-semibold text-white leading-tight">
-                                {blog.title}
-                            </h2>
-                            <p className="text-slate-300 mt-3 line-clamp-4">{blog.content}</p>
-                            <div className="flex justify-between items-center mt-5 text-indigo-300 text-sm font-medium">
-                                <span>{blog.likes} Likes</span>
-                                <span>{blog.comments.length} Comments</span>
-                            </div>
-                        </div>
+              <h2 className="mt-3 text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
+                {blog.title}
+              </h2>
+              <p className="text-gray-600 mt-3 line-clamp-4">{blog.content}</p>
 
-                        <div className="bg-slate-800/40 px-6 py-4 border-t border-slate-700/50 max-h-32 overflow-y-auto scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-indigo-900">
-                            {blog.comments.map((c, i) => (
-                                <div key={i} className="border-b border-slate-600/50 py-1 last:border-0">
-                                    <p className="text-sm text-slate-300 italic truncate">“{c.text}”</p>
-                                    <p className="text-xs text-slate-400 mt-1 truncate">
-                                        - {c.user}, {new Date(c.date).toLocaleDateString()}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </article>
-                ))}
-            </section>
-
-            {/* Pagination Controls */}
-            <div className="flex justify-center items-center gap-3 mt-12 text-indigo-300 font-mono max-w-6xl mx-auto">
-                <button
-                    onClick={() => handlePageClick(currentPage - 1)}
-                    disabled={currentPage === 1}
-                    className={`px-4 py-2 rounded-md border border-indigo-500 ${currentPage === 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-indigo-600"
-                        }`}
-                >
-                    Previous
-                </button>
-
-                {[...Array(totalPages)].map((_, idx) => {
-                    const pageNum = idx + 1;
-                    return (
-                        <button
-                            key={pageNum}
-                            onClick={() => handlePageClick(pageNum)}
-                            className={`px-4 py-2 rounded-md border border-indigo-500 ${pageNum === currentPage
-                                ? "bg-indigo-600 text-white"
-                                : "hover:bg-indigo-600 hover:text-white"
-                                }`}
-                        >
-                            {pageNum}
-                        </button>
-                    );
-                })}
-
-                <button
-                    onClick={() => handlePageClick(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                    className={`px-4 py-2 rounded-md border border-indigo-500 ${currentPage === totalPages ? "opacity-40 cursor-not-allowed" : "hover:bg-indigo-600"
-                        }`}
-                >
-                    Next
-                </button>
+              <div className="flex justify-between items-center mt-5 text-sm text-gray-500">
+                <span className="flex items-center gap-1">
+                  ❤️ {blog.likes} Likes
+                </span>
+                <span className="flex items-center gap-1">
+                  💬 {blog.comments.length} Comments
+                </span>
+              </div>
             </div>
-        </div>
-    );
+
+            {/* Comments Section */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-100 px-6 py-4 border-t border-amber-200 max-h-32 overflow-y-auto scrollbar-thin scrollbar-thumb-orange-400 scrollbar-track-amber-200">
+              {blog.comments.map((c, i) => (
+                <div
+                  key={i}
+                  className="border-b border-amber-300/50 py-1 last:border-0"
+                >
+                  <p className="text-sm text-gray-700 italic truncate">
+                    “{c.text}”
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1 truncate">
+                    - {c.user}, {new Date(c.date).toLocaleDateString()}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+
+      {/* Pagination Controls */}
+      <div className="flex justify-center items-center gap-3 mt-16 text-amber-700 font-medium max-w-6xl mx-auto">
+        <button
+          onClick={() => handlePageClick(currentPage - 1)}
+          disabled={currentPage === 1}
+          className={`px-4 py-2 rounded-md border border-orange-400 ${
+            currentPage === 1
+              ? "opacity-40 cursor-not-allowed"
+              : "bg-gradient-to-r from-orange-400 to-amber-500 text-white hover:shadow-md transition"
+          }`}
+        >
+          Previous
+        </button>
+
+        {[...Array(totalPages)].map((_, idx) => {
+          const pageNum = idx + 1;
+          return (
+            <button
+              key={pageNum}
+              onClick={() => handlePageClick(pageNum)}
+              className={`px-4 py-2 rounded-lg border border-orange-400 ${
+                pageNum === currentPage
+                  ? "bg-orange-500 text-white shadow-md"
+                  : "hover:bg-amber-400 hover:text-white transition"
+              }`}
+            >
+              {pageNum}
+            </button>
+          );
+        })}
+
+        <button
+          onClick={() => handlePageClick(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className={`px-4 py-2 rounded-md border border-orange-400 ${
+            currentPage === totalPages
+              ? "opacity-40 cursor-not-allowed"
+              : "bg-gradient-to-r from-amber-400 to-orange-500 text-white hover:shadow-md transition"
+          }`}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default BlogSection;

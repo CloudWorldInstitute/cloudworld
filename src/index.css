@@ -4,17 +4,19 @@
    Custom Theme Colors
 ======================= */
 :root {
-  --primary: #1f3b54;
-  --secondary: #21628d/* Soft mint */
-  --accent: #9aa9cf;   /* Light green */
-  --light: #d5e8f1;        /* Off-white */
-  --white: #f6f5fa;        /* Pure white */
-  --red: #dd5050;
+  --primary: #fa7a09;
+  --secondary: #fc984b;/* Soft mint */
+  --accent: #f7c59f;   /* Light green */
+  --light: #f3f0ec;        /* Off-white */
+  --white: #ffffff;        /* Pure white */
+  --red: #ff6b35;
+  --pista: #cbe896;
+
   /* Black & Gray Shades */
   --black: #000000;
   --gray-dark: #333333;
-  --gray: #555555;
-  --gray-light: #aaaaaa;
+  --gray: #beb7a4;
+  --gray-light: #beb7a4;
   --green-dark: #001302;
 }
 
@@ -29,6 +31,7 @@
 .bg-gray { background-color: var(--gray); }
 .bg-gray-dark { background-color: var(--gray-dark); }
 .bg-green-dark { background-color: var(--green-dark); }
+.bg-pista { background-color: var(--pista); }
 
 /* =======================
    Text Color Utilities
@@ -40,6 +43,7 @@
 .text-white { color: var(--white); }
 .text-gray { color: var(--gray); }
 .text-gray-dark { color: var(--gray-dark); }
+.text-pista { color: var(--pista); }
 
 /* =======================
    Border Utilities

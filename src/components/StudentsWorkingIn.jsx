@@ -38,10 +38,10 @@ const StudentsWorkingIn = () => {
 
 
   return (
-    <section className="py-16 bg-gradient-to-tr    from-indigo-500 to-violet-600 min-h-screen">
-      <div className=" bg-indigo-200 rounded-3xl mx-auto p-4 text-center">
-        <h1 className="text-5xl text-primary text-shadow-black font-bold mb-8">Our Students Are Working In</h1>
-        <p className="text-2xl mb-12 text-gray-800">
+    <section className=" bg-white min-h-screen">
+      <div className=" bg-light  mx-auto p-4 text-center">
+         <h1 className="text-5xl font-extrabold text-orange-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
+        <p className="text-xl text-orange-400 mb-16 max-w-4xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
 
@@ -52,7 +52,7 @@ const StudentsWorkingIn = () => {
             {companies.concat(companies).map((company, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-lg border border-gray-100 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-gray-100 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>
@@ -64,7 +64,7 @@ const StudentsWorkingIn = () => {
             {companies1.concat(companies1).map((company, index) => (
               <div
                 key={index + companies.length}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-lg border border-gray-100 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-gray-100 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>

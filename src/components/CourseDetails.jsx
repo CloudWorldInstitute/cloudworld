@@ -6,17 +6,17 @@ const CourseDetails = () => {
   const { courseId } = useParams();
   const navigate = useNavigate();
 
-  // Find the course by ID
+  // Find the course
   const course = coursesData.courses.find(course => course.id === parseInt(courseId));
 
   if (!course) {
     return (
-      <div className="min-h-screen bg-indigo-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-emerald-50 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h2>
-          <button 
+          <h2 className="text-2xl font-bold text-amber-700 mb-4">Course Not Found</h2>
+          <button
             onClick={() => navigate('/')}
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg"
+            className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform"
           >
             Back to Courses
           </button>
@@ -26,95 +26,83 @@ const CourseDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-emerald-50">
       {/* Header */}
-      <div className="bg-white shadow-sm border-b">
+      <div className="bg-white/80 backdrop-blur-sm border-b border-orange-100 sticky top-0 z-10 shadow-md">
         <div className="container mx-auto px-4 py-4">
-          <button 
+          <button
             onClick={() => navigate('/')}
-            className="flex items-center text-blue-600 hover:text-blue-700 font-semibold mb-4"
+            className="flex items-center text-orange-600 hover:text-emerald-600 font-semibold"
           >
             ← Back to Courses
           </button>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-6 py-10">
         {/* Course Header */}
-        <div className="bg-teal-100 rounded-2xl shadow-xl p-8 mb-8">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+        <div className="bg-gradient-to-br from-orange-100 via-amber-100 to-emerald-50 rounded-3xl shadow-xl p-8 mb-10">
+          <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div className="flex-1">
               <div className="flex items-center mb-4">
                 <span className="text-4xl mr-4">{course.icon}</span>
-                <div>
-                  <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">
-                    {course.category}
-                  </span>
-                </div>
-              </div>
-              
-              <h1 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
-                {course.title}
-              </h1>
-              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                {course.fullDescription}
-              </p>
-              
-              <div className="flex flex-wrap gap-6 text-sm text-gray-500 mb-6">
-                <div className="flex items-center">
-                  <span className="text-blue-600 mr-2">⏱️</span>
-                  <span>{course.duration}</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-green-600 mr-2">👥</span>
-                  <span>{course.enrolledStudents}</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-yellow-500 mr-2">⭐</span>
-                  <span>{course.rating} Rating ({course.reviews} reviews)</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-purple-600 mr-2">🎯</span>
-                  <span>{course.level}</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-cyan-600 mr-2">💼</span>
-                  <span>{course.mode.join(' + ')}</span>
-                </div>
+                <span className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  {course.category}
+                </span>
               </div>
 
-              {/* Course Highlights */}
-              <div className="mb-6">
-                <h3 className="font-semibold text-gray-800 mb-3">What You'll Get:</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {course.highlights.slice(0, 6).map((highlight, index) => (
-                    <div key={index} className="flex items-center text-gray-600">
-                      <span className="text-green-500 mr-2">✓</span>
-                      <span className="text-sm">{highlight}</span>
+              <h1 className="text-4xl font-bold text-emerald-800 mb-4">{course.title}</h1>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">{course.fullDescription}</p>
+
+              {/* Course Info */}
+              <div className="flex flex-wrap gap-6 text-sm text-gray-600 mb-8">
+                <span className="flex items-center gap-2">
+                  <span className="text-orange-500">⏱️</span> {course.duration}
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="text-emerald-500">👥</span> {course.enrolledStudents}
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="text-amber-500">⭐</span> {course.rating} ({course.reviews} reviews)
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="text-yellow-500">🎯</span> {course.level}
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="text-orange-400">🧭</span> {course.mode.join(' + ')}
+                </span>
+              </div>
+
+              {/* Highlights */}
+              <div>
+                <h3 className="text-xl font-semibold text-amber-700 mb-3">What You'll Learn:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {course.highlights.slice(0, 6).map((h, i) => (
+                    <div key={i} className="flex items-center text-gray-700">
+                      <span className="text-emerald-500 mr-2">✓</span> {h}
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-            
-            {/* Pricing & Enrollment */}
-            <div className="bg-blue-50 rounded-xl p-6 min-w-80 sticky top-4">
-              <div className="text-center mb-4">
-                <span className="text-2xl font-bold text-blue-600">
-                  {course.price.currency} {course.price.discounted.toLocaleString()}
-                </span>
-                <span className="text-gray-500 line-through ml-2 block">
-                  {course.price.currency} {course.price.original.toLocaleString()}
-                </span>
-              </div>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 mb-3">
+
+            {/* Pricing Card */}
+            <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-6 shadow-md text-center h-fit">
+              <span className="text-3xl font-bold text-orange-700">
+                {course.price.currency} {course.price.discounted.toLocaleString()}
+              </span>
+              <span className="block text-sm text-gray-500 line-through mt-1">
+                {course.price.currency} {course.price.original.toLocaleString()}
+              </span>
+
+              <button className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500 text-white py-3 rounded-lg mt-6 font-semibold hover:scale-105 transition-transform">
                 Enroll Now
               </button>
-              <button className="w-full border border-blue-600 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
+              <button className="w-full mt-3 border-2 border-amber-400 text-amber-600 py-3 rounded-lg font-semibold hover:bg-amber-50">
                 Download Syllabus
               </button>
-              
-              <div className="mt-4 text-center text-sm text-gray-600">
+
+              <div className="mt-4 text-sm text-gray-700">
                 <p>💳 EMI Options Available</p>
                 <p>🎯 100% Placement Support</p>
               </div>
@@ -122,24 +110,20 @@ const CourseDetails = () => {
           </div>
         </div>
 
-        {/* Course Curriculum */}
-        <div className="bg-sky-100 rounded-2xl shadow-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Course Curriculum
-          </h2>
-          
+        {/* Curriculum Section */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 mb-10 border-l-4 border-orange-300">
+          <h2 className="text-3xl font-bold text-emerald-800 mb-8 text-center">Course Curriculum</h2>
           <div className="space-y-8">
             {course.curriculum.map((month, index) => (
-              <div key={index} className="border-l-4 border-blue-500 pl-6 relative">
-                <div className="absolute -left-3 top-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+              <div key={index} className="border-l-4 border-amber-400 pl-6 relative">
+                <div className="absolute -left-3 w-6 h-6 bg-amber-500 text-white font-bold flex items-center justify-center rounded-full">
                   {index + 1}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">{month.month}</h3>
-                <ul className="space-y-3">
-                  {month.content.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start text-gray-600 leading-relaxed">
-                      <span className="text-green-500 mr-3 mt-1">✓</span>
-                      {item}
+                <h3 className="text-2xl font-semibold text-orange-700 mb-4">{month.month}</h3>
+                <ul className="space-y-2 text-gray-700">
+                  {month.content.map((c, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-emerald-500 mr-2 mt-1">✓</span> {c}
                     </li>
                   ))}
                 </ul>
@@ -149,58 +133,60 @@ const CourseDetails = () => {
         </div>
 
         {/* Projects Section */}
-        <div className="bg-fuchsia-100 rounded-2xl shadow-xl p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-            Real-World Projects
-          </h2>
-          <p className="text-lg text-gray-600 text-center mb-8 max-w-4xl mx-auto leading-relaxed">
-            Build an impressive portfolio with industry-relevant projects that showcase your skills to employers.
+        <div className="bg-gradient-to-br from-emerald-50 via-yellow-50 to-orange-50 rounded-3xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-center text-emerald-700 mb-4">Real-World Projects</h2>
+          <p className="text-gray-700 text-center mb-8 max-w-3xl mx-auto">
+            Apply what you've learned with hands-on projects that strengthen your confidence and resume.
           </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {course.projects.map((project, index) => (
-              <div key={index} className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-4 border border-blue-200 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start">
-                  <span className="text-blue-600 font-bold mr-3 text-lg">💥</span>
-                  <div>
-                    <span className="text-gray-700 font-medium">{project}</span>
-                    <p className="text-sm text-gray-600 mt-1">Hands-on project with real-world application</p>
-                  </div>
-                </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {course.projects.map((p, i) => (
+              <div
+                key={i}
+                className="bg-white border-l-4 border-emerald-400 rounded-xl p-4 shadow-md hover:shadow-amber-200 transition"
+              >
+                <h4 className="text-orange-700 font-semibold">{p}</h4>
+                <p className="text-sm text-gray-600 mt-1">Practical project using industry tools</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Learning & CTA */}
+        <div className="mt-10 bg-white border-t-4 border-amber-400 rounded-2xl p-8 shadow-lg">
+          <h3 className="text-3xl font-bold text-center text-orange-700 mb-8">How You'll Learn & Grow</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {[
+              {
+                icon: "👨‍💻",
+                title: "Hands-On Learning",
+                desc: "Learn through projects that simulate real-world IT scenarios.",
+              },
+              {
+                icon: "🤝",
+                title: "Guided Mentorship",
+                desc: "Receive dedicated coaching from industry-certified experts.",
+              },
+              {
+                icon: "🎯",
+                title: "Career-Oriented",
+                desc: "Get placement assistance and build a strong professional portfolio.",
+              },
+            ].map(({ icon, title, desc }, idx) => (
+              <div key={idx} className="p-6 hover:scale-105 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl shadow-sm transition">
+                <div className="text-4xl mb-3">{icon}</div>
+                <h4 className="text-xl font-semibold text-emerald-700 mb-2">{title}</h4>
+                <p className="text-gray-700 text-sm">{desc}</p>
               </div>
             ))}
           </div>
 
-          {/* Learning Methodology */}
-          <div className="mt-12 bg-gray-50 rounded-xl p-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-              How You'll Learn & Succeed
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div className="p-4">
-                <div className="text-3xl mb-3">👨‍💻</div>
-                <h4 className="font-semibold text-gray-800 mb-2">Hands-On Learning</h4>
-                <p className="text-gray-600 text-sm">Practical, project-based approach with real-world scenarios</p>
-              </div>
-              <div className="p-4">
-                <div className="text-3xl mb-3">🤝</div>
-                <h4 className="font-semibold text-gray-800 mb-2">Expert Mentorship</h4>
-                <p className="text-gray-600 text-sm">Guidance from industry professionals with live support</p>
-              </div>
-              <div className="p-4">
-                <div className="text-3xl mb-3">🎯</div>
-                <h4 className="font-semibold text-gray-800 mb-2">Career Focused</h4>
-                <p className="text-gray-600 text-sm">100% placement support with interview preparation</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Final CTA */}
-          <div className="mt-8 text-center">
-            <p className="text-xl text-gray-700 mb-6 font-semibold">
+          <div className="mt-10 text-center">
+            <p className="text-xl text-gray-800 mb-6 font-semibold">
               Ready to transform your career with {course.title}?
             </p>
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-12 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500 text-white px-12 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-lg">
               Start Your Journey Today
             </button>
           </div>
