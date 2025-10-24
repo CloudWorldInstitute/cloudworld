@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
+
 import {
   FaFacebookF,
   FaWhatsapp,
@@ -45,15 +48,11 @@ const Footer = () => {
                 and professional training solutions.
               </p>
               <div className="flex space-x-4">
-                <a
-                  href="https://cloudworld.co.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-600 text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-105"
-                >
-                  <span className="mr-2">🌐</span>
-                  Visit Website
-                </a>
+                <Link to="/upcoming-batches">
+                  <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                    Upcoming Batches
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -152,6 +151,7 @@ const Footer = () => {
         <div className="absolute top-10 right-20 w-6 h-6 bg-cyan-400 rounded-full opacity-30 animate-pulse" style={{ animationDelay: "1s" }}></div>
         <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-purple-400 rounded-full opacity-25 animate-pulse" style={{ animationDelay: "2s" }}></div>
       </footer>
+
       <a
         href="https://wa.me/917498539362"
         target="_blank"
@@ -165,6 +165,8 @@ const Footer = () => {
           className="w-35 h-35 object-contain"
         />
       </a>
+
+
 
 
     </>

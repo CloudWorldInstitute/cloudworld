@@ -7,8 +7,8 @@ const Navbar = () => {
 
   // Navigation items data
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
+    { path: "/", label: "Corporate Training" },
+    { path: "/AboutUs", label: "About Us" },
     { path: "/success-stories", label: "Success Stories" },
     { path: "/contact", label: "Contact" },
     { path: "/blog", label: "Blog" }
@@ -31,14 +31,14 @@ const Navbar = () => {
             />
             <span className="absolute inset-0 rounded-full ring-2 ring-orange-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
-          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-orange -950">
+          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-orange-950">
             Cloud<span className="text-orange-600">World</span>
           </span>
         </NavLink>
 
         {/* Desktop Navigation - Always visible on medium screens and up */}
-        <div className="hidden md:flex  rounded-2xl items-center space-x-8">
-          <div className=" bg-orange-950 rounded-2xl items-center p-3 space-x-8">
+        <div className="hidden md:flex  rounded-2xl items-center space-x-6">
+          <div className=" bg-orange-950 rounded-2xl items-center p-3 space-x-6">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
@@ -53,7 +53,7 @@ const Navbar = () => {
                 {item.label}
                 {/* Active indicator line */}
                 {({ isActive }) => isActive && (
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-teal-400 rounded-full"></span>
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-orange-400 rounded-full"></span>
                 )}
               </NavLink>
             ))}
@@ -76,7 +76,7 @@ const Navbar = () => {
           aria-controls="navbar-sticky"
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center justify-center p-2 w-10 h-10 text-orange-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
+          className="inline-flex items-center justify-center p-2 w-10 h-10 text-orange-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -108,8 +108,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
                     `block py-3 px-4 rounded-lg transition-all duration-300 ${isActive
-                      ? "bg-teal-600 text-white font-bold shadow-md"
-                      : "text-teal-300 hover:text-white hover:bg-teal-500/30"
+                      ? "bg-orange-600 text-white font-bold shadow-md"
+                      : "text-orange-300 hover:text-white hover:bg-orange-500/30"
                     }`
                   }
                 >
@@ -121,7 +121,7 @@ const Navbar = () => {
             {/* Mobile CTA Button */}
             <li className="pt-2">
               <button className="p-[3px] relative ">
-            <div className="absolute  inset-0 bg-gradient-to-r from-lime-500 to-teal-500 rounded-2xl" />
+            <div className="absolute  inset-0 bg-gradient-to-r from-lime-500 to-orange-500 rounded-2xl" />
             <div className="p-2   flex items-center  bg-gray-800 rounded-2xl  relative group transition duration-200 text-lime-300 font-bold hover:bg-transparent">
               <GiTabletopPlayers /> Get career guidance
             </div>

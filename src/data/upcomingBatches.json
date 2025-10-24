@@ -1,0 +1,82 @@
+{
+  "batches": [
+    {
+      "id": 1,
+      "courseId": "C001",
+      "courseName": "Full Stack Web Development",
+      "startDate": "2025-11-05",
+      "displayDate": "November 5, 2025",
+      "mode": "Online & Offline",
+      "duration": "4 Months",
+      "availableSeats": 15,
+      "status": "Filling Fast",
+      "timing": "Weekdays 7 PM - 9 PM",
+      "instructor": "Senior Full Stack Developer"
+    },
+    {
+      "id": 2,
+      "courseId": "C002",
+      "courseName": "Cloud Architect Program",
+      "startDate": "2025-11-12",
+      "displayDate": "November 12, 2025",
+      "mode": "Online",
+      "duration": "4 Months",
+      "availableSeats": 20,
+      "status": "Open",
+      "timing": "Weekend 10 AM - 2 PM",
+      "instructor": "AWS Certified Architect"
+    },
+    {
+      "id": 3,
+      "courseId": "C003",
+      "courseName": "DevOps with AWS Cloud",
+      "startDate": "2025-11-20",
+      "displayDate": "November 20, 2025",
+      "mode": "Offline",
+      "duration": "4 Months",
+      "availableSeats": 10,
+      "status": "Filling Fast",
+      "timing": "Weekdays 6 PM - 8 PM",
+      "instructor": "DevOps Engineer"
+    },
+    {
+      "id": 4,
+      "courseId": "C006",
+      "courseName": "Data Engineering with Azure",
+      "startDate": "2025-12-01",
+      "displayDate": "December 1, 2025",
+      "mode": "Online & Offline",
+      "duration": "4 Months",
+      "availableSeats": 25,
+      "status": "Open",
+      "timing": "Weekend 9 AM - 1 PM",
+      "instructor": "Azure Data Engineer"
+    },
+    {
+      "id": 5,
+      "courseId": "C008",
+      "courseName": "Data Science & Machine Learning",
+      "startDate": "2025-12-10",
+      "displayDate": "December 10, 2025",
+      "mode": "Online",
+      "duration": "4 Months",
+      "availableSeats": 18,
+      "status": "Open",
+      "timing": "Weekdays 8 PM - 10 PM",
+      "instructor": "ML Engineer"
+    },
+    {
+      "id": 6,
+      "courseId": "C004",
+      "courseName": "DevOps with Azure Cloud",
+      "startDate": "2025-12-15",
+      "displayDate": "December 15, 2025",
+      "mode": "Offline",
+      "duration": "4 Months",
+      "availableSeats": 12,
+      "status": "Open",
+      "timing": "Weekend 11 AM - 3 PM",
+      "instructor": "Azure DevOps Expert"
+    }
+  ]
+}

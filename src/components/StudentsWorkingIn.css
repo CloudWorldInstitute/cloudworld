@@ -1,3 +1,6 @@
+/* ================================
+   Desktop (default)
+================================ */
 @keyframes scroll-right {
   0% {
     transform: translateX(-50%);
@@ -17,11 +20,35 @@
 }
 
 .animate-scroll-right {
-  animation: scroll-right 10s linear infinite;
+  animation: scroll-right 7s linear infinite;
 }
 
 .animate-scroll-left {
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 7s linear infinite;
 }
 
+/* ================================
+   Tablet (max-width: 1024px)
+================================ */
+@media (max-width: 1024px) {
+  .animate-scroll-right {
+    animation: scroll-right 9s linear infinite; /* Slightly slower for smoother experience */
+  }
 
+  .animate-scroll-left {
+    animation: scroll-left 9s linear infinite;
+  }
+}
+
+/* ================================
+   Mobile (max-width: 600px)
+================================ */
+@media (max-width: 600px) {
+  .animate-scroll-right {
+    animation: scroll-right 7s linear infinite; /* Even slower for readability */
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 7s linear infinite;
+  }
+}

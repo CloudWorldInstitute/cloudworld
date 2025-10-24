@@ -85,7 +85,7 @@ const SuccessStories = () => {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50">
+    <div className="min-h-screen font-sans bg-white">
 
       {/* Hero Section */}
       <section
@@ -115,7 +115,7 @@ const SuccessStories = () => {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-12 bg-emerald-50 text-center">
+      <section className="py-12 bg-white text-center">
         <div className=" mx-auto px-4 max-w-7xl">
           <h2 className="text-2xl font-bold text-amber-700 mb-6 flex items-center justify-center">
             <FaChartBar className="mr-2" /> Why CloudWorld Success Stories Matter
@@ -133,7 +133,7 @@ const SuccessStories = () => {
             ].map(({ value, label, color }, idx) => (
               <div
                 key={idx}
-                className={`p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
+                className={`p-4 bg-white rounded-lg shadow-md border-amber-600 hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
               >
                 <h3 className={`text-3xl font-bold ${color}`}>{value}</h3>
                 <p className={color}>{label}</p>

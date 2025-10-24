@@ -10,22 +10,29 @@ const CareerGuidanceModal = () => {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors({ ...errors, [name]: "" });
+    }
   };
 
   const validateForm = () => {
     let newErrors = {};
-    if (!formData.name) newErrors.name = "Name is required.";
-    if (!formData.email) {
-      newErrors.email = "Email is required.";
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid.";
+      newErrors.email = "Please enter a valid email";
     }
-    if (!formData.phone) newErrors.phone = "Phone number is required.";
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^\d{10}$/.test(formData.phone.replace(/\D/g, ""))) {
+      newErrors.phone = "Please enter a valid 10-digit phone number";
+    }
     return newErrors;
   };
 
@@ -36,30 +43,42 @@ const CareerGuidanceModal = () => {
       setErrors(validationErrors);
       return;
     }
+
     setIsSubmitting(true);
     setErrors({});
-    setSubmitMessage("");
 
     try {
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1500));
       console.log("Form Data Submitted:", formData);
+
+      // Close modal and reset form
       setIsOpen(false);
       setFormData({ name: "", email: "", phone: "" });
+
+      // Show success message
       await Swal.fire({
         icon: "success",
         title: "Success!",
-        text: "Your request has been submitted successfully!",
-        confirmButtonColor: "#319795",
+        text: "Our career counselor will contact you soon!",
+        confirmButtonColor: "#f97316",
+        confirmButtonText: "Great!",
       });
+
+      // Mark as submitted in session
       sessionStorage.setItem("formSubmitted", "true");
-      setIsOpen(false);
     } catch (error) {
-      setSubmitMessage("Something went wrong. Please try again.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops!",
+        text: "Something went wrong. Please try again.",
+        confirmButtonColor: "#f97316",
+      });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // ✅ useEffect should be at component level, NOT inside handleSubmit
   useEffect(() => {
     const interval = setInterval(() => {
       if (!sessionStorage.getItem("formSubmitted")) {
@@ -70,93 +89,176 @@ const CareerGuidanceModal = () => {
     return () => clearInterval(interval);
   }, []);
 
+  if (!isOpen) return null;
+
   return (
-    <div>
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-transparent bg-opacity-1"
-          onClick={() => setIsOpen(false)}
-        >
-          <div
-            className="bg-gradient-to-r from-violet-500 to-indigo-600  rounded-xl p-6 my-20 w-full max-w-sm max-h-100 mx-4"
-            onClick={(e) => e.stopPropagation()}
-          > 
-
-
-            <div className="flex justify-between items-center mb-4">
-
-
-              <h2 className="text-2xl font-bold text-lime-500">Get Career Guidance</h2>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-lime-500 hover:text-lime-600 text-2xl"
-                aria-label="Close modal"
-              >
-                &times;
-              </button>
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fadeIn"
+      onClick={() => setIsOpen(false)}
+    >
+      <div
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-md mx-4 overflow-hidden transform transition-all animate-slideUp"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className="bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 p-6 relative">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+          
+          <div className="relative flex justify-between items-start">
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                🎯 Get Career Guidance
+              </h2>
+              <p className="text-orange-100 text-sm">
+                Let our experts guide your tech journey
+              </p>
             </div>
-
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-lime-500">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                />
-                {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-              </div>
-
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-lime-500">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                />
-                {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
-              </div>
-
-              <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-lime-500">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="mt-1 block w-full border border-lime-300 rounded-md p-2 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                />
-                {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-lime-500 text-white py-2 px-4 rounded-lg hover:bg-lime-600 transition-all shadow-md disabled:opacity-50"
-              >
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </button>
-
-              {submitMessage && (
-                <p className="mt-2 text-center text-green-500">{submitMessage}</p>
-              )}
-            </form>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition-all"
+              aria-label="Close modal"
+            >
+              <span className="text-2xl leading-none">&times;</span>
+            </button>
           </div>
         </div>
-      )}
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+          {/* Name Input */}
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1">
+              Full Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
+                errors.name
+                  ? "border-red-500 focus:border-red-500"
+                  : "border-gray-300 focus:border-orange-500"
+              }`}
+            />
+            {errors.name && (
+              <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                <span>⚠️</span> {errors.name}
+              </p>
+            )}
+          </div>
+
+          {/* Email Input */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1">
+              Email Address <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="your.email@example.com"
+              className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
+                errors.email
+                  ? "border-red-500 focus:border-red-500"
+                  : "border-gray-300 focus:border-orange-500"
+              }`}
+            />
+            {errors.email && (
+              <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                <span>⚠️</span> {errors.email}
+              </p>
+            )}
+          </div>
+
+          {/* Phone Input */}
+          <div>
+            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1">
+              Phone Number <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="1234567890"
+              maxLength="10"
+              className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
+                errors.phone
+                  ? "border-red-500 focus:border-red-500"
+                  : "border-gray-300 focus:border-orange-500"
+              }`}
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-xs mt-1 flex items-center gap-1">
+                <span>⚠️</span> {errors.phone}
+              </p>
+            )}
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold py-3 px-4 rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          >
+            {isSubmitting ? (
+              <>
+                <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                Submitting...
+              </>
+            ) : (
+              <>
+                <span>Submit Request</span>
+                <span>→</span>
+              </>
+            )}
+          </button>
+
+          <p className="text-xs text-gray-500 text-center mt-4">
+            🔒 Your information is safe and will not be shared
+          </p>
+        </form>
+      </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes slideUp {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+
+        .animate-slideUp {
+          animation: slideUp 0.4s ease-out;
+        }
+      `}</style>
     </div>
   );
 };

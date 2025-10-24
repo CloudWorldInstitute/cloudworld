@@ -9,6 +9,7 @@ import CourseDetails from "./components/CourseDetails";
 import Contact from "./Pages/Contact";
 import BlogSection from "./Pages/Blog";
 import Login from "./admin/AdminLogin";
+import UpcomingBatches from "./components/UpcomingBatches";
 
 const App = () => {
   return (
@@ -16,12 +17,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route path="AboutUs" element={<AboutPage />} />
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/course/:courseId" element={<CourseDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogSection />} />
           <Route path="/admin" element={<Login />} />
+          <Route path="/upcoming-batches" element={<UpcomingBatches />} />
 
 
           <Route path="*" element={<ErrorPage />} /> {/* Catch-all for 404 */}

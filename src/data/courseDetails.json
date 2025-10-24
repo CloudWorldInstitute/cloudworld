@@ -1,579 +1,511 @@
 {
   "courses": [
     {
-      "id": 1,
-      "icon": "💻",
-      "title": "Full Stack Web Development Program",
-      "duration": "6 Months",
-      "enrolledStudents": "4,000+ Students Enrolled",
-      "description": "Build complete web applications from start to finish. Master HTML, CSS, JavaScript, React, Node.js, MongoDB, and APIs — the most in-demand developer skills in today's tech world.",
-      "fullDescription": "Transform from beginner to professional full-stack developer in just 6 months! Our comprehensive program covers everything from basic HTML to advanced React and Node.js. You'll build real-world projects, learn industry best practices, and get 100% placement support to launch your career as a web developer.",
-      "highlights": [
-        "Days FREE Demo",
-        "Learn Frontend + Backend + Database development",
-        "Work on 5+ real-world web app projects",
-        "Master modern frameworks like React & Node.js",
-        "Live mentor-led classes with code reviews",
-        "Lifetime access to materials & updates",
-        "Placement-focused training & interview prep",
-        "Certification on course completion"
+      "courseId": "C001",
+      "courseName": "Full Stack Web Development Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Full Stack Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Web Application Developer"
       ],
-      "price": {
-        "original": 45000,
-        "discounted": 34999,
-        "currency": "₹"
-      },
-      "level": "Beginner to Advanced",
-      "mode": ["Online", "Offline"],
-      "category": "Web Development",
-      "rating": 4.8,
-      "reviews": 1247,
-      "instructor": "Senior Full Stack Developer",
-      "tags": ["Frontend", "Backend", "Database", "React", "Node.js"],
-      "curriculum": [
+      "skillsGained": [
+        "React and modern frontend frameworks",
+        "Node.js & Express REST APIs",
+        "Django backend basics",
+        "MongoDB and SQL databases",
+        "Version control with Git",
+        "Docker containerization",
+        "CI/CD pipeline creation"
+      ],
+      "modules": [
         {
-          "month": "Month 1: Web Fundamentals",
-          "content": [
-            "HTML5, CSS3, JavaScript ES6+",
-            "Responsive Web Design",
-            "Git & GitHub version control",
-            "Build 3 responsive websites"
+          "month": 1,
+          "title": "Frontend Foundations",
+          "goal": "Learn HTML, CSS, JavaScript fundamentals and React basics.",
+          "weeks": [
+            { "week": 1, "topic": "HTML & CSS basics", "hours": 15, "project": "Portfolio Landing Page" },
+            { "week": 2, "topic": "ES6+ JavaScript, async/await", "hours": 15, "project": "Weather Dashboard App" },
+            { "week": 3, "topic": "React fundamentals", "hours": 20, "project": "To-Do App" },
+            { "week": 4, "topic": "React Router and hooks", "hours": 20, "project": "Movie Explorer App" }
           ]
         },
         {
-          "month": "Month 2: Frontend Development",
-          "content": [
-            "React.js fundamentals",
-            "State management with Redux",
-            "Modern CSS with Tailwind",
-            "Build 2 React applications"
+          "month": 2,
+          "title": "Backend Development",
+          "goal": "Build RESTful APIs with Node.js and Django.",
+          "weeks": [
+            { "week": 5, "topic": "Node.js and Express.js", "hours": 20, "project": "API Development" },
+            { "week": 6, "topic": "Authentication & Authorization", "hours": 20, "project": "Auth System" },
+            { "week": 7, "topic": "Django Basics", "hours": 20, "project": "Blog API" },
+            { "week": 8, "topic": "Database Integration", "hours": 20, "project": "MongoDB & SQL" }
           ]
         },
         {
-          "month": "Month 3: Backend Development",
-          "content": [
-            "Node.js & Express.js",
-            "RESTful API development",
-            "Authentication & Authorization",
-            "Build REST APIs"
+          "month": 3,
+          "title": "Advanced Concepts & Deployment",
+          "goal": "Master TypeScript, GraphQL, Microservices and deploy to cloud.",
+          "weeks": [
+            { "week": 9, "topic": "TypeScript Introduction", "hours": 20, "project": "Typed React App" },
+            { "week": 10, "topic": "GraphQL APIs", "hours": 20, "project": "GraphQL Server" },
+            { "week": 11, "topic": "WebSockets & Realtime Apps", "hours": 20, "project": "Chat Application" },
+            { "week": 12, "topic": "Microservices Fundamentals", "hours": 20, "project": "Microservices Architecture" }
           ]
         },
         {
-          "month": "Month 4: Database & Deployment",
-          "content": [
-            "MongoDB & Mongoose",
-            "SQL databases with PostgreSQL",
-            "Deployment on AWS/Heroku",
-            "Full-stack project deployment"
-          ]
-        },
-        {
-          "month": "Month 5: Advanced Concepts",
-          "content": [
-            "TypeScript",
-            "GraphQL APIs",
-            "WebSockets & Real-time apps",
-            "Microservices architecture"
-          ]
-        },
-        {
-          "month": "Month 6: Capstone Projects",
-          "content": [
-            "E-commerce platform",
-            "Social media application",
-            "Real-time chat application",
-            "Portfolio development"
+          "month": 4,
+          "title": "Capstone Projects",
+          "goal": "Build real-world web applications to showcase your skills.",
+          "weeks": [
+            { "week": 13, "topic": "E-commerce platform", "hours": 20, "project": "Complete Storefront" },
+            { "week": 14, "topic": "Social media application", "hours": 20, "project": "Social Network" },
+            { "week": 15, "topic": "Real-time chat application", "hours": 20, "project": "Chat System" },
+            { "week": 16, "topic": "Portfolio development", "hours": 20, "project": "Personal Portfolio" }
           ]
         }
-      ],
-      "projects": [
-        "E-commerce Website with Payment Gateway",
-        "Social Media Platform with Real-time Features",
-        "Project Management Tool",
-        "Blogging Platform with CMS",
-        "Weather Application with APIs",
-        "Portfolio Website with Admin Panel"
       ]
     },
     {
-      "id": 2,
-      "icon": "☁️",
-      "title": "Cloud Computing & AWS Master Program",
-      "duration": "5 Months",
-      "enrolledStudents": "3,200+ Students Enrolled",
-      "description": "Master cloud computing fundamentals and AWS services. Learn to deploy, manage, and scale applications on the world's leading cloud platform.",
-      "fullDescription": "Become an AWS cloud expert with our comprehensive program designed by industry professionals. Learn to design, deploy, and manage scalable cloud infrastructure while preparing for AWS certifications. Hands-on labs and real-world projects will make you job-ready for cloud roles.",
-      "highlights": [
-        "AWS Certified Solutions Architect preparation",
-        "Hands-on with EC2, S3, RDS, Lambda",
-        "Real-world cloud migration projects",
-        "Industry expert instructors",
-        "Live lab sessions",
-        "Resume and interview preparation",
-        "100% placement assistance",
-        "AWS certification guidance"
+      "courseId": "C002",
+      "courseName": "Cloud Architect Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Cloud Architect",
+        "Solutions Architect",
+        "SRE Lead",
+        "Cloud Consultant"
       ],
-      "price": {
-        "original": 52000,
-        "discounted": 39999,
-        "currency": "₹"
-      },
-      "level": "Intermediate",
-      "mode": ["Online", "Offline"],
-      "category": "Cloud Computing",
-      "rating": 4.9,
-      "reviews": 892,
-      "instructor": "AWS Certified Professional",
-      "tags": ["AWS", "Cloud", "DevOps", "Infrastructure"],
-      "curriculum": [
+      "skillsGained": [
+        "Multi-cloud networking and security design",
+        "Terraform IaC automation",
+        "Cross-cloud CI/CD",
+        "Monitoring with Grafana and Prometheus",
+        "Hybrid architecture and FinOps"
+      ],
+      "modules": [
         {
-          "month": "Month 1: Cloud Fundamentals",
-          "content": [
-            "Cloud Computing Concepts",
-            "AWS Global Infrastructure",
-            "IAM & Security Fundamentals",
-            "EC2 & Auto Scaling"
+          "month": 1,
+          "title": "Cloud Fundamentals + Identity + Networking",
+          "goal": "Learn IAM, networking, and Terraform basics across AWS, Azure, and GCP.",
+          "weeks": [
+            { "week": 1, "topic": "Cloud Foundations", "hours": 15, "project": "Multi-Cloud Account Setup Automation" },
+            { "week": 2, "topic": "Networking & VPC", "hours": 15, "project": "VPC/VNet Creation using Terraform" },
+            { "week": 3, "topic": "Storage & Load Balancing", "hours": 20, "project": "3-Tier Infra with Load Balancer" },
+            { "week": 4, "topic": "Terraform Basics", "hours": 20, "project": "Multi-Cloud VM Deployment via IaC" }
           ]
         },
         {
-          "month": "Month 2: Storage & Databases",
-          "content": [
-            "S3 & Glacier Storage",
-            "RDS & DynamoDB",
-            "Elastic Block Store",
-            "Database Migration Service"
+          "month": 2,
+          "title": "Compute + Storage + IaC Automation",
+          "goal": "Automate infrastructure across cloud platforms using Terraform and containers.",
+          "weeks": [
+            { "week": 5, "topic": "Compute Deep Dive", "hours": 20, "project": "Auto-Scaling Compute Setup" },
+            { "week": 6, "topic": "Container Services", "hours": 20, "project": "Containerized App on AKS & GKE" },
+            { "week": 7, "topic": "Serverless Architecture", "hours": 20, "project": "Serverless Image Processor" },
+            { "week": 8, "topic": "Database Integration", "hours": 20, "project": "Multi-Cloud Database Replication" }
           ]
         },
         {
-          "month": "Month 3: Networking & Security",
-          "content": [
-            "VPC & Network Security",
-            "Route 53 & CloudFront",
-            "Security Groups & NACLs",
-            "AWS WAF & Shield"
+          "month": 3,
+          "title": "Security • CI/CD • Monitoring",
+          "goal": "Implement CI/CD pipelines, IAM security, and monitoring across clouds.",
+          "weeks": [
+            { "week": 9, "topic": "IAM Security", "hours": 20, "project": "Federated Login with OIDC" },
+            { "week": 10, "topic": "CI/CD Automation", "hours": 20, "project": "Cross-Cloud Pipeline with Jenkins" },
+            { "week": 11, "topic": "Monitoring", "hours": 20, "project": "Unified Grafana Dashboard" },
+            { "week": 12, "topic": "Security Audit", "hours": 20, "project": "Multi-Cloud Security Audit" }
           ]
         },
         {
-          "month": "Month 4: Advanced Services",
-          "content": [
-            "Lambda & Serverless",
-            "Elastic Beanstalk",
-            "CloudFormation & Terraform",
-            "Monitoring with CloudWatch"
-          ]
-        },
-        {
-          "month": "Month 5: Certification Prep & Projects",
-          "content": [
-            "Solutions Architect Associate Prep",
-            "Real-world migration projects",
-            "Cost optimization strategies",
-            "Interview preparation"
+          "month": 4,
+          "title": "Advanced Architectures • Hybrid Cloud • Capstone",
+          "goal": "Build enterprise-grade hybrid cloud architectures and global deployments.",
+          "weeks": [
+            { "week": 13, "topic": "Hybrid Cloud Design", "hours": 20, "project": "Hybrid Infra using Azure Arc & Anthos" },
+            { "week": 14, "topic": "Cross-Cloud Networking", "hours": 20, "project": "VPC Peering & VPN Setup" },
+            { "week": 15, "topic": "Cost Optimization", "hours": 20, "project": "FinOps Dashboard using Cloud APIs" },
+            { "week": 16, "topic": "Capstone", "hours": 20, "project": "Global Multi-Cloud Deployment" }
           ]
         }
-      ],
-      "projects": [
-        "Multi-tier Web Application Deployment",
-        "Disaster Recovery Setup",
-        "Serverless Application Architecture",
-        "Cost Optimization Implementation",
-        "Auto-scaling Infrastructure",
-        "Secure Cloud Network Design"
       ]
     },
     {
-      "id": 3,
-      "icon": "⚡",
-      "title": "The Ultimate 6-Month DevOps & SRE Roadmap",
-      "duration": "6 Months",
-      "enrolledStudents": "2,800+ Students Enrolled",
-      "description": "Become a DevOps engineer by mastering CI/CD, Docker, Kubernetes, Jenkins, and infrastructure automation tools.",
-      "fullDescription": "Get ready for the most addictive, industry-grade DevOps program on the market! This isn't just a course—it's a transformation journey into the most sought-after skills, packed with real corporate scenarios, hands-on mastery, and associate-level tool certifications. By the end, you'll not only ace interviews—you'll have a showstopping DevOps portfolio with 12 full-fledged, production-grade projects using the hottest tech in the field.",
-      "highlights": [
-        "Docker and Kubernetes deep dive",
-        "CI/CD pipeline implementation",
+      "courseId": "C003",
+      "courseName": "DevOps with AWS Cloud Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "DevOps Engineer",
+        "Cloud Engineer",
+        "Site Reliability Engineer",
+        "Automation Specialist"
+      ],
+      "skillsGained": [
+        "AWS DevOps tools and architectures",
+        "Docker and Kubernetes orchestration",
         "Infrastructure as Code with Terraform",
-        "Monitoring and logging tools",
-        "Real-time project deployment",
-        "Mentorship from industry experts",
-        "Job placement support",
-        "DevOps certification"
+        "CI/CD pipeline development",
+        "Monitoring and Log aggregation"
       ],
-      "price": {
-        "original": 65000,
-        "discounted": 49999,
-        "currency": "₹"
-      },
-      "level": "Intermediate to Advanced",
-      "mode": ["Online", "Offline"],
-      "category": "DevOps",
-      "rating": 4.9,
-      "reviews": 756,
-      "instructor": "Senior DevOps Engineer",
-      "tags": ["Docker", "Kubernetes", "CI/CD", "Automation"],
-      "curriculum": [
+      "modules": [
         {
-          "month": "Month 1: AWS Cloud Wizardry",
-          "content": [
-            "AWS Solutions Architect Associate (SAA): Design scalable, resilient and secure cloud architectures: VPC, S3, RDS, IAM, Lambda, CloudFront.",
-            "AWS SysOps Administrator Associate: Operational automation, CloudWatch, CloudFormation, blue/green deployments, provisioning, security controls.",
-            "Mini-Projects: Launch auto-scaling apps, real-time monitoring dashboards."
+          "month": 1,
+          "title": "Linux • Git • Docker • AWS Basics",
+          "goal": "Build foundational skills of Linux, version control and Docker containers.",
+          "weeks": [
+            { "week": 1, "topic": "Linux Essentials", "hours": 15, "project": "Linux Server Hardening Script" },
+            { "week": 2, "topic": "Git & GitHub Workflows", "hours": 15, "project": "GitHub PR Automation" },
+            { "week": 3, "topic": "Docker Basics", "hours": 20, "project": "Containerize Python/Node App" },
+            { "week": 4, "topic": "AWS Core Services", "hours": 20, "project": "Static Website on S3 & CDN" }
           ]
         },
         {
-          "month": "Month 2: Container Engineering",
-          "content": [
-            "Docker Certified Associate: Multi-stage builds, registries, scanning, networking, Compose, Swarm.",
-            "Kubernetes CKA & CKAD: Production cluster management, Helm, RBAC, secrets, persistent volumes, application rollout/rollback, chaos engineering.",
-            "Mini-Projects: Secure microservice pipelines, Kubernetes self-healing apps."
+          "month": 2,
+          "title": "CI/CD & Infrastructure as Code",
+          "goal": "Implement CI/CD pipelines and Terraform infrastructure provisioning.",
+          "weeks": [
+            { "week": 5, "topic": "Jenkins Mastery", "hours": 20, "project": "Automated Build Pipeline" },
+            { "week": 6, "topic": "GitHub Actions & GitLab CI", "hours": 20, "project": "Multi-cloud Deployments" },
+            { "week": 7, "topic": "Terraform Fundamentals", "hours": 20, "project": "IaC Multi-Cloud Project" },
+            { "week": 8, "topic": "Serverless Architectures", "hours": 20, "project": "Lambda Event Processing" }
           ]
         },
         {
-          "month": "Month 3: DevOps Automation",
-          "content": [
-            "Jenkins (CI/CD Guru): Advanced Pipelines, rollback/promotion flows, integrated security checks.",
-            "GitLab CI / GitHub Actions: Multi-cloud deploys, dynamic environments, GitOps rollouts, parallel pipelines.",
-            "Mini-Projects: Multi-cloud deploy pipeline, full Git-driven artifact promotion."
+          "month": 3,
+          "title": "Monitoring & Security",
+          "goal": "Setup monitoring with Prometheus and secure pipelines.",
+          "weeks": [
+            { "week": 9, "topic": "Prometheus & Grafana", "hours": 20, "project": "Monitoring Dashboards" },
+            { "week": 10, "topic": "Logging & Tracing", "hours": 20, "project": "Distributed Tracing System" },
+            { "week": 11, "topic": "Security Scanning (DevSecOps)", "hours": 20, "project": "Vulnerability Scans" },
+            { "week": 12, "topic": "Incident Response Automation", "hours": 20, "project": "Slack-Driven ChatOps" }
           ]
         },
         {
-          "month": "Month 4: Infrastructure as Code & Automation",
-          "content": [
-            "Terraform Associate: HCL modules, zero-downtime rollouts, remote state, DR, cloud-agnostic infra.",
-            "Ansible Automation: Idempotent config, dynamic inventories, patch management, continuous compliance.",
-            "Mini-Projects: Multi-cloud IaC portfolio, auto-patcher for production fleets."
-          ]
-        },
-        {
-          "month": "Month 5: Corporate Observability",
-          "content": [
-            "Prometheus Certified Associate: PromQL, exporters, advanced alerting, custom dashboards, SLI/SLO tracking.",
-            "Loki, Tempo, Alloy stack: Centralized logging, distributed tracing, unified telemetry.",
-            "Mini-Projects: Trace-root cause pipeline, business-metric Grafana boards."
-          ]
-        },
-        {
-          "month": "Month 6: Cloud-Native Security & Edge",
-          "content": [
-            "DevSecOps: Secure-by-design pipelines, vulnerability scans, secrets vaults, automated audits.",
-            "Serverless & Innovation: Multi-cloud Lambda, event-driven workflows, auto-scaling, serverless CI/CD.",
-            "Mini-Projects: Secure serverless CI/CD, event-driven end-to-end workflow."
+          "month": 4,
+          "title": "Capstone Projects",
+          "goal": "Build enterprise-grade end to end pipelines and cloud infrastructure.",
+          "weeks": [
+            { "week": 13, "topic": "GitOps Platform", "hours": 20, "project": "GitOps Pipeline with ArgoCD" },
+            { "week": 14, "topic": "Service Mesh Setup", "hours": 20, "project": "Istio & Kiali Service Mesh" },
+            { "week": 15, "topic": "CI/CD Security Pipelines", "hours": 20, "project": "Secure Enterprise Build" },
+            { "week": 16, "topic": "Multi-cloud Telemetry", "hours": 20, "project": "Distributed Monitoring Stack" }
           ]
         }
-      ],
-      "projects": [
-        "GitOps-powered Enterprise Platform",
-        "Production Service Mesh with Istio & Kiali",
-        "Canary & Blue/Green Automated Releases",
-        "Cloud Infrastructure as Code on Steroids",
-        "Monitoring and Distributed Tracing at Scale",
-        "Slack-Driven Incident Response (ChatOps)",
-        "Enterprise-Grade CI/CD Security Pipeline",
-        "Alloy-Powered Multi-Cloud Telemetry",
-        "Disaster Recovery & High-Availability Experiments",
-        "Self-Healing, Auto-Remediating Production Environments",
-        "Serverless Event-Driven App Suite",
-        "Real-Time Business Metrics and Intelligence"
       ]
     },
     {
-      "id": 4,
-      "icon": "📊",
-      "title": "Data Science & Machine Learning Program",
-      "duration": "7 Months",
-      "enrolledStudents": "2,500+ Students Enrolled",
-      "description": "Learn data analysis, machine learning algorithms, and AI concepts to build intelligent data-driven applications.",
-      "fullDescription": "Master the complete data science lifecycle from data collection to deployment. Learn statistical analysis, machine learning algorithms, and AI concepts through hands-on projects with real datasets. Become industry-ready for data scientist and ML engineer roles.",
-      "highlights": [
-        "Python for Data Science",
-        "Machine Learning algorithms",
-        "Data visualization with Tableau",
-        "Real-world data projects",
-        "AI and Deep Learning basics",
-        "Industry case studies",
-        "Portfolio building",
-        "Job interview preparation"
+      "courseId": "C004",
+      "courseName": "DevOps with Azure Cloud Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Azure DevOps Engineer",
+        "Cloud Automation Engineer",
+        "Site Reliability Engineer"
       ],
-      "price": {
-        "original": 55000,
-        "discounted": 42999,
-        "currency": "₹"
-      },
-      "level": "Beginner to Advanced",
-      "mode": ["Online", "Offline"],
-      "category": "Data Science",
-      "rating": 4.6,
-      "reviews": 634,
-      "instructor": "Data Scientist",
-      "tags": ["Python", "ML", "AI", "Data Analysis"],
-      "curriculum": [
+      "skillsGained": [
+        "Azure DevOps pipelines and automation",
+        "Terraform & Bicep IaC for Azure",
+        "AKS cluster management",
+        "GitHub Actions and Helm for GitOps",
+        "Monitoring with Azure Monitor and Grafana"
+      ],
+      "modules": [
         {
-          "month": "Month 1: Python & Statistics",
-          "content": [
-            "Python programming for data science",
-            "NumPy, Pandas, Matplotlib",
-            "Statistical analysis fundamentals",
-            "Data cleaning and preprocessing"
+          "month": 1,
+          "title": "Linux • Git • Docker • Azure Basics",
+          "goal": "Build foundational Linux and Git skills with Azure cloud concepts.",
+          "weeks": [
+            { "week": 1, "topic": "Linux Essentials", "hours": 15, "project": "Server Hardening Automation" },
+            { "week": 2, "topic": "Git & GitHub Workflows", "hours": 15, "project": "GitHub PR Automation" },
+            { "week": 3, "topic": "Docker Basics", "hours": 20, "project": "Containerize Python/Node App" },
+            { "week": 4, "topic": "Azure Core Services", "hours": 20, "project": "Static Site on Azure CDN" }
           ]
         },
         {
-          "month": "Month 2: Data Visualization",
-          "content": [
-            "Advanced data visualization",
-            "Tableau and Power BI",
-            "Storytelling with data",
-            "Interactive dashboards"
+          "month": 2,
+          "title": "CI/CD Pipelines and Automation",
+          "goal": "Setup Azure DevOps and GitHub pipelines for full automation.",
+          "weeks": [
+            { "week": 5, "topic": "Azure DevOps Pipelines", "hours": 20, "project": "Build & Deploy Pipeline" },
+            { "week": 6, "topic": "Terraform & Bicep Fundamentals", "hours": 20, "project": "Infrastructure as Code" },
+            { "week": 7, "topic": "AKS & Kubernetes", "hours": 20, "project": "Container Orchestration" },
+            { "week": 8, "topic": "GitOps with Helm & ArgoCD", "hours": 20, "project": "GitOps Pipeline Setup" }
           ]
         },
         {
-          "month": "Month 3: Machine Learning Fundamentals",
-          "content": [
-            "Supervised learning algorithms",
-            "Regression and classification",
-            "Model evaluation metrics",
-            "Scikit-learn mastery"
+          "month": 3,
+          "title": "Monitoring & Security",
+          "goal": "Implement monitoring, logging, and DevSecOps best practices.",
+          "weeks": [
+            { "week": 9, "topic": "Azure Monitor & Grafana", "hours": 20, "project": "Monitoring Dashboards" },
+            { "week": 10, "topic": "Security & Compliance", "hours": 20, "project": "Security Audits" },
+            { "week": 11, "topic": "Automated Testing & Scanning", "hours": 20, "project": "DevSecOps Pipeline" },
+            { "week": 12, "topic": "Incident Response Automation", "hours": 20, "project": "ChatOps Incident Management" }
           ]
         },
         {
-          "month": "Month 4: Advanced ML & Feature Engineering",
-          "content": [
-            "Ensemble methods",
-            "Feature engineering techniques",
-            "Hyperparameter tuning",
-            "ML pipeline development"
-          ]
-        },
-        {
-          "month": "Month 5: Deep Learning",
-          "content": [
-            "Neural networks fundamentals",
-            "TensorFlow and Keras",
-            "CNN for computer vision",
-            "RNN for time series"
-          ]
-        },
-        {
-          "month": "Month 6: NLP & Deployment",
-          "content": [
-            "Natural Language Processing",
-            "Transformers and BERT",
-            "Model deployment with Flask",
-            "MLOps fundamentals"
-          ]
-        },
-        {
-          "month": "Month 7: Capstone Projects",
-          "content": [
-            "End-to-end data science projects",
-            "Real-world business problems",
-            "Portfolio development",
-            "Interview preparation"
+          "month": 4,
+          "title": "Capstone & Real-World Projects",
+          "goal": "Build scalable production-grade automation on Azure cloud.",
+          "weeks": [
+            { "week": 13, "topic": "Full CI/CD Production Pipeline", "hours": 20, "project": "End-to-End Automation" },
+            { "week": 14, "topic": "Advanced AKS Management", "hours": 20, "project": "Cluster Autoscaling & Monitoring" },
+            { "week": 15, "topic": "GitOps & Security Integration", "hours": 20, "project": "Secure GitOps Pipelines" },
+            { "week": 16, "topic": "Capstone Deployment", "hours": 20, "project": "Azure Enterprise Platform" }
           ]
         }
-      ],
-      "projects": [
-        "Predictive Analytics for Sales",
-        "Customer Segmentation Analysis",
-        "Sentiment Analysis for Reviews",
-        "Image Classification System",
-        "Time Series Forecasting",
-        "Recommendation Engine",
-        "Fraud Detection System",
-        "Chatbot Development"
       ]
     },
     {
-      "id": 5,
-      "icon": "🔐",
-      "title": "Cyber Security Specialist Program",
-      "duration": "6 Months",
-      "enrolledStudents": "1,800+ Students Enrolled",
-      "description": "Become a cybersecurity expert by learning ethical hacking, network security, and threat protection techniques.",
-      "fullDescription": "Our comprehensive cybersecurity program transforms you into a security professional capable of protecting organizations from modern cyber threats. Learn ethical hacking, network security, vulnerability assessment, and digital forensics through hands-on labs and real-world scenarios.",
-      "highlights": [
-        "Ethical hacking techniques",
-        "Network security fundamentals",
-        "Vulnerability assessment",
-        "Cyber forensics basics",
-        "Hands-on penetration testing",
-        "Industry certification preparation",
-        "Security tools mastery",
-        "Career guidance"
+      "courseId": "C005",
+      "courseName": "Data Engineering with AWS Cloud Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "AWS Data Engineer",
+        "Big Data Engineer",
+        "Data Pipeline Developer"
       ],
-      "price": {
-        "original": 50000,
-        "discounted": 39999,
-        "currency": "₹"
-      },
-      "level": "Beginner to Intermediate",
-      "mode": ["Online", "Offline"],
-      "category": "Cyber Security",
-      "rating": 4.8,
-      "reviews": 423,
-      "instructor": "Security Analyst",
-      "tags": ["Security", "Ethical Hacking", "Networking"],
-      "curriculum": [
+      "skillsGained": [
+        "Python ETL scripting",
+        "AWS Glue, Redshift and Lambda",
+        "Streaming data with Kinesis",
+        "Data warehouse architectures",
+        "Airflow orchestration and automation"
+      ],
+      "modules": [
         {
-          "month": "Month 1: Security Fundamentals",
-          "content": [
-            "Cybersecurity concepts",
-            "Network protocols and security",
-            "Cryptography basics",
-            "Security policies and compliance"
+          "month": 1,
+          "title": "Python • SQL • AWS Basics",
+          "goal": "Build foundational knowledge in Python ETL and AWS cloud storage services.",
+          "weeks": [
+            { "week": 1, "topic": "Python for Data Engineering", "hours": 15, "project": "CSV to JSON ETL Script" },
+            { "week": 2, "topic": "SQL Mastery", "hours": 15, "project": "SQL Analytics on Dataset" },
+            { "week": 3, "topic": "AWS Fundamentals", "hours": 20, "project": "S3 Data Upload and Access" },
+            { "week": 4, "topic": "Data Modeling & Warehouse Design", "hours": 20, "project": "Retail Data Warehouse Schema" }
           ]
         },
         {
-          "month": "Month 2: Network Security",
-          "content": [
-            "Firewall configuration",
-            "Intrusion Detection Systems",
-            "VPN and remote access security",
-            "Wireless network security"
+          "month": 2,
+          "title": "ETL Pipelines & Glue",
+          "goal": "Master ETL pipeline creation with AWS Glue and Airflow workflows.",
+          "weeks": [
+            { "week": 5, "topic": "AWS Glue Basics", "hours": 20, "project": "Glue ETL Job with S3" },
+            { "week": 6, "topic": "Redshift Data Warehousing", "hours": 20, "project": "Redshift DWH Implementation" },
+            { "week": 7, "topic": "Airflow Orchestration", "hours": 20, "project": "Workflow DAG Creation" },
+            { "week": 8, "topic": "Lambda & Serverless", "hours": 20, "project": "Serverless Event Processor" }
           ]
         },
         {
-          "month": "Month 3: Ethical Hacking",
-          "content": [
-            "Penetration testing methodology",
-            "Vulnerability assessment",
-            "Social engineering attacks",
-            "Web application security"
+          "month": 3,
+          "title": "Big Data & Streaming",
+          "goal": "Implement streaming data processing and big data solutions.",
+          "weeks": [
+            { "week": 9, "topic": "Kinesis & Firehose Streams", "hours": 20, "project": "Real-time Stream Processing" },
+            { "week": 10, "topic": "EMR & Spark", "hours": 20, "project": "Spark Data Processing" },
+            { "week": 11, "topic": "SageMaker Integration", "hours": 20, "project": "ML Model Pipeline" },
+            { "week": 12, "topic": "Glue & Lambda Automation", "hours": 20, "project": "Data Pipeline Orchestration" }
           ]
         },
         {
-          "month": "Month 4: Advanced Threats",
-          "content": [
-            "Malware analysis",
-            "Advanced persistent threats",
-            "Incident response",
-            "Digital forensics"
-          ]
-        },
-        {
-          "month": "Month 5: Cloud & Application Security",
-          "content": [
-            "Cloud security best practices",
-            "Secure coding principles",
-            "API security",
-            "Mobile security"
-          ]
-        },
-        {
-          "month": "Month 6: Capstone & Certification",
-          "content": [
-            "Security operations center simulation",
-            "Red team vs Blue team exercises",
-            "Certification preparation",
-            "Career readiness"
+          "month": 4,
+          "title": "Capstone Project",
+          "goal": "Build a complete data lakehouse with AWS cloud tools.",
+          "weeks": [
+            { "week": 13, "topic": "Data Lakehouse Architecture", "hours": 20, "project": "Unified Lakehouse Solution" },
+            { "week": 14, "topic": "Pipeline CI/CD", "hours": 20, "project": "Automated Pipeline Delivery" },
+            { "week": 15, "topic": "Security & Governance", "hours": 20, "project": "Cloud Data Security Setup" },
+            { "week": 16, "topic": "Final Capstone Presentations", "hours": 20, "project": "Enterprise Data Platform" }
           ]
         }
-      ],
-      "projects": [
-        "Network Vulnerability Assessment",
-        "Web Application Penetration Test",
-        "Security Operations Center Setup",
-        "Incident Response Simulation",
-        "Secure Network Architecture Design",
-        "Malware Analysis Report",
-        "Security Policy Development",
-        "Digital Forensics Investigation"
       ]
     },
     {
-      "id": 6,
-      "icon": "🤖",
-      "title": "AI & Machine Learning Engineering",
-      "duration": "8 Months",
-      "enrolledStudents": "1,200+ Students Enrolled",
-      "description": "Comprehensive AI and ML engineering program covering advanced algorithms, neural networks, and real-world AI applications.",
-      "fullDescription": "Dive deep into artificial intelligence and machine learning engineering. Master advanced algorithms, neural networks, deep learning, and AI deployment. Work on cutting-edge projects and prepare for roles in AI research and development.",
-      "highlights": [
-        "Deep Learning with TensorFlow",
-        "Natural Language Processing",
-        "Computer Vision applications",
-        "AI model deployment",
-        "Capstone AI projects",
-        "Research paper discussions",
-        "Industry expert mentorship",
-        "Advanced certification"
+      "courseId": "C006",
+      "courseName": "Data Engineering with Azure Cloud Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Azure Data Engineer",
+        "Data Pipeline Architect",
+        "Business Intelligence Engineer"
       ],
-      "price": {
-        "original": 75000,
-        "discounted": 59999,
-        "currency": "₹"
-      },
-      "level": "Advanced",
-      "mode": ["Online"],
-      "category": "Artificial Intelligence",
-      "rating": 4.9,
-      "reviews": 298,
-      "instructor": "AI Research Scientist",
-      "tags": ["AI", "Deep Learning", "NLP", "Computer Vision"],
-      "curriculum": [
+      "skillsGained": [
+        "Azure Data Factory pipelines",
+        "Synapse Analytics and Databricks",
+        "Power BI integration",
+        "Real-time event processing",
+        "Data governance with Azure Purview"
+      ],
+      "modules": [
         {
-          "month": "Month 1-2: Advanced ML & Math",
-          "content": [
-            "Advanced machine learning algorithms",
-            "Linear algebra for ML",
-            "Probability and statistics",
-            "Optimization techniques"
+          "month": 1,
+          "title": "Python • SQL • Azure Basics",
+          "goal": "Build foundational skills with Python ETL and Azure storage.",
+          "weeks": [
+            { "week": 1, "topic": "Python for Data Engineering", "hours": 15, "project": "CSV to Parquet Converter" },
+            { "week": 2, "topic": "SQL Analytics", "hours": 15, "project": "AdventureWorks SQL Analysis" },
+            { "week": 3, "topic": "Azure Fundamentals", "hours": 20, "project": "Upload to ADLS with Python SDK" },
+            { "week": 4, "topic": "Data Modeling", "hours": 20, "project": "Star Schema Design" }
           ]
         },
         {
-          "month": "Month 3-4: Deep Learning Fundamentals",
-          "content": [
-            "Neural networks architecture",
-            "TensorFlow and PyTorch",
-            "Convolutional Neural Networks",
-            "Recurrent Neural Networks"
+          "month": 2,
+          "title": "ETL Pipelines & Synapse",
+          "goal": "Master orchestration with Azure Data Factory and Synapse.",
+          "weeks": [
+            { "week": 5, "topic": "ADF Pipelines", "hours": 20, "project": "Data Orchestration Workflow" },
+            { "week": 6, "topic": "Synapse SQL Pools", "hours": 20, "project": "Synapse Analytics Implementation" },
+            { "week": 7, "topic": "Data Flows and Triggers", "hours": 20, "project": "Data Flows in ADF" },
+            { "week": 8, "topic": "Pipeline Monitoring", "hours": 20, "project": "Monitor ETL Pipelines" }
           ]
         },
         {
-          "month": "Month 5: Natural Language Processing",
-          "content": [
-            "Transformers and BERT",
-            "Text classification and generation",
-            "Sentiment analysis",
-            "Chatbot development"
+          "month": 3,
+          "title": "Big Data & Streaming",
+          "goal": "Implement Azure Databricks and streaming analytics.",
+          "weeks": [
+            { "week": 9, "topic": "Azure Databricks with PySpark", "hours": 20, "project": "Spark ETL Jobs" },
+            { "week": 10, "topic": "Event Hubs & Stream Analytics", "hours": 20, "project": "Event Streaming Pipeline" },
+            { "week": 11, "topic": "Delta Lake & Lakehouse", "hours": 20, "project": "Lakehouse Architecture" },
+            { "week": 12, "topic": "Databricks Orchestration", "hours": 20, "project": "Databricks Job Scheduling" }
           ]
         },
         {
-          "month": "Month 6: Computer Vision",
-          "content": [
-            "Object detection and recognition",
-            "Image segmentation",
-            "GANs for image generation",
-            "Video analysis"
-          ]
-        },
-        {
-          "month": "Month 7: AI Deployment & MLOps",
-          "content": [
-            "Model deployment strategies",
-            "MLOps pipeline development",
-            "Model monitoring and maintenance",
-            "Cloud AI services"
-          ]
-        },
-        {
-          "month": "Month 8: Advanced Projects & Research",
-          "content": [
-            "Research paper implementation",
-            "Advanced AI projects",
-            "Portfolio development",
-            "Industry readiness"
+          "month": 4,
+          "title": "BI & Automation Capstone",
+          "goal": "Deploy Power BI dashboards and automate pipelines.",
+          "weeks": [
+            { "week": 13, "topic": "Power BI Integration", "hours": 20, "project": "BI Sales Dashboard" },
+            { "week": 14, "topic": "Data Governance", "hours": 20, "project": "Azure Purview Setup" },
+            { "week": 15, "topic": "CI/CD Automation", "hours": 20, "project": "GitHub Actions Pipelines" },
+            { "week": 16, "topic": "Capstone Project", "hours": 20, "project": "Unified Data Platform" }
           ]
         }
+      ]
+    },
+    {
+      "courseId": "C007",
+      "courseName": "Data Analyst Master Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Data Analyst",
+        "Business Intelligence Analyst",
+        "Data Reporting Specialist"
       ],
-      "projects": [
-        "AI-Powered Chatbot with NLP",
-        "Real-time Object Detection System",
-        "Image Generation with GANs",
-        "Speech Recognition System",
-        "AI-based Recommendation Engine",
-        "Autonomous Vehicle Simulation",
-        "Medical Image Analysis",
-        "AI Stock Prediction System"
+      "skillsGained": [
+        "Excel and advanced formulas",
+        "SQL querying and optimization",
+        "Power BI dashboard creation",
+        "Python automation for analytics"
+      ],
+      "modules": [
+        {
+          "month": 1,
+          "title": "Excel & Statistics Basics",
+          "goal": "Build foundation in Excel and introductory statistics.",
+          "weeks": [
+            { "week": 1, "topic": "Excel Basics", "hours": 15, "project": "Sales Dashboard" },
+            { "week": 2, "topic": "Pivot Tables & Power Query", "hours": 15, "project": "HR Dashboard" },
+            { "week": 3, "topic": "Descriptive Statistics", "hours": 20, "project": "Customer Feedback Analysis" },
+            { "week": 4, "topic": "Data Visualization", "hours": 20, "project": "Market Basket Analysis" }
+          ]
+        },
+        {
+          "month": 2,
+          "title": "SQL & Data Cleaning",
+          "goal": "Master SQL queries and data cleaning techniques.",
+          "weeks": [
+            { "week": 5, "topic": "SQL Basics & Joins", "hours": 20, "project": "Movie Dataset Analytics" },
+            { "week": 6, "topic": "Window Functions & Aggregations", "hours": 20, "project": "Advanced SQL Queries" },
+            { "week": 7, "topic": "Data Cleaning", "hours": 20, "project": "Customer Data Sanitize" },
+            { "week": 8, "topic": "Business Queries", "hours": 20, "project": "Sales Trend Reports" }
+          ]
+        },
+        {
+          "month": 3,
+          "title": "Power BI & Automation",
+          "goal": "Create interactive dashboards and automate reports.",
+          "weeks": [
+            { "week": 9, "topic": "Power BI Basics", "hours": 20, "project": "Interactive Report" },
+            { "week": 10, "topic": "Advanced Dashboarding", "hours": 20, "project": "Executive Dashboard" },
+            { "week": 11, "topic": "Python for Automation", "hours": 20, "project": "Automated Notifications" },
+            { "week": 12, "topic": "Cloud BI Solutions", "hours": 20, "project": "Cloud Data Services" }
+          ]
+        },
+        {
+          "month": 4,
+          "title": "Capstone & Presentation",
+          "goal": "Build portfolio projects for data analyst roles.",
+          "weeks": [
+            { "week": 13, "topic": "End-to-End Project", "hours": 20, "project": "Retail Analytics" },
+            { "week": 14, "topic": "Presentation Skills", "hours": 20, "project": "Dashboard Showcase" },
+            { "week": 15, "topic": "Interview Prep", "hours": 20, "project": "Mock Interviews" },
+            { "week": 16, "topic": "Career Planning", "hours": 20, "project": "Job Application Strategies" }
+          ]
+        }
+      ]
+    },
+    {
+      "courseId": "C008",
+      "courseName": "Data Science & Machine Learning Program",
+      "duration": { "months": 4, "weeks": 16, "hours": 320 },
+      "careerOutcomes": [
+        "Data Scientist",
+        "Machine Learning Engineer",
+        "AI Specialist"
+      ],
+      "skillsGained": [
+        "Python for data science",
+        "Supervised and unsupervised ML",
+        "Deep learning with TensorFlow",
+        "NLP and computer vision",
+        "AI model deployment"
+      ],
+      "modules": [
+        {
+          "month": 1,
+          "title": "Python & Statistics",
+          "goal": "Learn Python programming and foundational statistics.",
+          "weeks": [
+            { "week": 1, "topic": "Python Basics", "hours": 15, "project": "Data Cleaning Script" },
+            { "week": 2, "topic": "Pandas & Dataframes", "hours": 15, "project": "Netflix Dataset Analysis" },
+            { "week": 3, "topic": "Statistical Analysis", "hours": 20, "project": "COVID-19 Visualization" },
+            { "week": 4, "topic": "Data Visualization", "hours": 20, "project": "Descriptive Stats Report" }
+          ]
+        },
+        {
+          "month": 2,
+          "title": "Machine Learning Fundamentals",
+          "goal": "Hands-on ML model building and evaluation.",
+          "weeks": [
+            { "week": 5, "topic": "Supervised Learning", "hours": 20, "project": "Predictive Models" },
+            { "week": 6, "topic": "Unsupervised Learning", "hours": 20, "project": "Clustering Models" },
+            { "week": 7, "topic": "Model Evaluation", "hours": 20, "project": "Performance Metrics" },
+            { "week": 8, "topic": "Scikit-learn Mastery", "hours": 20, "project": "ML Pipelines" }
+          ]
+        },
+        {
+          "month": 3,
+          "title": "Deep Learning & NLP",
+          "goal": "Learn neural networks, CNNs, RNNs and NLP.",
+          "weeks": [
+            { "week": 9, "topic": "Neural Networks", "hours": 20, "project": "Image Classification" },
+            { "week": 10, "topic": "Convolutional Networks", "hours": 20, "project": "Object Detection" },
+            { "week": 11, "topic": "Recurrent Networks", "hours": 20, "project": "Sequence Modeling" },
+            { "week": 12, "topic": "NLP & Transformers", "hours": 20, "project": "Sentiment Analysis" }
+          ]
+        },
+        {
+          "month": 4,
+          "title": "AI Deployment & Research",
+          "goal": "Deploy ML models and work on advanced AI projects.",
+          "weeks": [
+            { "week": 13, "topic": "Model Deployment", "hours": 20, "project": "Flask API Deployment" },
+            { "week": 14, "topic": "MLOps Fundamentals", "hours": 20, "project": "CI/CD for ML" },
+            { "week": 15, "topic": "Research Paper Implementation", "hours": 20, "project": "State-of-art Model" },
+            { "week": 16, "topic": "Capstone AI Project", "hours": 20, "project": "End-to-End ML Pipeline" }
+          ]
+        }
       ]
     }
   ]
