@@ -8,7 +8,14 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Advanced",
-      "technologies": ["AWS", "Azure", "GCP", "Terraform", "CI/CD", "Monitoring"],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Terraform",
+        "CI/CD",
+        "Monitoring"
+      ],
       "shortDescription": "Master AWS, Azure, and GCP architectures, automation with Terraform, and multi-cloud deployments."
     },
     {
@@ -19,7 +26,14 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Advanced",
-      "technologies": ["AWS", "Glue", "Redshift", "Airflow", "Lambda", "SageMaker"],
+      "technologies": [
+        "AWS",
+        "Glue",
+        "Redshift",
+        "Airflow",
+        "Lambda",
+        "SageMaker"
+      ],
       "shortDescription": "Build end-to-end ETL pipelines using Glue, Lambda, and Redshift with orchestration in Airflow."
     },
     {
@@ -30,7 +44,14 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Advanced",
-      "technologies": ["Azure", "Docker", "AKS", "Terraform", "Bicep", "Azure DevOps"],
+      "technologies": [
+        "Azure",
+        "Docker",
+        "AKS",
+        "Terraform",
+        "Bicep",
+        "Azure DevOps"
+      ],
       "shortDescription": "End-to-end Azure DevOps program covering CI/CD pipelines, AKS, GitHub Actions, and monitoring."
     },
     {
@@ -41,7 +62,14 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Advanced",
-      "technologies": ["AWS", "Docker", "EKS", "Terraform", "Jenkins", "CloudWatch"],
+      "technologies": [
+        "AWS",
+        "Docker",
+        "EKS",
+        "Terraform",
+        "Jenkins",
+        "CloudWatch"
+      ],
       "shortDescription": "Hands-on AWS DevOps journey with Terraform, Jenkins, Docker, and Kubernetes automation."
     },
     {
@@ -74,7 +102,14 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Intermediate",
-      "technologies": ["GCP", "GKE", "Compute Engine", "IAM", "Cloud Build", "BigQuery"],
+      "technologies": [
+        "GCP",
+        "GKE",
+        "Compute Engine",
+        "IAM",
+        "Cloud Build",
+        "BigQuery"
+      ],
       "shortDescription": "Develop GCP solutions with Kubernetes, networking, IAM, and CI/CD using Cloud Build."
     },
     {
@@ -85,8 +120,26 @@
       "totalHours": 320,
       "projects": 16,
       "level": "Expert",
-      "technologies": ["AWS", "Azure", "GCP", "SageMaker", "Vertex AI", "MLflow"],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "SageMaker",
+        "Vertex AI",
+        "MLflow"
+      ],
       "shortDescription": "Architect AI and ML pipelines using SageMaker, Vertex AI, and Databricks in multi-cloud environments."
+    },
+    {
+      "courseId": "C009",
+      "courseName": "Cybersecurity Cloud Architect Program",
+      "category": "Cybersecurity",
+      "duration": "4 Months",
+      "totalHours": 320,
+      "projects": 16,
+      "level": "Expert",
+      "technologies": ["AWS", "Azure", "GCP", "KMS", "Cloud Armor", "SIEM"],
+      "shortDescription": "Design secure, scalable cloud infrastructures and implement advanced cybersecurity strategies using KMS, Cloud Armor, and SIEM tools in multi-cloud environments."
     }
   ]
 }

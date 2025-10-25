@@ -9,7 +9,7 @@ const journeyData = [
     description:
       "In 2022, Cloud World Institute was founded with a clear goal — to make quality IT education accessible to everyone, even for students from non-IT backgrounds. With a small but passionate team of industry experts, we began our journey to build India's next generation of cloud professionals through practical, job-focused learning.",
     icon: <FaSeedling className="w-8 h-8 text-green-500" />,
-    color: "from-green-500 to-emerald-600",
+    color: "from-green-50 to-emerald-50",
   },
   {
     year: "2023",
@@ -18,7 +18,7 @@ const journeyData = [
     description:
       "Our focus on hands-on training and real-world projects helped hundreds of learners secure their first IT jobs. We launched our flagship Cloud + DevOps Combo Program, which quickly became one of the most popular and trusted career-building courses. To make opportunities accessible to all, we introduced our unique 'Pay After Placement' model — allowing students to start their journey with just ₹5000.",
     icon: <FaRocket className="w-8 h-8 text-cyan-500" />,
-    color: "from-blue-500 to-cyan-600",
+    color: "from-blue-50 to-cyan-50",
   },
   {
     year: "2024",
@@ -27,7 +27,7 @@ const journeyData = [
     description:
       "By 2024, Cloud World Institute had become a nationally recognized training brand. We strengthened corporate tie-ups and helped students get placed in top tech companies with impressive salary packages. With upgraded AI-powered labs, personalized mentorship, and placement-driven training, Cloud World Institute became a synonym for career success in Cloud and DevOps.",
     icon: <FaTrophy className="w-8 h-8 text-pink-500" />,
-    color: "from-purple-500 to-pink-600",
+    color: "from-purple-50 to-pink-50",
   },
   {
     year: "2025",
@@ -35,8 +35,8 @@ const journeyData = [
     subtitle: "Scaling New Heights with New Opportunities",
     description:
       "In 2025, Cloud World Institute expanded its horizon by launching new-age technology programs in Data Science, Data Analytics, and Full Stack Development. These additions empower learners to explore multiple IT domains and stay ahead in the evolving tech industry. With continuous innovation, updated curriculum, and global learning standards, Cloud World Institute continues its mission — to help every learner Learn, Grow, and Get Placed.",
-    icon: <FaMagic className="w-8 h-8 text-orange-500" />,
-    color: "from-orange-500 to-red-500",
+    icon: <FaMagic className="w-8 h-8 text-emerald-500" />,
+    color: "from-emerald-50 to-red-50",
     programs: ["Data Science", "Data Analytics", "Full Stack Development"],
   },
 ];
@@ -48,10 +48,10 @@ const JourneySection = () => {
        <h2 className="text-5xl font-extrabold text-center text-primary mb-20 drop-shadow-md">
           Our Journey Through the Years
         </h2>
-      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-amber-300 to-orange-300 shadow-lg">
+      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-teal-300 to-emerald-300 shadow-lg">
        
 
-        <div className="relative border-l-4 border-cyan-400 pl-8 sm:pl-12">
+        <div className="relative border-l-4 border-red-400 pl-8 sm:pl-12">
           {journeyData.map((item, index) => (
             <div
               key={index}

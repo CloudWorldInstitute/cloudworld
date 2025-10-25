@@ -8,14 +8,15 @@ const Navbar = () => {
   // Navigation items data
   const navItems = [
     { path: "/", label: "Corporate Training" },
-    { path: "/AboutUs", label: "About Us" },
+    { path: "/upcoming-batches", label: "Batches" },
     { path: "/success-stories", label: "Success Stories" },
-    { path: "/contact", label: "Contact" },
-    { path: "/blog", label: "Blog" }
+    { path: "/AboutUs", label: "About Us" },
+    { path: "/blog", label: "Blog" },
+    { path: "/contact", label: "Contact" }
   ];
 
   return (
-    <nav className="fixed top-5 inset-x-4 bg-orange/20 backdrop-blur-md text-white z-50 border-b border-orange-900 shadow-[inset_0px_0px_17px_0px_#ff7f11] rounded-xl transition-all duration-300 mx-10">
+    <nav className="fixed top-5 inset-x-4 bg-teal/20 backdrop-blur-md text-white z-50 border-b border-teal-900 shadow-[inset_0px_0px_17px_0px_#0ccec4] rounded-xl transition-all duration-300 mx-10">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
 
         {/* Logo */}
@@ -29,31 +30,31 @@ const Navbar = () => {
               alt="CloudWorld Logo"
               className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
             />
-            <span className="absolute inset-0 rounded-full ring-2 ring-orange-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
+            <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
-          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-orange-950">
-            Cloud<span className="text-orange-600">World</span>
+          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-teal-950">
+            Cloud<span className="text-teal-600">World</span>
           </span>
         </NavLink>
 
         {/* Desktop Navigation - Always visible on medium screens and up */}
-        <div className="hidden md:flex  rounded-2xl items-center space-x-6">
-          <div className=" bg-orange-950 rounded-2xl items-center p-3 space-x-6">
+        <div className="hidden md:flex  rounded-2xl items-center space-x-2">
+          <div className=" bg-teal-100 rounded-2xl items-center p-3 space-x-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `relative px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${isActive
-                    ? "text-white bg-orange-600 shadow-lg"
-                    : "text-orange-400 hover:text-white hover:bg-orange-500/30"
+                  `relative px-4 py-2 rounded-lg font-bold transition-all duration-300 ${isActive
+                    ? "text-white bg-teal-600 shadow-lg"
+                    : "text-teal-900 hover:text-white hover:bg-teal-400"
                   }`
                 }
               >
                 {item.label}
                 {/* Active indicator line */}
                 {({ isActive }) => isActive && (
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-orange-400 rounded-full"></span>
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-teal-600 rounded-full"></span>
                 )}
               </NavLink>
             ))}
@@ -63,8 +64,8 @@ const Navbar = () => {
 
 
           <button className="p-[3px] relative ">
-            <div className="absolute  inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl" />
-            <div className="p-2   flex items-center  bg-orange-950 rounded-2xl  relative group transition duration-200 text-lime-500 font-bold hover:bg-transparent">
+            <div className="absolute  inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl" />
+            <div className="p-2   flex items-center  bg-teal-950 rounded-2xl  relative group transition duration-200 text-emerald-500 font-bold hover:bg-transparent">
               <GiTabletopPlayers /> Get career guidance
             </div>
           </button>
@@ -76,7 +77,7 @@ const Navbar = () => {
           aria-controls="navbar-sticky"
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center justify-center p-2 w-10 h-10 text-orange-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300"
+          className="inline-flex items-center justify-center p-2 w-10 h-10 text-teal-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -108,8 +109,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
                     `block py-3 px-4 rounded-lg transition-all duration-300 ${isActive
-                      ? "bg-orange-600 text-white font-bold shadow-md"
-                      : "text-orange-300 hover:text-white hover:bg-orange-500/30"
+                      ? "bg-teal-600 text-white font-bold shadow-md"
+                      : "text-teal-300 hover:text-white hover:bg-teal-500/30"
                     }`
                   }
                 >
@@ -121,8 +122,8 @@ const Navbar = () => {
             {/* Mobile CTA Button */}
             <li className="pt-2">
               <button className="p-[3px] relative ">
-            <div className="absolute  inset-0 bg-gradient-to-r from-lime-500 to-orange-500 rounded-2xl" />
-            <div className="p-2   flex items-center  bg-gray-800 rounded-2xl  relative group transition duration-200 text-lime-300 font-bold hover:bg-transparent">
+            <div className="absolute  inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl" />
+            <div className="p-2   flex items-center  bg-gray-800 rounded-2xl  relative group transition duration-200 text-emerald-300 font-bold hover:bg-transparent">
               <GiTabletopPlayers /> Get career guidance
             </div>
           </button>

@@ -101,7 +101,7 @@ const CareerGuidanceModal = () => {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 p-6 relative">
+        <div className="bg-gradient-to-r from-teal-500 via-green-500 to-teal-600 p-6 relative">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
           
@@ -110,7 +110,7 @@ const CareerGuidanceModal = () => {
               <h2 className="text-2xl font-bold text-white mb-2">
                 🎯 Get Career Guidance
               </h2>
-              <p className="text-orange-100 text-sm">
+              <p className="text-teal-100 text-sm">
                 Let our experts guide your tech journey
               </p>
             </div>
@@ -141,7 +141,7 @@ const CareerGuidanceModal = () => {
               className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
                 errors.name
                   ? "border-red-500 focus:border-red-500"
-                  : "border-gray-300 focus:border-orange-500"
+                  : "border-gray-300 focus:border-teal-500"
               }`}
             />
             {errors.name && (
@@ -166,7 +166,7 @@ const CareerGuidanceModal = () => {
               className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
                 errors.email
                   ? "border-red-500 focus:border-red-500"
-                  : "border-gray-300 focus:border-orange-500"
+                  : "border-gray-300 focus:border-teal-500"
               }`}
             />
             {errors.email && (
@@ -192,7 +192,7 @@ const CareerGuidanceModal = () => {
               className={`w-full border-2 rounded-lg px-4 py-2.5 focus:outline-none transition-all ${
                 errors.phone
                   ? "border-red-500 focus:border-red-500"
-                  : "border-gray-300 focus:border-orange-500"
+                  : "border-gray-300 focus:border-teal-500"
               }`}
             />
             {errors.phone && (
@@ -206,7 +206,7 @@ const CareerGuidanceModal = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold py-3 px-4 rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-teal-500 to-green-500 text-white font-semibold py-3 px-4 rounded-lg hover:from-teal-600 hover:to-green-600 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
             {isSubmitting ? (
               <>

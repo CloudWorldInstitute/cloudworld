@@ -40,8 +40,8 @@ const StudentsWorkingIn = () => {
   return (
     <section className=" bg-white min-h-screen">
       <div className=" bg-light  mx-auto  py-15 text-center">
-         <h1 className="text-5xl font-extrabold text-orange-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
-        <p className="text-xl text-orange-400 mb-16 max-w-4xl mx-auto">
+         <h1 className="text-5xl font-extrabold text-teal-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
+        <p className="text-xl text-teal-400 mb-16 max-w-4xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
 
@@ -52,7 +52,7 @@ const StudentsWorkingIn = () => {
             {companies.concat(companies).map((company, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-orange-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-teal-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>
@@ -64,7 +64,7 @@ const StudentsWorkingIn = () => {
             {companies1.concat(companies1).map((company, index) => (
               <div
                 key={index + companies.length}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-orange-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-teal-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>

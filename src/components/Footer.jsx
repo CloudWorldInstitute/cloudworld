@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-b from-orange-950 to-gray-950 text-white relative overflow-hidden">
+      <footer className="bg-gradient-to-b from-teal-950 to-gray-950 text-white relative overflow-hidden">
 
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:bg-white/30 transition-all duration-300">
                   <img src="logo.png" alt="CloudWorld Logo" className="w-7 h-7 object-contain" />
                 </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-orange-500 bg-clip-text text-transparent">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-teal-500 to-teal-500 bg-clip-text text-transparent">
                   CloudWorld
                 </h3>
               </div>
@@ -49,7 +49,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <Link to="/upcoming-batches">
-                  <button className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                  <button className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
                     Upcoming Batches
                   </button>
                 </Link>

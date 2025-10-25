@@ -6,47 +6,47 @@ const AboutPage = () => {
     <>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-emerald-50 overflow-hidden">
+      <section className="relative pt-40 pb-10 bg-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 w-36 h-36 bg-orange-300 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-10 right-10 w-36 h-36 bg-teal-300 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-12 left-16 w-40 h-40 bg-emerald-300 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
         <div className="relative container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
             <img
-              src="https://t4.ftcdn.net/jpg/03/83/66/45/360_F_383664523_k7SpSAq9Q5atIYfayRvKyprZIGQoyz0Y.jpg"
+              src="aboutUs.jpg"
               alt="Cloud World Institute team"
               className="rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-amber-100">
-              <h3 className="text-3xl font-bold text-orange-600">5000+</h3>
+            <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-emerald-100">
+              <h3 className="text-3xl font-bold text-teal-600">5000+</h3>
               <p className="text-sm text-gray-700 font-medium">Students Trained</p>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-emerald-500 to-amber-500 text-white rounded-2xl p-6 shadow-2xl">
+            <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-emerald-500 to-emerald-500 text-white rounded-2xl p-6 shadow-2xl">
               <h3 className="text-3xl font-bold">100%</h3>
               <p className="text-sm font-medium opacity-95">Placement Support</p>
             </div>
           </div>
 
           <div className="order-1 lg:order-2">
-            <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500 mb-5 text-center lg:text-left">
+            <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-emerald-500 to-emerald-500 mb-5 text-center lg:text-left">
               About Us
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              At <span className="font-semibold text-orange-600">Cloud World Institute</span>, our mission is simple — to make every student job-ready for the
+              At <span className="font-semibold text-teal-600">Cloud World Institute</span>, our mission is simple — to make every student job-ready for the
               digital era of technology.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               We bridge the gap between learning and earning through practical skill-based IT training in
-              <span className="font-semibold text-amber-600"> Cloud</span>,
+              <span className="font-semibold text-emerald-600"> Cloud</span>,
               <span className="font-semibold text-emerald-600"> DevOps</span>, and 
-              <span className="font-semibold text-orange-600"> AI</span> programs driven by real-world projects.
+              <span className="font-semibold text-teal-600"> AI</span> programs driven by real-world projects.
             </p>
-            <div className="bg-white/70 backdrop-blur-sm border-l-4 border-amber-400 rounded-xl p-6 shadow-md mt-8">
+            <div className="bg-white/70 backdrop-blur-sm border-l-4 border-emerald-400 rounded-xl p-6 shadow-md mt-8">
               <p className="text-gray-800">
                 Founded by <span className="font-semibold text-emerald-600">industry-certified mentors</span> with global experience,
-                Cloud World Institute is leading the path for learners from <span className="text-orange-600 font-semibold">non-IT to IT</span> success.
+                Cloud World Institute is leading the path for learners from <span className="text-teal-600 font-semibold">non-IT to IT</span> success.
               </p>
             </div>
           </div>
@@ -54,15 +54,15 @@ const AboutPage = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-16 bg-gradient-to-br from-emerald-50 via-amber-50 to-orange-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Vision */}
-          <div className="bg-white/80 rounded-2xl border border-amber-100 shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
+          <div className="bg-white/80 rounded-2xl border border-emerald-100 shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
                 <FaLightbulb />
               </div>
-              <h3 className="text-2xl font-extrabold text-amber-700">Our Vision</h3>
+              <h3 className="text-2xl font-extrabold text-emerald-700">Our Vision</h3>
             </div>
             <p className="text-gray-700 leading-relaxed pl-1">
               To be India’s most trusted institute for Cloud & DevOps education, empowering aspiring professionals with world-class learning and innovation.
@@ -95,8 +95,8 @@ const AboutPage = () => {
       </section>
 
       {/* Key Highlights */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-emerald-50 rounded-3xl shadow-inner">
-        <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500">
+      <section className="py-20 bg-white rounded-3xl shadow-inner">
+        <h2 className="text-5xl font-extrabold text-center mb-12 text-teal-500 bg-clip-text bg-white">
           Why Choose Cloud World Institute
         </h2>
 
@@ -105,12 +105,12 @@ const AboutPage = () => {
             {
               title: "Job-Ready Curriculum",
               desc: "Our courses are structured for students to become employable directly post-training.",
-              color: "orange",
+              color: "teal",
             },
             {
               title: "Practical Hands-On Projects",
               desc: "Work on real-use cases directly aligned with today’s enterprise cloud environments.",
-              color: "amber",
+              color: "emerald",
             },
             {
               title: "Mentorship-Based Learning",
@@ -130,8 +130,8 @@ const AboutPage = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-emerald-50">
-        <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">Our Core Values</h2>
+      <section className="py-16 bg-white">
+        <h2 className="text-5xl font-extrabold text-center text-teal-600 mb-8">Our Core Values</h2>
         <p className="max-w-3xl mx-auto text-center text-gray-700 mb-12">
           Our values define who we are and guide every step of our mission to educate and inspire the next-gen IT professionals of India.
         </p>
@@ -139,47 +139,47 @@ const AboutPage = () => {
           {[
             {
               title: "Excellence",
-              color: "amber",
+              color: "emerald",
               desc: "We pursue excellence through world-class teaching, innovation, and dedication.",
             },
             {
               title: "Integrity",
-              color: "emerald",
+              color: "red",
               desc: "Ethical practices and transparency form the foundation of our operations.",
             },
             {
               title: "Community",
-              color: "orange",
+              color: "teal",
               desc: "Fostering a supportive environment for collaboration and growth.",
             },
             {
               title: "Innovation",
-              color: "amber",
+              color: "emerald",
               desc: "Adapting to change and leveraging technology to stay ahead in the IT era.",
             },
           ].map(({ title, desc, color }, idx) => (
             <div
               key={idx}
-              className={`p-8 bg-white rounded-xl shadow-lg border border-${color}-200 hover:shadow-${color}-300 transition-transform hover:scale-105`}
+              className={`p-8 bg-teal-50 rounded-xl shadow-lg border border-${color}-200 hover:shadow-${color}-300 transition-transform hover:scale-105`}
             >
-              <h3 className={`text-2xl font-semibold text-${color}-600 mb-4`}>{title}</h3>
-              <p className="text-gray-700">{desc}</p>
+              <h3 className={`text-2xl font-bold text-${color}-600 mb-4`}>{title}</h3>
+              <p className="text-gray-800">{desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-orange-500 via-amber-500 to-emerald-500 text-white text-center rounded-t-3xl shadow-xl">
-        <h3 className="text-3xl font-bold mb-4">Ready to Begin Your IT Career?</h3>
+      <section className="py-16 bg-gradient-to-r from-teal-500 via-green-500 to-emerald-500 text-white text-center rounded-t-3xl shadow-xl">
+        <h3 className="text-4xl font-bold mb-4">Ready to Begin Your IT Career?</h3>
         <p className="mb-8 max-w-2xl mx-auto">
           Join thousands of Cloud World graduates who advanced their careers through our job-ready cloud and DevOps programs.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-white text-emerald-700 px-8 py-3 font-bold rounded-xl hover:bg-amber-50 transition duration-300 shadow-lg">
+          <button className="bg-white text-emerald-700 px-8 py-3 font-bold rounded-xl hover:bg-emerald-50 transition duration-300 shadow-lg">
             Enroll Today
           </button>
-          <button className="border-2 border-white px-8 py-3 font-bold rounded-xl hover:bg-white hover:text-orange-600 transition duration-300">
+          <button className="border-2 border-white px-8 py-3 font-bold rounded-xl hover:bg-white hover:text-teal-600 transition duration-300">
             Talk to Us
           </button>
         </div>
