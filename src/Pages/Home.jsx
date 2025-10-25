@@ -6,6 +6,7 @@ import CoursesComponent from "../components/CoursesComponent";
 import TestComponent from "../components/TestComponent";
 import StudentsWorkingIn from "../components/StudentsWorkingIn";
 import AlumniTestimonials from "../components/AlumniTestimonials";
+import NonITCareerSection from "../components/NonItCareerSerction";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
 
       <section
         id="home"
-        className="relative min-h-screen pt-5 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-white"
+        className="relative min-h-screen pt-20 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-white"
         aria-labelledby="hero-title"
       >
 
@@ -28,14 +29,14 @@ const Home = () => {
         <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left animate-fade-in-up">
           <div className="animate-fade-in-up animation-delay-200">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-primary rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
+            <div className="inline-flex items-center px-2 py-1 bg-emerald-100 text-primary rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
               <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
               India's Leading Cloud Training Platform
             </div>
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-tight"
+              className="text-xl sm:text-5xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -54,15 +55,37 @@ const Home = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-1000">
+             <button
+  onClick={() => {
+    const element = document.getElementById('non-it-section');
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }}
+  className="relative overflow-hidden group border-2 border-orange-600 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-orange-500/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
+  aria-label="Start your journey with CloudWorld"
+>
+  {/* Shimmer Effect */}
+  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 group-hover:animate-shimmer"></span>
+
+  {/* Button Text */}
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    Do you have a non-IT background?
+    <span className="inline-block group-hover:translate-x-2 transition-transform duration-300">
+      →
+    </span>
+  </span>
+
+  {/* Glow Effect */}
+  <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-400 to-amber-400 blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-300 -z-10"></span>
+</button>
+
+
+
               <button
-                className="group bg-emerald-100 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
-                aria-label="Start your journey with CloudWorld"
-              >
-                Start Your Journey
-                <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
-              </button>
-              <button
-                className="border-2 border-orange-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                onClick={() => {
+                  const element = document.getElementById('core-services');
+                  element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                className="border-2 border-orange-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-200 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 aria-label="Explore our services"
               >
                 Explore Services
@@ -110,10 +133,12 @@ const Home = () => {
 
           </div>
         </div>
-                               
+
 
 
       </section>
+
+      <NonITCareerSection/>
 
       <CoursesComponent />
 
@@ -122,100 +147,132 @@ const Home = () => {
 
 
       {/* Services Section - Card hover effects */}
-      <section className=" bg-white-50">
-        <div className="container bg-white mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16 animate-fade-in-up">
-<h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent inline-block">
-  Our Core Services
-</h2>
-            <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
+      <section id="core-services" className="relative py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+
+          {/* Section Header */}
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+              Our Core Services
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
               Tailored solutions to propel your IT career and business forward with confidence.
             </p>
           </div>
-          <div className="grid grid-cols-1 p-5 bg-amber-200  rounded-3xl md:grid-cols-3 gap-8">
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-4 sm:p-6 md:p-8 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl md:rounded-3xl shadow-xl">
             {[
               {
-                icon: <FaCloud className="text-5xl" />, // Replaced ☁️
+                icon: <FaCloud className="text-4xl sm:text-5xl" />,
                 title: "Cloud Training",
                 desc: "Master AWS, Azure, and Google Cloud through hands-on, certified programs designed for real-world success.",
-                color: "from-primary to-secondary"
+                color: "from-blue-500 to-cyan-500",
+                hoverColor: "hover:from-blue-600 hover:to-cyan-600"
               },
               {
-                icon: <FaTools className="text-5xl" />, // Replaced 🔧
+                icon: <FaTools className="text-4xl sm:text-5xl" />,
                 title: "IT Consulting",
                 desc: "Strategic guidance for cloud migration, optimization, and scalable infrastructure that drives efficiency.",
-                color: "from-secondary to-tertiary"
+                color: "from-purple-500 to-pink-500",
+                hoverColor: "hover:from-purple-600 hover:to-pink-600"
               },
               {
-                icon: <FaRocket className="text-5xl" />, // Replaced 🚀
+                icon: <FaRocket className="text-4xl sm:text-5xl" />,
                 title: "Career Placement",
                 desc: "Exclusive access to top IT roles with personalized coaching and a 98% placement success rate.",
-                color: "from-tertiary to-quaternary"
+                color: "from-orange-500 to-red-500",
+                hoverColor: "hover:from-orange-600 hover:to-red-600"
               }
             ].map((service, index) => (
               <div
                 key={index}
-                className="group bg-emerald-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-primary animate-fade-in-up animation-delay-500"
+                className="group relative bg-white p-6 sm:p-8 rounded-xl md:rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-orange-400 animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+                {/* Gradient Background on Hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-xl md:rounded-2xl`}></div>
+
+                {/* Icon with Gradient Background */}
+                <div className={`relative inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 mb-6 rounded-2xl bg-gradient-to-br ${service.color} text-white shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary group-hover:text-secondary transition-colors">
+
+                {/* Title */}
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 group-hover:text-orange-600 transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
+
+                {/* Description */}
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6 min-h-[80px] sm:min-h-[100px]">
                   {service.desc}
                 </p>
-                <button className="text-primary font-semibold hover:text-secondary transition-colors">
-                  Learn More →
+
+                {/* CTA Button */}
+                <button
+                  className="inline-flex items-center text-orange-600 font-semibold text-sm sm:text-base hover:text-orange-700 transition-colors group/btn"
+                  aria-label={`Learn more about ${service.title}`}
+                >
+                  Learn More
+                  <span className="ml-2 transform group-hover/btn:translate-x-2 transition-transform duration-300">
+                    →
+                  </span>
                 </button>
+
+                {/* Decorative Corner Element */}
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-orange-200 to-transparent opacity-0 group-hover:opacity-30 rounded-full blur-2xl transition-opacity duration-500"></div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-20 -z-10"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-20 -z-10"></div>
       </section>
 
+
       {/* Testimonials Section - New addition for credibility */}
-    
-      <AlumniTestimonials/>
 
-     {/* Stats Section - Enhanced Design */}
-<section className="relative py-24 bg-white text-primary">
-  <div className="container mx-auto px-6 md:px-12 text-center">
-    
-    {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-orange-600">
-      Our Achievements at a Glance
-    </h2>
+      <AlumniTestimonials />
 
-    {/* Stats Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-      {[
-        { num: "1,000+", label: "Trained Professionals" },
-        { num: "100+", label: "Partner Companies" },
-        { num: "98%", label: "Placement Success" },
-        { num: "7+", label: "Years of Excellence" }
-      ].map((stat, index) => (
-        <div
-          key={index}
-          className="bg-emerald-100 backdrop-blur-md rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
-          style={{ animationDelay: `${index * 150}ms` }}
-        >
-          <div className="text-5xl font-extrabold text-orange-600 mb-2">
-            {stat.num}
+      {/* Stats Section - Enhanced Design */}
+      <section className="relative py-12 md:py-24 bg-white text-primary overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 lg:px-12 text-center">
+
+          {/* Heading */}
+          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 md:mb-12 text-orange-600 px-2">
+            Our Achievements at a Glance
+          </h2>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+            {[
+              { num: "1,000+", label: "Trained Professionals" },
+              { num: "100+", label: "Partner Companies" },
+              { num: "98%", label: "Placement Success" },
+              { num: "7+", label: "Years of Excellence" }
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="bg-emerald-50 backdrop-blur-md rounded-lg md:rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center justify-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-orange-600 mb-1 md:mb-2 leading-tight">
+                  {stat.num}
+                </div>
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-700 leading-snug break-words text-center px-1">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
           </div>
-          <p className="text-lg font-semibold text-gray-700">
-            {stat.label}
-          </p>
         </div>
-      ))}
-    </div>
-  </div>
 
-  {/* Decorative Background Element */}
-  <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.2)_0%,_rgba(0,0,0,0)_70%)]"></div>
-</section>
+        {/* Decorative Background Element */}
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.2)_0%,_rgba(0,0,0,0)_70%)]"></div>
+      </section>
+
 
 
 

@@ -29,15 +29,16 @@ const CoursesComponent = () => {
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-orange-100 group overflow-hidden">
+    <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-orange-100 group overflow-hidden flex flex-col h-full">
       
       {/* Card Top Header */}
       <div className="bg-gradient-to-r from-orange-400 via-yellow-500 to-amber-500 p-6 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_80%,white,transparent_70%)]"></div>
 
         <div className="flex items-start space-x-4 relative z-10">
-          <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
+          <div className="w-30 h-30 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
             <span className="text-2xl">🎓</span>
+            <image> img</image>
           </div>
           <div className="flex-1">
             <h3 className="text-xl font-bold mb-2 text-white group-hover:text-orange-100 transition-colors">
@@ -63,8 +64,8 @@ const CourseCard = ({ course }) => {
         </div>
       </div>
 
-      {/* Card Content */}
-      <div className="p-6">
+      {/* Card Content - flex-grow makes it expand */}
+      <div className="p-6 flex-grow flex flex-col">
         <p className="text-gray-600 mb-4 line-clamp-3">{course.shortDescription}</p>
 
         {/* Level Badge */}
@@ -99,12 +100,17 @@ const CourseCard = ({ course }) => {
           )}
         </div>
 
-        {/* CTA Button */}
-        <Link to={`/course/${course.courseId}`}>
-          <button className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white px-5 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 transition-all duration-300 hover:scale-105 shadow-lg">
-            View Details →
-          </button>
-        </Link>
+        {/* Spacer to push button to bottom */}
+        <div className="flex-grow"></div>
+
+        {/* CTA Button - stays at bottom */}
+        <div className="mt-auto">
+          <Link to={`/course/${course.courseId}`}>
+            <button className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white px-5 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 transition-all duration-300 hover:scale-105 shadow-lg">
+              View Details →
+            </button>
+          </Link>
+        </div>
       </div>
 
       {/* Hover Border */}
