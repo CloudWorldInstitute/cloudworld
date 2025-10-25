@@ -39,14 +39,14 @@ const StudentsWorkingIn = () => {
 
   return (
     <section className=" bg-white min-h-screen">
-      <div className=" bg-light  mx-auto  py-15 text-center">
+      <div className=" bg-white  mx-auto  py-15 text-center">
          <h1 className="text-5xl font-extrabold text-teal-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
         <p className="text-xl text-teal-400 mb-16 max-w-4xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
 
         {/* Scrolling Logos Section */}
-        <div className="relative overflow-hidden space-y-5">
+        <div className="relative overflow-hidden space-y-2">
           {/* Row 1 - Scroll Right */}
           <div className="flex gap-4 p-5 animate-scroll-right">
             {companies.concat(companies).map((company, index) => (
@@ -60,7 +60,7 @@ const StudentsWorkingIn = () => {
           </div>
 
           {/* Row 2 - Scroll Left */}
-          <div className="flex gap-4 p-5 animate-scroll-left">
+          <div className="flex gap-4 p-10 animate-scroll-left">
             {companies1.concat(companies1).map((company, index) => (
               <div
                 key={index + companies.length}

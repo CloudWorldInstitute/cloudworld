@@ -8,6 +8,7 @@ import StudentsWorkingIn from "../components/StudentsWorkingIn";
 import AlumniTestimonials from "../components/AlumniTestimonials";
 import NonITCareerSection from "../components/NonItCareerSerction";
 import HeroImageSection from "../components/HeroImageSection";
+import SlidingImageSection from "../components/HeroImageSection";
 
 const Home = () => {
   return (
@@ -18,13 +19,6 @@ const Home = () => {
         className="relative min-h-screen pt-20 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 overflow-hidden bg-white"
         aria-labelledby="hero-title"
       >
-
-        {/* Animated background elements */}
-        {/* <div className="absolute inset-0  opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-3/4 right-1/4 w-80 h-80 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-1/4 left-3/4 w-72 h-72 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-        </div> */}
 
         {/* Content Section */}
         <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left animate-fade-in-up">
@@ -97,32 +91,7 @@ const Home = () => {
 
         {/* Image Section */}
         <div className="relative z-10 w-full lg:w-1/2 mt-12 lg:mt-0 flex justify-center animate-fade-in-up animation-delay-400">
-        
-          <div className="relative">
-            {/* Main Image */}
-            <img
-              src="public/heroImage.webp"
-           
-              alt="Student learning cloud computing with laptop"
-              className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
-            />
-
-
-
-            {/* Stats Card */}
-          
-
-            <div className="absolute -bottom-3 -right-6 animate-glow bg-emerald-100 rounded-2xl p-4 shadow-2xl border border-gray-100 animate-bounce-slow">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-teal-600">100%</div>
-                <div className="text-sm text-teal-600 font-medium">Placement Support</div>
-              </div>
-            </div>
-
-
-           
-
-          </div>
+          <SlidingImageSection />
         </div>
 
 
@@ -144,7 +113,7 @@ const Home = () => {
 
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent">
               Our Core Services
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
@@ -270,7 +239,7 @@ const Home = () => {
 
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-gray-900 text-teal-600 relative overflow-hidden">
+      <section className="py-24 bg-zinc-950 text-teal-500 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         </div>

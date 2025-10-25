@@ -10,14 +10,14 @@ const UpcomingBatches = () => {
     : batchesData.batches.filter(batch => batch.mode.toLowerCase().includes(filter));
 
   return (
-    <section className="py-16 bg-gradient-to-br from-teal-50 via-amber-50 to-emerald-50 min-h-screen">
+    <section className="py-16 bg-gradient-to-br from-teal-50 via-teal-50 to-emerald-50 min-h-screen">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block bg-teal-200 text-teal-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
             🚀 Join Our Next Cohort
           </span>
-          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-amber-600 mb-4">
+          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-600 mb-4">
             Upcoming Batches
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -34,7 +34,7 @@ const UpcomingBatches = () => {
               onClick={() => setFilter(mode)}
               className={`px-5 py-2 rounded-full font-semibold transition-all transform hover:scale-105 ${
                 filter === mode
-                  ? 'bg-gradient-to-r from-teal-500 to-amber-500 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-teal-500 to-teal-500 text-white shadow-lg'
                   : 'bg-white text-gray-700 shadow-md hover:shadow-lg'
               }`}
             >
@@ -87,7 +87,7 @@ const UpcomingBatches = () => {
                     </div>
                     
                     <div className="flex items-center gap-2 text-gray-700">
-                      <span className="text-amber-500">⏱️</span>
+                      <span className="text-teal-500">⏱️</span>
                       <div className="text-sm">
                         <p className="font-semibold">Duration</p>
                         <p className="text-gray-600">{batch.duration}</p>
@@ -113,9 +113,9 @@ const UpcomingBatches = () => {
                 </div>
 
                 {/* Right Section - CTA */}
-                <div className="lg:w-64 bg-gradient-to-br from-teal-50 to-amber-50 p-6 flex flex-col justify-center gap-3 border-t lg:border-t-0 lg:border-l border-teal-100">
+                <div className="lg:w-64 bg-gradient-to-br from-teal-50 to-teal-50 p-6 flex flex-col justify-center gap-3 border-t lg:border-t-0 lg:border-l border-teal-100">
                   <Link to={`/course/${batch.courseId}`}>
-                    <button className="w-full bg-gradient-to-r from-teal-500 to-amber-500 text-white py-3 px-4 rounded-lg font-semibold hover:from-teal-600 hover:to-amber-600 transition-all hover:scale-105 shadow-md text-sm">
+                    <button className="w-full bg-gradient-to-r from-teal-500 to-teal-500 text-white py-3 px-4 rounded-lg font-semibold hover:from-teal-600 hover:to-teal-600 transition-all hover:scale-105 shadow-md text-sm">
                       📖 View Course
                     </button>
                   </Link>
@@ -148,7 +148,7 @@ const UpcomingBatches = () => {
         )}
 
         {/* Bottom CTA */}
-        <div className="mt-16 bg-gradient-to-r from-teal-500 via-amber-500 to-teal-600 rounded-2xl p-8 max-w-4xl mx-auto text-white shadow-2xl">
+        <div className="mt-16 bg-gradient-to-r from-teal-500 via-teal-500 to-teal-600 rounded-2xl p-8 max-w-4xl mx-auto text-white shadow-2xl">
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-3">
               Can't Find a Suitable Batch?

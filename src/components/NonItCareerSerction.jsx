@@ -57,11 +57,8 @@ const NonITCareerSection = () => {
 
   return (
     <>
-      <section id="non-it-section" className="relative py-20 md:py-28 bg-gradient-to-br from-blue-50 via-emerald-50 to-green-50 overflow-hidden">
-        {/* Decorative Backgrounds */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-teal-200 to-green-200 rounded-full blur-3xl opacity-30 -z-10"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200 to-emerald-200 rounded-full blur-3xl opacity-30 -z-10"></div>
-
+      <section id="non-it-section" className="relative py-10 md:py-15  overflow-hidden">
+       
         <div className="container mx-auto px-6 lg:px-8 max-w-6xl">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -79,14 +76,14 @@ const NonITCareerSection = () => {
             {benefits.map((item, index) => (
               <div
                 key={index}
-                className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-teal-400"
+                className="group bg-teal-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-teal-400"
               >
                 <div
                   className={`inline-flex items-center justify-center w-16 h-16 mb-5 rounded-xl bg-gradient-to-br ${item.color} shadow-md group-hover:scale-110 transition-transform duration-300`}
                 >
                   {item.icon}
                 </div>
-                <h4 className="text-lg font-bold mb-2 text-gray-800">{item.title}</h4>
+                <h4 className="text-lg font-bold mb-2 text-teal-600">{item.title}</h4>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
@@ -105,7 +102,7 @@ const NonITCareerSection = () => {
 
           {/* Career Paths */}
           <div className="text-center mb-20">
-            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-gray-800">
+            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-teal-600">
               Career Paths You Can Explore
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -115,7 +112,7 @@ const NonITCareerSection = () => {
                   className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border border-gray-100 hover:border-teal-400"
                 >
                   <div className="flex justify-center mb-3">{path.icon}</div>
-                  <p className="font-semibold text-gray-800">{path.name}</p>
+                  <p className="font-semibold text-teal-600">{path.name}</p>
                 </div>
               ))}
             </div>
@@ -123,7 +120,7 @@ const NonITCareerSection = () => {
 
           {/* Call To Action */}
           <div className="text-center">
-            <h3 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800">
+            <h3 className="text-3xl md:text-4xl font-bold mb-10 text-teal-600">
               Take the First Step Today
             </h3>
             <button

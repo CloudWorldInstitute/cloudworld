@@ -4,9 +4,9 @@
    Custom Theme Colors
 ======================= */
 :root {
-  --primary: #23aca5;
-  --secondary: #a7e6e2;/* Soft mint */
-  --accent: #f7c59f;   /* Light green */
+  --primary: #009689;
+  --secondary: #47aec6;/* Soft mint */
+  --accent: #e0f4f5;   /* Light green */
   --light: #f3f0ec;        /* Off-white */
   --white: #ffffff;        /* Pure white */
   --red: #ff6b35;
