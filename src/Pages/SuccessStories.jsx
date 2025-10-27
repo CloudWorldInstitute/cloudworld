@@ -87,32 +87,40 @@ const SuccessStories = () => {
   return (
     <div className="min-h-screen font-sans bg-white">
 
-      {/* Hero Section */}
-      <section
-        className="relative py-60  flex items-center justify-center text-center text-white"
-        style={{
-          backgroundImage:
-            "url('successStory.webp')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* <div className="absolute inset-0 bg-gradient-to-br from-teal-500 via-teal-400 to-teal-300 opacity-80"></div> */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl  font-bold mb-4 animate-fade-in">Success Stories</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '200ms' }}>
-            Discover how CloudWorld has transformed lives and careers. Our alumni are shaping the future of IT—read their inspiring journeys and get motivated!
-          </p>
-          <button
-            onClick={handleScroll}
-            className="bg-white text-primary px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 shadow-md hover:shadow-lg animate-fade-in transition"
-            aria-label="Scroll to success stories"
-            style={{ animationDelay: '400ms' }}
-          >
-            View All Stories
-          </button>
-        </div>
-      </section>
+     {/* Hero Section */}
+<section
+  className="relative flex items-center justify-center text-center text-white 
+             py-10 pt-10 md:py-60 bg-center bg-no-repeat bg-cover"
+  style={{
+    backgroundImage: "url('successStory1.webp')",
+  }}
+>
+  {/* Optional gradient overlay */}
+  <div className="absolute inset-0 bg-black/40 md:bg-black/30"></div>
+
+  <div className="relative z-10 pt-10 max-w-6xl mx-auto px-10">
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+      Success Stories
+    </h1>
+    <p
+      className="text-base font-semibold sm:text-lg md:text-2xl  mb-4 max-w-2xl mx-auto animate-fade-in"
+      style={{ animationDelay: '200ms' }}
+    >
+      Discover how CloudWorld has transformed lives and careers. Our alumni are shaping the
+      future of IT — read their inspiring journeys and get motivated!
+    </p>
+    <button
+      onClick={handleScroll}
+      className="bg-white text-primary px-5 py-2 sm:px-6 sm:py-3 rounded-xl font-semibold 
+                 hover:bg-gray-100 shadow-md hover:shadow-lg animate-fade-in transition"
+      aria-label="Scroll to success stories"
+      style={{ animationDelay: '400ms' }}
+    >
+      View All Stories
+    </button>
+  </div>
+</section>
+
 
       {/* Statistics Section */}
       <section className="py-12 bg-white text-center">

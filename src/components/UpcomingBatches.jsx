@@ -10,8 +10,8 @@ const UpcomingBatches = () => {
     : batchesData.batches.filter(batch => batch.mode.toLowerCase().includes(filter));
 
   return (
-    <section className="py-16 bg-gradient-to-br from-teal-50 via-teal-50 to-emerald-50 min-h-screen">
-      <div className="container mx-auto px-6">
+    <section className="py-16  bg-gradient-to-br from-teal-50 via-teal-50 to-emerald-50 min-h-screen">
+      <div className="container pt-10 mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block bg-teal-200 text-teal-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
