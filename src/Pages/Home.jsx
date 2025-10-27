@@ -31,7 +31,7 @@ const Home = () => {
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent leading-tight"
+              className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -55,7 +55,7 @@ const Home = () => {
                   const element = document.getElementById('non-it-section');
                   element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
-                className="relative overflow-hidden group border-2 border-teal-600 bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-teal-500/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
+                className="relative overflow-hidden group border-2 border-teal-600 bg-gradient-to-r from-teal-600 to-cyan-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-teal-600/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
                 aria-label="Start your journey with CloudWorld"
               >
                 {/* Shimmer Effect */}
@@ -63,10 +63,8 @@ const Home = () => {
 
                 {/* Button Text */}
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  Do you have a non-IT background?
-                  <span className="inline-block group-hover:translate-x-2 transition-transform duration-300">
-                    →
-                  </span>
+                  Non-IT background?
+                 
                 </span>
 
                 {/* Glow Effect */}
@@ -108,12 +106,12 @@ const Home = () => {
 
 
       {/* Services Section - Card hover effects */}
-      <section id="core-services" className="relative py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+      <section id="core-services" className="relative py-16 md:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">
               Our Core Services
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
@@ -142,7 +140,7 @@ const Home = () => {
                 icon: <FaRocket className="text-4xl sm:text-5xl" />,
                 title: "Career Placement",
                 desc: "Exclusive access to top IT roles with personalized coaching and a 98% placement success rate.",
-                color: "from-teal-500 to-red-500",
+                color: "from-teal-600 to-red-500",
                 hoverColor: "hover:from-teal-600 hover:to-red-600"
               }
             ].map((service, index) => (
@@ -169,16 +167,7 @@ const Home = () => {
                   {service.desc}
                 </p>
 
-                {/* CTA Button */}
-                <button
-                  className="inline-flex items-center text-teal-600 font-semibold text-sm sm:text-base hover:text-teal-700 transition-colors group/btn"
-                  aria-label={`Learn more about ${service.title}`}
-                >
-                  Learn More
-                  <span className="ml-2 transform group-hover/btn:translate-x-2 transition-transform duration-300">
-                    →
-                  </span>
-                </button>
+              
 
                 {/* Decorative Corner Element */}
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-teal-200 to-transparent opacity-0 group-hover:opacity-30 rounded-full blur-2xl transition-opacity duration-500"></div>
@@ -239,7 +228,7 @@ const Home = () => {
 
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-zinc-950 text-teal-500 relative overflow-hidden">
+      <section className="py-24 bg-zinc-950 text-teal-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         </div>
@@ -251,7 +240,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
-              className="bg-emerald-100 text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="bg-teal-600 text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Contact Us Now
             </a>

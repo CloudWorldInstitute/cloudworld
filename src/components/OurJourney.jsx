@@ -48,7 +48,7 @@ const JourneySection = () => {
        <h2 className="text-5xl font-extrabold text-center text-primary mb-20 drop-shadow-md">
           Our Journey Through the Years
         </h2>
-      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-teal-300 to-emerald-300 shadow-lg">
+      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-teal-300 to-cyan-300 shadow-lg">
        
 
         <div className="relative border-l-4 border-red-400 pl-8 sm:pl-12">

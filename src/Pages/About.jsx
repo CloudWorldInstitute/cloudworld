@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLightbulb, FaHandHoldingHeart } from 'react-icons/fa';
 
+
 const AboutPage = () => {
   return (
     <>
@@ -20,17 +21,17 @@ const AboutPage = () => {
               className="rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-emerald-100">
-              <h3 className="text-3xl font-bold text-teal-600">5000+</h3>
+              <h3 className="text-3xl font-bold text-blue-600">5000+</h3>
               <p className="text-sm text-gray-700 font-medium">Students Trained</p>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-emerald-500 to-emerald-500 text-white rounded-2xl p-6 shadow-2xl">
+            <div className="absolute -bottom-6 -right-6 bg-white text-lime-500 rounded-2xl p-6 shadow-2xl">
               <h3 className="text-3xl font-bold">100%</h3>
               <p className="text-sm font-medium opacity-95">Placement Support</p>
             </div>
           </div>
 
           <div className="order-1 lg:order-2">
-            <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-emerald-500 to-emerald-500 mb-5 text-center lg:text-left">
+            <h1 className="text-5xl font-extrabold  text-teal-600 mb-5 text-center lg:text-left">
               About Us
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -40,7 +41,7 @@ const AboutPage = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               We bridge the gap between learning and earning through practical skill-based IT training in
               <span className="font-semibold text-emerald-600"> Cloud</span>,
-              <span className="font-semibold text-emerald-600"> DevOps</span>, and 
+              <span className="font-semibold text-emerald-600"> DevOps</span>, and
               <span className="font-semibold text-teal-600"> AI</span> programs driven by real-world projects.
             </p>
             <div className="bg-white/70 backdrop-blur-sm border-l-4 border-emerald-400 rounded-xl p-6 shadow-md mt-8">
@@ -55,48 +56,75 @@ const AboutPage = () => {
 
       {/* Vision & Mission */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="container mx-auto px-3 max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Vision */}
-          <div className="bg-white/80 rounded-2xl border border-emerald-100 shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
-                <FaLightbulb />
-              </div>
-              <h3 className="text-2xl font-extrabold text-emerald-700">Our Vision</h3>
+         
+
+          <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl border border-emerald-100 shadow-xl p-5 hover:shadow-2xl transition-all duration-300">
+            {/* Image block - You can replace /mission-image.webp with your actual image path */}
+            <div className="w-full   md:w-1/2 flex justify-center mb-6 md:mb-0">
+              <img
+                src="/vision.webp"
+                alt="vision illustration"
+                className="rounded-xl object-cover h-48 md:h-64 w-full max-w-xs shadow-md"
+              />
             </div>
-            <p className="text-gray-700 leading-relaxed pl-1">
-              To be India’s most trusted institute for Cloud & DevOps education, empowering aspiring professionals with world-class learning and innovation.
-            </p>
-            <ul className="text-gray-600 text-sm mt-4 list-disc list-inside">
-              <li>Accessible learning for all backgrounds</li>
-              <li>Always evolving with industry trends</li>
-              <li>Global standards, national excellence</li>
-            </ul>
+
+            {/* Vision Content */}
+            <div className="w-full md:w-1/2">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
+                  <FaLightbulb />                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold text-teal-600">Our Vision</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed pl-1">
+                To be India’s most trusted institute for Cloud & DevOps education, empowering aspiring professionals with world-class learning and innovation.
+              </p>
+              <ul className="text-gray-600 text-sm mt-4 list-disc list-inside">
+                <li>Accessible learning for all backgrounds</li>
+                <li>Always evolving with industry trends</li>
+                <li>Global standards, national excellence</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Mission */}
-          <div className="bg-white/80 rounded-2xl border border-emerald-100 shadow-xl p-8 hover:shadow-2xl transition-all duration-300">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
-                <FaHandHoldingHeart />
-              </div>
-              <h3 className="text-2xl font-extrabold text-emerald-700">Our Mission</h3>
+
+          {/* Mission Section */}
+          <div className="flex flex-col md:flex-row items-center gap-8 bg-white/80 rounded-2xl border border-emerald-100 shadow-xl p-5 hover:shadow-2xl transition-all duration-300">
+            {/* Image block - You can replace /mission-image.webp with your actual image path */}
+            <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+              <img
+                src="/mission.webp"
+                alt="Mission illustration"
+                className="rounded-xl object-cover h-48 md:h-64 w-full max-w-xs shadow-md"
+              />
             </div>
-            <p className="text-gray-700 leading-relaxed pl-1">
-              To equip learners with the technical expertise, confidence, and support to launch successful IT careers—with real skills, not just certifications.
-            </p>
-            <ul className="text-gray-600 text-sm mt-4 list-disc list-inside">
-              <li>Hands-on labs, real-world training</li>
-              <li>Dedicated mentorship and guidance</li>
-              <li>Reliable placement assistance</li>
-            </ul>
+
+            {/* Mission Content */}
+            <div className="w-full md:w-1/2">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-violet-400 rounded-xl flex items-center justify-center text-white text-2xl mr-4">
+                  <FaHandHoldingHeart />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-extrabold text-emerald-700">Our Mission</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed pl-1 mb-2">
+                To equip learners with the technical expertise, confidence, and support to launch successful IT careers—with real skills, not just certifications.
+              </p>
+              <ul className="text-gray-600 text-sm mt-4 list-disc list-inside space-y-1">
+                <li>Hands-on labs, real-world training</li>
+                <li>Dedicated mentorship and guidance</li>
+                <li>Reliable placement assistance</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </section>
 
       {/* Key Highlights */}
       <section className="py-20 bg-white rounded-3xl shadow-inner">
-        <h2 className="text-5xl font-extrabold text-center mb-12 text-teal-500 bg-clip-text bg-white">
+        <h2 className="text-5xl font-extrabold text-center mb-12 text-teal-600 bg-clip-text bg-white">
           Why Choose Cloud World Institute
         </h2>
 
@@ -110,17 +138,17 @@ const AboutPage = () => {
             {
               title: "Practical Hands-On Projects",
               desc: "Work on real-use cases directly aligned with today’s enterprise cloud environments.",
-              color: "emerald",
+              color: "teal",
             },
             {
               title: "Mentorship-Based Learning",
               desc: "Engage with industry veterans for career coaching and personalized mentoring.",
-              color: "emerald",
+              color: "teal",
             },
           ].map(({ title, desc, color }, idx) => (
             <div
               key={idx}
-              className={`p-8 bg-white/80 rounded-2xl shadow-md hover:shadow-xl border-l-4 border-${color}-400 transition-all duration-300`}
+              className={`p-8 bg-white/80 rounded-2xl shadow-md hover:shadow-xl border-l-4 border-${color}-500 transition-all duration-300`}
             >
               <h3 className={`text-2xl font-semibold text-${color}-600 mb-3`}>{title}</h3>
               <p className="text-gray-700 leading-relaxed">{desc}</p>
@@ -139,7 +167,7 @@ const AboutPage = () => {
           {[
             {
               title: "Excellence",
-              color: "emerald",
+              color: "blue",
               desc: "We pursue excellence through world-class teaching, innovation, and dedication.",
             },
             {
@@ -149,18 +177,18 @@ const AboutPage = () => {
             },
             {
               title: "Community",
-              color: "teal",
+              color: "green",
               desc: "Fostering a supportive environment for collaboration and growth.",
             },
             {
               title: "Innovation",
-              color: "emerald",
+              color: "cyan",
               desc: "Adapting to change and leveraging technology to stay ahead in the IT era.",
             },
           ].map(({ title, desc, color }, idx) => (
             <div
               key={idx}
-              className={`p-8 bg-teal-50 rounded-xl shadow-lg border border-${color}-200 hover:shadow-${color}-300 transition-transform hover:scale-105`}
+              className={`p-8 bg-teal-50 rounded-xl shadow-lg border border-teal-600 hover:shadow-teal-300 transition-transform hover:scale-105`}
             >
               <h3 className={`text-2xl font-bold text-${color}-600 mb-4`}>{title}</h3>
               <p className="text-gray-800">{desc}</p>
@@ -170,7 +198,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-teal-500 via-green-500 to-emerald-500 text-white text-center rounded-t-3xl shadow-xl">
+      <section className="py-16 bg-gradient-to-r from-teal-600 via-cyan-800 to-teal-600 text-white text-center rounded-t-3xl shadow-xl">
         <h3 className="text-4xl font-bold mb-4">Ready to Begin Your IT Career?</h3>
         <p className="mb-8 max-w-2xl mx-auto">
           Join thousands of Cloud World graduates who advanced their careers through our job-ready cloud and DevOps programs.

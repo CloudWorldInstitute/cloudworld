@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CoursesComponent = () => {
   return (
-    <div className="py-16 bg-gradient-to-br from-teal-50 via-emerald-100 to-teal-50">
+    <div className="py-16 bg-white  ">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -32,7 +32,7 @@ const CourseCard = ({ course }) => {
     <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-teal-100 group overflow-hidden flex flex-col h-full">
       
       {/* Card Top Header */}
-      <div className="bg-gradient-to-r from-teal-400 via-teal-500 to-emerald-500 p-6 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-r from-teal-600 via-cyan-700 to-teal-600 p-6 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_80%,white,transparent_70%)]"></div>
 
         <div className="flex items-start space-x-4 relative z-10">
@@ -106,7 +106,7 @@ const CourseCard = ({ course }) => {
         {/* CTA Button - stays at bottom */}
         <div className="mt-auto">
           <Link to={`/course/${course.courseId}`}>
-            <button className="w-full bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-5 py-3 rounded-xl font-semibold hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 hover:scale-105 shadow-lg">
+            <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-700 text-white px-5 py-3 rounded-xl font-semibold hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 hover:scale-105 shadow-lg">
               View Details →
             </button>
           </Link>

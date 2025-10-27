@@ -98,7 +98,7 @@ const SuccessStories = () => {
   {/* Optional gradient overlay */}
   <div className="absolute inset-0 bg-black/40 md:bg-black/30"></div>
 
-  <div className="relative z-10 pt-10 max-w-6xl mx-auto px-10">
+  <div className="relative z-10 pt- max-w-6xl mx-auto px-10">
     <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
       Success Stories
     </h1>
@@ -125,23 +125,23 @@ const SuccessStories = () => {
       {/* Statistics Section */}
       <section className="py-12 bg-white text-center">
         <div className=" mx-auto px-4 max-w-7xl">
-          <h2 className="text-2xl font-bold text-teal-700 mb-6 flex items-center justify-center">
-            <FaChartBar className="mr-2" /> Why CloudWorld Success Stories Matter
+          <h2 className="text-5xl font-extrabold text-teal-700 mb-6 flex items-center justify-center">
+             Why CloudWorld Success Stories Matter
           </h2>
           <p className="text-primary mb-8 max-w-4xl mx-auto">
             At CloudWorld, we're proud of our track record. Over 1,000 professionals have graduated from our programs, with a 98% placement rate. Here's a snapshot:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-15 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
             {[
-              { value: "1,000+", label: "Alumni Trained", color: "text-teal-400" },
-              { value: "98%", label: "Placement Success", color: "text-teal-600" },
-              { value: "50+", label: "Partner Companies", color: "text-teal-600" },
-              { value: "7+", label: "Years of Excellence", color: "text-red-500" },
-              { value: "35%", label: "Average Salary Hike", color: "text-purple-700" },
+              { value: "1,000+", label: "Alumni Trained", color: "text-green-600" },
+              { value: "98%", label: "Placement Success", color: "text-indigo-600" },
+              { value: "50+", label: "Partner Companies", color: "text-rose-600" },
+              { value: "7+", label: "Years of Excellence", color: "text-amber-600" },
+              { value: "35%", label: "Average Salary Hike", color: "text-purple-600" },
             ].map(({ value, label, color }, idx) => (
               <div
                 key={idx}
-                className={`p-4 bg-white rounded-lg shadow-md border-teal-600 hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
+                className={`p-4 bg-teal-100 rounded-lg shadow-md border-teal-600 hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
               >
                 <h3 className={`text-3xl  font-bold ${color}`}>{value}</h3>
                 <p className={color}>{label}</p>
@@ -152,7 +152,7 @@ const SuccessStories = () => {
       </section>
 
       {/* Alumni Spotlight Section */}
-      <section className="py-16 bg-gradient-to-br from-teal-300 to-teal-200">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-5xl font-extrabold text-center text-teal-700 mb-6">Alumni Spotlight</h2>
           <p className="text-gray-800 text-center mb-8 max-w-2xl mx-auto">
@@ -162,7 +162,7 @@ const SuccessStories = () => {
             {spotlightStories.map((story) => (
               <div
                 key={story.id}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-teal-300"
+                className="bg-teal-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-teal-300"
               >
                 <div className="flex items-center mb-4">
                   <img
@@ -233,32 +233,32 @@ const SuccessStories = () => {
       </section>
 
       {/* Submit Your Story Section */}
-      <section className="py-16 bg-gradient-to-r from-teal-300 to-teal-200">
-        <div className="container bg-teal-100 mx-auto px-4 max-w-md text-center rounded-2xl shadow-lg p-10">
-          <h2 className="text-5xl font-extrabold text-teal-700 mb-6 flex justify-center items-center gap-2">
+<section className="py-12 sm:py-16 bg-cover bg-center" style={{ backgroundImage: "url(/formBg.webp)" }}>
+        <div className="container bg-backdrop-blur-3xl mx-auto px-4  max-w-md text-center rounded-2xl shadow-2xl p-10">
+          <h2 className="text-3xl font-bold text-teal-950 mb-6 flex justify-center items-center gap-2">
             <FaEdit /> Share Your Success Story
           </h2>
-          <p className="text-gray-800 mb-8 max-w-2xl mx-auto">
+          <p className="text-teal-950 mb-8 max-w-2xl mx-auto">
             Have a story to share? Tell us how CloudWorld helped you succeed, and inspire others!
           </p>
           <form className="max-w-sm mx-auto" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full px-4 py-2 mb-4 border border-teal-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-2 mb-4 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
               aria-label="Your Name"
               required
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full px-4 py-2 mb-4 border border-teal-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-2 mb-4 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
               aria-label="Your Email"
               required
             />
             <textarea
               placeholder="Your Story"
-              className="w-full px-4 py-2 mb-6 border border-teal-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 h-32"
+              className="w-full px-4 py-2 mb-6 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 h-32"
               aria-label="Your Story"
               required
             />
@@ -274,9 +274,9 @@ const SuccessStories = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-teal-50 text-teal-700 text-center">
+      <section className="py-20 bg-white text-teal-700 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl text-teal-500 md:text-4xl font-bold mb-4">Ready to Write Your Success Story?</h2>
+          <h2 className="text-3xl text-teal-600 md:text-4xl font-bold mb-4">Ready to Write Your Success Story?</h2>
           <p className="text-xl mb-8 opacity-90">
             Join thousands of professionals who've advanced their careers with CloudWorld. Enroll today and take the first step!
           </p>

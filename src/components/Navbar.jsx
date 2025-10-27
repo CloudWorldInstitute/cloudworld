@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-5 inset-x-4 bg-teal/20 backdrop-blur-md text-white z-50 border-b border-teal-900 shadow-[inset_0px_0px_17px_0px_#0ccec4] rounded-xl transition-all duration-300 mx-10">
+    <nav className="fixed top-5 inset-x-4 bg-teal/20 backdrop-blur-3xl text-white z-50 border-b border-teal-900 shadow-[inset_0px_0px_17px_0px_#009689] rounded-xl transition-all duration-300 mx-5">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-2">
 
         {/* Logo */}
@@ -32,41 +32,46 @@ const Navbar = () => {
             />
             <span className="absolute inset-0 rounded-full ring-2 ring-teal-500 opacity-0 group-hover:opacity-80 transition-opacity duration-300"></span>
           </div>
-          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-teal-950">
-            Cloud<span className="text-teal-600">World</span>
+          <span className="self-center text-xl md:text-2xl font-extrabold tracking-wide text-blue-950">
+            Cloud<span className="text-teal-800">World</span>
           </span>
         </NavLink>
 
         {/* Desktop Navigation - Always visible on medium screens and up */}
         <div className="hidden md:flex  rounded-2xl items-center space-x-2">
-          <div className=" bg-teal-100 rounded-2xl items-center p-3 space-x-1">
+          <div className="  rounded-2xl items-center p-3 space-x-1">
             {navItems.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                className={({ isActive }) =>
-                  `relative px-4 py-2 rounded-lg font-bold transition-all duration-300 ${isActive
-                    ? "text-white bg-teal-600 shadow-lg"
-                    : "text-teal-900 hover:text-white hover:bg-teal-400"
-                  }`
-                }
-              >
-                {item.label}
-                {/* Active indicator line */}
-                {({ isActive }) => isActive && (
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-teal-600 rounded-full"></span>
-                )}
-              </NavLink>
-            ))}
+  <NavLink
+    key={item.path}
+    to={item.path}
+    className={({ isActive }) =>
+      `relative px-4 py-2 rounded-lg font-bold transition-all duration-300 ${
+        isActive
+          ? "text-white bg-teal-600 shadow-lg"
+          : "text-teal-950 hover:text-white hover:bg-teal-400"
+      }`
+    }
+  >
+    {({ isActive }) => (
+      <>
+        {item.label}
+        {isActive && (
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-teal-600 rounded-full"></span>
+        )}
+      </>
+    )}
+  </NavLink>
+))}
+
           </div>
 
           {/* Additional CTA Button for Desktop */}
 
 
           <button className="p-[3px] relative ">
-            <div className="absolute  inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl" />
-            <div className="p-2   flex items-center  bg-teal-950 rounded-2xl  relative group transition duration-200 text-emerald-500 font-bold hover:bg-transparent">
-              <GiTabletopPlayers /> Get career guidance
+            <div className="absolute  inset-0  rounded-2xl" />
+            <div className="p-2   flex items-center  bg-green-600 rounded-2xl  relative group transition duration-200 text-gray-800 font-bold hover:bg-transparent">
+             Student login
             </div>
           </button>
         </div>

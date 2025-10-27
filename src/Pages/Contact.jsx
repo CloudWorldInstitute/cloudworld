@@ -21,35 +21,39 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 bg-white p-12 rounded-3xl shadow-lg">
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-extrabold text-teal-500 mb-8">Contact CloudWorld</h2>
+            <h2 className="text-4xl font-extrabold text-teal-600 mb-8">Contact CloudWorld</h2>
 
             <div className="space-y-6 text-gray-700 text-lg">
               <p className="flex items-center gap-3">
-                <FaEnvelope className="text-teal-500 w-6 h-6" />
-                <a href="https://cloudworld.co.in/" target="_blank" rel="noopener noreferrer" className="hover:underline text-teal-500 font-semibold">
+                <FaEnvelope className="text-teal-600 w-6 h-6" />
+                <a href="https://cloudworld.co.in/" target="_blank" rel="noopener noreferrer" className="hover:underline text-teal-600 font-semibold">
                   cloudworld.co.in
                 </a>
               </p>
               <p className="flex items-center gap-3">
-                <FaEnvelope className="text-teal-500 w-6 h-6" />
-                <a href="mailto:info@cloudworld.co.in" className="hover:underline text-teal-500 font-semibold">
+                <FaEnvelope className="text-teal-600 w-6 h-6" />
+                <a href="mailto:info@cloudworld.co.in" className="hover:underline text-teal-600 font-semibold">
                   info@cloudworld.co.in
                 </a>
               </p>
               <p className="flex items-center gap-3">
-                <FaPhone className="text-teal-500 w-6 h-6" />
-                <a href="tel:+917498539362" className="hover:underline text-teal-500 font-semibold">
+                <FaPhone className="text-teal-600 w-6 h-6" />
+                <a href="tel:+917498539362" className="hover:underline text-teal-600 font-semibold">
                   +91 7498539362
                 </a>
               </p>
-              <p className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-teal-500 w-6 h-6 mt-1" />
-                <span className="font-semibold">Location:</span><br />
-                <address className="not-italic max-w-xs">102,103 Thite Vasti, Thite Nagar, Kharadi Pune, Maharashtra 411014, India</address>
-              </p>
+              <div className="flex items-start gap-3"> {/* Changed p to div */}
+                <FaMapMarkerAlt className="text-teal-600 w-6 h-6 mt-1" />
+                <div> {/* Wrapper for text, or you could put span and address directly here */}
+                  <span className="font-semibold">Location:</span>
+                  <address className="not-italic max-w-xs">
+                    102,103 Thite Vasti, Thite Nagar, Kharadi Pune, Maharashtra 411014, India
+                  </address>
+                </div>
+              </div>
             </div>
 
-            <button className="mt-10 bg-teal-500 hover:bg-secondary text-white py-3 rounded-xl font-semibold shadow-lg transition duration-300 w-fit px-8">
+            <button className="mt-10 bg-teal-600 hover:bg-secondary text-white py-3 rounded-xl font-semibold shadow-lg transition duration-300 w-fit px-8">
               Get in Touch
             </button>
           </div>
@@ -67,7 +71,7 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-            <div className="absolute bottom-6 left-6 bg-teal-500 bg-opacity-90 text-white font-semibold px-4 py-2 rounded-lg shadow-lg">
+            <div className="absolute bottom-6 left-6 bg-teal-600 bg-opacity-90 text-white font-semibold px-4 py-2 rounded-lg shadow-lg">
               Visit Us in Pune!
             </div>
           </div>
@@ -75,10 +79,10 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gradient-to-br from-teal-500 via-secondary to-accent py-16 px-6 md:px-12 min-h-screen flex items-center justify-center">
+      <section className="bg-gradient-to-br from-teal-600 via-secondary to-accent py-16 px-6 md:px-12 min-h-screen flex items-center justify-center">
         <div className="max-w-5xl w-full bg-white bg-opacity-90 backdrop-blur-md rounded-3xl shadow-xl p-10">
           <header className="text-center mb-12">
-            <h1 className="text-4xl font-extrabold text-teal-500 mb-4">Frequently Asked Questions</h1>
+            <h1 className="text-4xl font-extrabold text-teal-600 mb-4">Frequently Asked Questions</h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Explore our most common questions and find quick answers about CloudWorld.
             </p>
@@ -91,12 +95,12 @@ const Contact = () => {
                 tabIndex={0}
                 onClick={() => toggleFaq(index)}
                 onKeyPress={(e) => e.key === 'Enter' && toggleFaq(index)}
-                className={`border border-gray-300 rounded-xl p-6 bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-4 focus:ring-teal-500 transition-shadow ${faq.open ? 'shadow-lg' : 'hover:shadow-md'}`}
+                className={`border border-gray-300 rounded-xl p-6 bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-4 focus:ring-teal-600 transition-shadow ${faq.open ? 'shadow-lg' : 'hover:shadow-md'}`}
                 aria-expanded={faq.open}
                 role="button"
               >
                 <div className="flex justify-between items-center">
-                  <h2 className="text-xl font-semibold text-teal-500">{faq.question}</h2>
+                  <h2 className="text-xl font-semibold text-teal-600">{faq.question}</h2>
                   <svg
                     className={`w-6 h-6 transition-transform duration-300 ${faq.open ? 'rotate-180' : ''}`}
                     fill="none"
@@ -125,7 +129,7 @@ const Contact = () => {
                   type="email"
                   placeholder="Enter your email"
                   aria-label="Email address"
-                  requigreen
+                  
                   className="w-full p-4 rounded-xl bg-teal-50 border-2 border-green-400 text-gray-900 placeholder:text-gray-500 font-semibold 
                 focus:outline-none focus:ring-4 focus:ring-teal-300 
                 transition duration-300 shadow-md 
@@ -137,12 +141,12 @@ const Contact = () => {
               <button
                 type="submit"
                 className="relative overflow-hidden px-8 py-4 rounded-xl font-semibold text-white 
-              bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 
+              bg-gradient-to-r from-teal-600 via-emerald-500 to-green-500 
               shadow-md hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 
               focus:outline-none focus:ring-4 focus:ring-teal-300"
               >
                 <span className="relative z-10">Subscribe</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-500 to-emerald-500 opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-green-500 via-teal-600 to-emerald-500 opacity-0 hover:opacity-100 transition-opacity duration-500"></span>
               </button>
             </form>
 
