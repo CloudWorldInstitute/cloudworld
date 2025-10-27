@@ -104,11 +104,11 @@ const NonITCareerSection = () => {
             <h3 className="text-3xl md:text-4xl font-bold mb-12 text-teal-600">
               Career Paths You Can Explore
             </h3>
-            <div className="grid grid-cols-2 bg-teal-100 p-5 rounded-2xl md:grid-cols-3 gap-10 max-w-8xl mx-auto">
+            <div className="grid grid-cols-1 bg-teal-100 p-5 rounded-2xl md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {careerPaths.map((path, index) => (
                 <div
                   key={index}
-                  className="bg-white p-10 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border border-gray-100 hover:border-teal-400"
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border border-gray-100 hover:border-teal-400"
                 >
                   <div className="flex justify-center mb-3">{path.icon}</div>
                   <p className="font-semibold text-teal-600">{path.name}</p>
