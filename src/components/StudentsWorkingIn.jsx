@@ -41,7 +41,7 @@ const StudentsWorkingIn = () => {
     <section className=" bg-white min-h-screen">
       <div className=" bg-white  mx-auto  py-15 text-center">
          <h1 className="text-5xl font-extrabold text-teal-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
-        <p className="text-xl text-teal-400 mb-16 max-w-4xl mx-auto">
+        <p className="text-xl text-teal-500 mb-16 max-w-4xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
 

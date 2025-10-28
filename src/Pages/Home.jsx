@@ -24,14 +24,14 @@ const Home = () => {
         <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left animate-fade-in-up">
           <div className="animate-fade-in-up animation-delay-200">
             {/* Badge */}
-            <div className="inline-flex items-center px-2 py-1 bg-emerald-100 text-teal-700 rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
+            <div className="inline-flex items-center px-2 py-1 bg-accent text-primary rounded-full text-sm font-semibold mb-6 animate-fade-in-up">
               <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
               India's Leading Cloud Training Platform
             </div>
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent leading-tight"
+              className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from bg-primary to bg-secondary bg-clip-text text-transparent leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -44,7 +44,7 @@ const Home = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
-              India's leading platform for mastering <span className="font-semibold text-teal-600">Cloud Computing, AWS, Azure, and DevOps</span>.
+              India's leading platform for mastering <span className="font-semibold text-primary">Cloud Computing, AWS, Azure, and DevOps</span>.
               We don't just teach — we transform beginners into industry-ready professionals with <span className="font-semibold text-green-600">100% placement support</span> and real-world training.
             </p>
 
@@ -55,7 +55,7 @@ const Home = () => {
                   const element = document.getElementById('non-it-section');
                   element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
-                className="relative overflow-hidden group border-2 border-teal-600 bg-gradient-to-r from-teal-600 to-cyan-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-teal-600/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
+                className="relative overflow-hidden group border-2 border-purple-600 bg-gradient-to-r from bg-primary to-cyan-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-teal-600/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
                 aria-label="Start your journey with CloudWorld"
               >
                 {/* Shimmer Effect */}
@@ -68,7 +68,7 @@ const Home = () => {
                 </span>
 
                 {/* Glow Effect */}
-                <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 to-emerald-400 blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-300 -z-10"></span>
+                <span className="absolute inset-0 rounded-xl bg-gradient-to-r from bg-primary to-emerald-400 blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-300 -z-10"></span>
               </button>
 
 
@@ -78,7 +78,7 @@ const Home = () => {
                   const element = document.getElementById('core-services');
                   element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
-                className="border-2 border-teal-600 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-200 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-200 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 aria-label="Explore our services"
               >
                 Explore Services
@@ -111,16 +111,17 @@ const Home = () => {
 
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">
+<h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gradient ">
+
               Our Core Services
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-base sm:text-lg md:text-xl text-sub max-w-3xl mx-auto leading-relaxed px-4">
               Tailored solutions to propel your IT career and business forward with confidence.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-4 sm:p-6 md:p-8 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl md:rounded-3xl shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-4 sm:p-6 md:p-8 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-2xl md:rounded-3xl shadow-xl">
             {[
               {
                 icon: <FaCloud className="text-4xl sm:text-5xl" />,
@@ -140,13 +141,13 @@ const Home = () => {
                 icon: <FaRocket className="text-4xl sm:text-5xl" />,
                 title: "Career Placement",
                 desc: "Exclusive access to top IT roles with personalized coaching and a 98% placement success rate.",
-                color: "from-teal-600 to-red-500",
-                hoverColor: "hover:from-teal-600 hover:to-red-600"
+                color: "from bg-primary to-red-500",
+                hoverColor: "hover:from bg-primary hover:to-red-600"
               }
             ].map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-white p-6 sm:p-8 rounded-xl md:rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-teal-400 animate-fade-in-up overflow-hidden"
+                className="group relative bg-white p-6 sm:p-8 rounded-xl md:rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-accent animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Gradient Background on Hover */}
@@ -158,7 +159,7 @@ const Home = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 group-hover:text-teal-600 transition-colors duration-300">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gradient group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </h3>
 
@@ -191,7 +192,7 @@ const Home = () => {
         <div className="container mx-auto px-4 md:px-6 lg:px-12 text-center">
 
           {/* Heading */}
-          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 md:mb-12 text-teal-600 px-2">
+          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 md:mb-12 text-primary px-2">
             Our Achievements at a Glance
           </h2>
 
@@ -205,10 +206,10 @@ const Home = () => {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="bg-emerald-50 backdrop-blur-md rounded-lg md:rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center justify-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
+                className="bg-indigo-100 backdrop-blur-md rounded-lg md:rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center justify-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-teal-600 mb-1 md:mb-2 leading-tight">
+                <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-1 md:mb-2 leading-tight">
                   {stat.num}
                 </div>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-700 leading-snug break-words text-center px-1">
@@ -228,7 +229,7 @@ const Home = () => {
 
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-zinc-950 text-teal-600 relative overflow-hidden">
+      <section className="py-24 bg-zinc-950 text-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         </div>
@@ -240,7 +241,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
-              className="bg-teal-600 text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="bg-primary text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Contact Us Now
             </a>

@@ -8,10 +8,10 @@ const CoursesComponent = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-teal-600 mb-4 drop-shadow-md">
+          <h2 className="text-5xl font-extrabold text-gradient mb-4 drop-shadow-md">
             Find the Course Right for Your Goals!
           </h2>
-          <p className="text-lg text-teal-800/80 max-w-3xl mx-auto">
+          <p className="text-lg text-sub max-w-3xl mx-auto">
             Choose from our expertly designed programs that ignite your tech career dreams.
           </p>
         </div>
@@ -32,7 +32,7 @@ const CourseCard = ({ course }) => {
     <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-teal-100 group overflow-hidden flex flex-col h-full">
       
       {/* Card Top Header */}
-      <div className="bg-gradient-to-r from-teal-600 via-cyan-700 to-teal-600 p-6 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-r from-purple-600 via-indigo-700 to-violet-600 p-6 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_80%,white,transparent_70%)]"></div>
 
         <div className="flex items-start space-x-4 relative z-10">
@@ -77,12 +77,12 @@ const CourseCard = ({ course }) => {
           }`}>
             {course.level}
           </span>
-          <span className="ml-2 text-sm text-gray-500">{course.totalHours} hours</span>
+          <span className="ml-2 text-sm font-bold text-gray-500">{course.totalHours} hours</span>
         </div>
 
         {/* Technologies */}
-        <h4 className="text-teal-600 font-semibold mb-2 flex items-center gap-2">
-          <div className="w-2 h-2 bg-teal-400 rounded-full"></div>Technologies
+        <h4 className="text-gradient font-semibold mb-2 flex items-center gap-2">
+          <div className="w-2 h-2 bg-violet-400 rounded-full"></div>Technologies
         </h4>
         <div className="flex flex-wrap gap-2 mb-6">
           {course.technologies.slice(0, 4).map((tech, index) => (
@@ -106,7 +106,7 @@ const CourseCard = ({ course }) => {
         {/* CTA Button - stays at bottom */}
         <div className="mt-auto">
           <Link to={`/course/${course.courseId}`}>
-            <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-700 text-white px-5 py-3 rounded-xl font-semibold hover:from-teal-600 hover:to-emerald-600 transition-all duration-300 hover:scale-105 shadow-lg">
+            <button className="w-full bg-gradient-to-r from-blue-600 to-violet-600 text-white px-5 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-violet-400 transition-all duration-300 hover:scale-105 shadow-lg">
               View Details →
             </button>
           </Link>

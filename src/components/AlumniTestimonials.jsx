@@ -69,7 +69,7 @@ const AlumniTestimonials = () => {
  <section className="relative mt-3 py-14 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl relative z-10">
     <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-teal-600 mb-4">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gradient mb-4">
         Hear From Our Proud Alumni
       </h2>
       <p className="text-secondary max-w-2xl mx-auto">
@@ -85,7 +85,7 @@ const AlumniTestimonials = () => {
       {testimonials.map((item, index) => (
         <div
           key={index}
-          className="min-w-[300px] max-w-xs flex-shrink-0 snap-center bg-cyan-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border-t-4 border-primary"
+          className="min-w-[300px] max-w-xs flex-shrink-0 snap-center bg-blue-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border-t-4 border-primary"
         >
           <div className="flex flex-col items-center -mt-12 mb-2">
             <img
@@ -93,12 +93,12 @@ const AlumniTestimonials = () => {
               alt={item.name}
               className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover"
             />
-            <h3 className="text-lg font-semibold text-teal-600 mt-4 mb-2">{item.name}</h3>
+            <h3 className="text-lg font-semibold text-gradient mt-4 mb-2">{item.name}</h3>
           </div>
           <p className="text-zinc-800 text-sm leading-relaxed mb-6 italic">
             “{item.text.length > 120 ? item.text.slice(0, 120) + '...' : item.text}”
           </p>
-          <button className="text-secondary font-semibold hover:text-teal-600 text-sm flex items-center justify-center gap-1">
+          <button className="text-secondary font-semibold hover:text-gradient text-sm flex items-center justify-center gap-1">
             Learn More
             <span>
               <i className="fas fa-arrow-right"></i>
@@ -111,13 +111,13 @@ const AlumniTestimonials = () => {
     <div className="flex justify-between  items-center mx-20">
       <button
         onClick={() => scroll('left')}
-        className="p-3 w-12 h-12 rounded-full border border-primary text-teal-600 hover:bg-primary hover:text-white transition"
+        className="p-3 w-12 h-12 rounded-full border border-primary text-gradient hover:bg-primary hover:text-white transition"
       >
         <FaArrowLeft />
       </button>
       <button
         onClick={() => scroll('right')}
-        className="p-3 w-12 h-12 rounded-full border border-primary text-teal-600 hover:bg-primary hover:text-white transition"
+        className="p-3 w-12 h-12 rounded-full border border-primary text-gradient hover:bg-primary hover:text-white transition"
       >
         <FaArrowRight />
       </button>

@@ -4,9 +4,11 @@
    Custom Theme Colors
 ======================= */
 :root {
-  --primary: #009689;
-  --secondary: #47aec6;/* Soft mint */
-  --accent: #9ceaef;   /* Light green */
+  --primary: #2643c5;
+  --sub: #485fc4;
+  --secondary: #6400ff;/* Soft mint */
+  --secondsary: #6400ff;/* Soft mint */
+  --accent: #b4bad3;   /* Light green */
   --light: #f3f0ec;        /* Off-white */
   --white: #ffffff;        /* Pure white */
   --red: #ff6b35;
@@ -24,6 +26,7 @@
    Background Utilities
 ======================= */
 .bg-primary { background-color: var(--primary); }
+.bg-sub { background-color: var(--sub); }
 .bg-secondary { background-color: var(--secondary); }
 .bg-accent { background-color: var(--accent); }
 .bg-light { background-color: var(--light); }
@@ -33,10 +36,18 @@
 .bg-green-dark { background-color: var(--green-dark); }
 .bg-pista { background-color: var(--pista); }
 
+
+.text-gradient {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* =======================
    Text Color Utilities
 ======================= */
 .text-primary { color: var(--primary); }
+.text-sub { color: var(--sub); }
 .text-secondary { color: var(--secondary); }
 .text-accent { color: var(--accent); }
 .text-light { color: var(--light); }

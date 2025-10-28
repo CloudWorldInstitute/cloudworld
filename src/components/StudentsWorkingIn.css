@@ -3,7 +3,7 @@
 ================================ */
 @keyframes scroll-right {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -15,16 +15,19 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
+/* Animation speeds */
 .animate-scroll-right {
-  animation: scroll-right 7s linear infinite;
+  animation: scroll-right 20s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-left {
-  animation: scroll-left 7s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
 }
 
 /* ================================
@@ -32,11 +35,11 @@
 ================================ */
 @media (max-width: 1024px) {
   .animate-scroll-right {
-    animation: scroll-right 9s linear infinite; /* Slightly slower for smoother experience */
+    animation: scroll-right 15s linear infinite;
   }
 
   .animate-scroll-left {
-    animation: scroll-left 9s linear infinite;
+    animation: scroll-left 15s linear infinite;
   }
 }
 
@@ -45,10 +48,10 @@
 ================================ */
 @media (max-width: 600px) {
   .animate-scroll-right {
-    animation: scroll-right 7s linear infinite; /* Even slower for readability */
+    animation: scroll-right 10s linear infinite;
   }
 
   .animate-scroll-left {
-    animation: scroll-left 7s linear infinite;
+    animation: scroll-left 10s linear infinite;
   }
 }

@@ -45,10 +45,13 @@ const JourneySection = () => {
   return (
     <section className="py-20 bg-white">
 
-       <h2 className="text-5xl font-extrabold text-center text-primary mb-20 drop-shadow-md">
+       <h2 className="text-5xl font-extrabold text-center text-primary mb-10 drop-shadow-md">
           Our Journey Through the Years
         </h2>
-      <div className="container mx-auto p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-teal-300 to-cyan-300 shadow-lg">
+        <p className="text-lg sm:text-xl text-center text-sub max-w-4xl mx-auto leading-relaxed">
+      A look back at the milestones, achievements, and growth that have shaped our path to success.
+    </p>
+      <div className="container mx-auto mt-5 p-10 max-w-6xl px-6 sm:px-12 rounded-3xl bg-gradient-to-r from-blue-200 to-violet-200 shadow-lg">
        
 
         <div className="relative border-l-4 border-red-400 pl-8 sm:pl-12">

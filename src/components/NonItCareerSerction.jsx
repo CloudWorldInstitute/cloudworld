@@ -62,11 +62,11 @@ const NonITCareerSection = () => {
         <div className="container mx-auto px-6 lg:px-8 max-w-6xl">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-teal-600 bg-clip-text  leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-gradient bg-clip-text  leading-tight">
               Turn Your Non-IT Background<br />into an IT Success Story!
             </h2>
             <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-              <span className="text-teal-600 font-bold">Don’t Have an IT Degree?</span> No problem — you already have what it takes to succeed in tech.
+              <span className="text-rose-500 font-bold">Don’t Have an IT Degree?</span> No problem — you already have what it takes to succeed in tech.
             </p>
           </div>
 
@@ -82,14 +82,14 @@ const NonITCareerSection = () => {
                 >
                   {item.icon}
                 </div>
-                <h4 className="text-lg font-bold mb-2 text-teal-600">{item.title}</h4>
+                <h4 className="text-lg font-bold mb-2 text-gradient">{item.title}</h4>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
 
           {/* Bridge Section */}
-          <div className="bg-gradient-to-r from-teal-500 to-cyan-700 rounded-3xl p-10 md:p-14 text-center shadow-2xl text-white mb-20">
+          <div className="bg-gradient-to-r from-blue-500 to-purple-700 rounded-3xl p-10 md:p-14 text-center shadow-2xl text-white mb-20">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">We Help You Bridge the Gap</h3>
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-4">
               At <span className="font-bold">CloudWorld</span>, we transform non-IT students into confident IT professionals.
@@ -101,17 +101,17 @@ const NonITCareerSection = () => {
 
           {/* Career Paths */}
           <div className="text-center mb-20">
-            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-teal-600">
+            <h3 className="text-3xl md:text-4xl font-bold mb-12 text-gradient">
               Career Paths You Can Explore
             </h3>
-            <div className="grid grid-cols-1 bg-teal-100 p-5 rounded-2xl md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 bg-blue-100 p-5 rounded-2xl md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {careerPaths.map((path, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border border-gray-100 hover:border-teal-400"
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border border-gray-100 hover:border-blue-400"
                 >
                   <div className="flex justify-center mb-3">{path.icon}</div>
-                  <p className="font-semibold text-teal-600">{path.name}</p>
+                  <p className="font-semibold text-gradient">{path.name}</p>
                 </div>
               ))}
             </div>
@@ -119,12 +119,12 @@ const NonITCareerSection = () => {
 
           {/* Call To Action */}
           <div className="text-center">
-            <h3 className="text-3xl md:text-4xl font-bold mb-10 text-teal-600">
+            <h3 className="text-3xl md:text-4xl font-bold mb-10 text-gradient">
               Take the First Step Today
             </h3>
             <button
               onClick={handleEnrollClick}
-              className="group relative px-10 py-4 bg-gradient-to-r from-teal-500 via-cyan-700 to-teal-600 text-white font-bold text-lg md:text-xl rounded-full shadow-2xl hover:shadow-teal-500/40 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+              className="group relative px-10 py-4 bg-gradient-to-r from-purple-600 via-indigo-700 to-violet-600 text-white font-bold text-lg md:text-xl rounded-full shadow-2xl hover:shadow-teal-500/40 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 group-hover:animate-shimmer"></span>
               <span className="relative flex items-center justify-center gap-3">
@@ -137,7 +137,7 @@ const NonITCareerSection = () => {
             </button>
 
             <blockquote className="mt-10 text-lg md:text-xl font-medium text-gray-700 italic leading-relaxed max-w-2xl mx-auto">
-              “You don’t need an IT background to shine in tech — you just need the <span className="text-teal-600 font-bold not-italic">courage to begin</span>.”
+              “You don’t need an IT background to shine in tech — you just need the <span className="text-gradient font-bold not-italic">courage to begin</span>.”
             </blockquote>
           </div>
         </div>
