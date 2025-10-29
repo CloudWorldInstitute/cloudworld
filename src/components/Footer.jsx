@@ -36,8 +36,8 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2 justify-between space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:bg-white/30 transition-all duration-300">
-                  <img src="logo.png" alt="CloudWorld Logo" className="w-7 h-7 object-contain" />
+                <div className="w-15 h-15 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:bg-white/30 transition-all duration-300">
+                  <img src="logo.webp" alt="CloudWorld Logo" className="h-10 w-10 md:h-15 md:w-15 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300" />
                 </div>
                 <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
                   CloudWorld

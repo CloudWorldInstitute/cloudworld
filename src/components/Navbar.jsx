@@ -26,7 +26,7 @@ const Navbar = () => {
         >
           <div className="relative">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="CloudWorld Logo"
               className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
             />
@@ -47,8 +47,8 @@ const Navbar = () => {
     className={({ isActive }) =>
       `relative px-4 py-2 rounded-lg font-bold transition-all duration-300 ${
         isActive
-          ? "text-blue-600  shadow-lg"
-          : "text-blue-950 hover:text-blue-500 hover:bg-blue-50"
+          ? "text-blue-600  shadow-sm"
+          : "text-blue-900 hover:text-blue-500 hover:bg-blue-100"
       }`
     }
   >

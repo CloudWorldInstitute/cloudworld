@@ -45,7 +45,7 @@ const JourneySection = () => {
   return (
     <section className="py-20 bg-white">
 
-       <h2 className="text-5xl font-extrabold text-center text-gradient mb-10 drop-shadow-md">
+       <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold text-center text-gradient mb-10 drop-shadow-md">
           Our Journey Through the Years
         </h2>
         <p className="text-lg sm:text-xl text-center text-sub max-w-4xl mx-auto leading-relaxed">

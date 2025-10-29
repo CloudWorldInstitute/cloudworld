@@ -8,7 +8,7 @@ const CoursesComponent = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gradient p-4 drop-shadow-md">
+          <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold text-gradient p-4 drop-shadow-md">
             Find the Course Right for Your Goals!
           </h2>
           <p className="text-lg text-sub max-w-3xl p-4 mx-auto">

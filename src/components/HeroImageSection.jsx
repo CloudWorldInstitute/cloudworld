@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 const SlidingImageSection = () => {
   const images = [
-    "/heroImage3.webp",
     "/heroImage1.webp",
     "/heroImage2.webp",
+    "/heroImage3.webp",
   ];
 
   const [current, setCurrent] = useState(0);

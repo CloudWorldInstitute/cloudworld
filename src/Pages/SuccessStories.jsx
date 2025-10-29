@@ -233,7 +233,7 @@ const SuccessStories = () => {
       </section>
 
       {/* Submit Your Story Section */}
-<section className="py-12 sm:py-16 bg-cover bg-center" style={{ backgroundImage: "url(/formBg.jpg)" }}>
+<section className="py-12 sm:py-16 bg-cover bg-center" style={{ backgroundImage: "url(/formBg.webp)" }}>
         <div className="container bg-backdrop-blur-3xl mx-auto px-4  max-w-md text-center rounded-2xl shadow-2xl p-10">
           <h2 className="text-3xl font-bold text-white mb-6 flex justify-center items-center gap-2">
             <FaEdit /> Share Your Success Story

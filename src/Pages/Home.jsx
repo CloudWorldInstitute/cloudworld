@@ -31,7 +31,7 @@ const Home = () => {
 
             <h1
               id="hero-title"
-              className="text-5xl sm:text-5xl lg:text-5xl font-bold mb-6 text-gradient leading-tight"
+              className="text-4xl sm:text-4xl md:text-5xl font-bold mb-6 text-gradient leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -192,7 +192,7 @@ const Home = () => {
   <div className="container mx-auto px-4 md:px-6 lg:px-12 text-center">
 
     {/* Heading */}
-    <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 text-primary px-2">
+    <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 text-gradient px-2">
       Our Achievements at a Glance
     </h2>
 

@@ -62,7 +62,7 @@ const NonITCareerSection = () => {
         <div className="container mx-auto px-6 lg:px-8 max-w-6xl">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-gradient bg-clip-text  leading-tight">
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold text-gradient bg-clip-text  leading-tight">
               Turn Your Non-IT Background<br />into an IT Success Story!
             </h2>
             <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">

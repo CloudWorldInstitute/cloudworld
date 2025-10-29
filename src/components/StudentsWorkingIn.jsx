@@ -40,7 +40,7 @@ const StudentsWorkingIn = () => {
   return (
     <section className=" bg-white min-h-screen">
       <div className=" bg-white  mx-auto  py-15 text-center">
-         <h1 className="text-5xl font-extrabold text-gradient drop-shadow-md p-5 mb-5">Our Students Are Working In</h1>
+         <h1 className="text-4xl sm:text-4xl md:text-5xl font-extrabold text-gradient drop-shadow-md p-5 mb-5">Our Students Are Working In</h1>
         <p className="text-lg sm:text-base md:text-lg text-sub mb-12 px-4 max-w-2xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
