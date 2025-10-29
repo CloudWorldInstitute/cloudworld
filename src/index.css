@@ -4,13 +4,13 @@
    Custom Theme Colors
 ======================= */
 :root {
-  --primary: #2643c5;
-  --sub: #485fc4;
-  --secondary: #6400ff;/* Soft mint */
+  --primary: #1e6fd8;
+  --sub: #009ce4;
+  --secondary: #2b4bc9;/* Soft mint */
   --secondsary: #6400ff;/* Soft mint */
   --accent: #b4bad3;   /* Light green */
   --light: #f3f0ec;        /* Off-white */
-  --white: #ffffff;        /* Pure white */
+  --white: #f0f1f3;        /* Pure white */
   --red: #ff6b35;
   --pista: #cbe896;
 

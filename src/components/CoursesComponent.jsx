@@ -8,10 +8,10 @@ const CoursesComponent = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gradient mb-4 drop-shadow-md">
+          <h2 className="text-5xl font-extrabold text-gradient p-4 drop-shadow-md">
             Find the Course Right for Your Goals!
           </h2>
-          <p className="text-lg text-sub max-w-3xl mx-auto">
+          <p className="text-lg text-sub max-w-3xl p-4 mx-auto">
             Choose from our expertly designed programs that ignite your tech career dreams.
           </p>
         </div>
@@ -29,10 +29,10 @@ const CoursesComponent = () => {
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-teal-100 group overflow-hidden flex flex-col h-full">
+    <div className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 border border-blue-100 group overflow-hidden flex flex-col h-full">
       
       {/* Card Top Header */}
-      <div className="bg-gradient-to-r from-purple-600 via-indigo-700 to-violet-600 p-6 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 p-6 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_80%,white,transparent_70%)]"></div>
 
         <div className="flex items-start space-x-4 relative z-10">
@@ -41,11 +41,11 @@ const CourseCard = ({ course }) => {
            
           </div>
           <div className="flex-1">
-            <h3 className="text-xl font-bold mb-2 text-white group-hover:text-teal-100 transition-colors">
+            <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-100 transition-colors">
               {course.courseName}
             </h3>
 
-            <div className="flex items-center space-x-4 text-xs text-teal-200">
+            <div className="flex items-center space-x-4 text-xs text-blue-200">
               <span className="flex items-center bg-white/20 px-2 py-1 rounded-full">
                 <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
@@ -71,8 +71,8 @@ const CourseCard = ({ course }) => {
         {/* Level Badge */}
         <div className="mb-4">
           <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-            course.level === 'Beginner' ? 'bg-teal-100 text-teal-700' :
-            course.level === 'Intermediate' ? 'bg-teal-100 text-teal-700' :
+            course.level === 'Beginner' ? 'bg-blue-100 text-blue-700' :
+            course.level === 'Intermediate' ? 'bg-blue-100 text-blue-700' :
             'bg-purple-100 text-purple-700'
           }`}>
             {course.level}
@@ -88,7 +88,7 @@ const CourseCard = ({ course }) => {
           {course.technologies.slice(0, 4).map((tech, index) => (
             <span 
               key={index} 
-              className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs font-medium border border-teal-200"
+              className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-200"
             >
               {tech}
             </span>
@@ -106,7 +106,7 @@ const CourseCard = ({ course }) => {
         {/* CTA Button - stays at bottom */}
         <div className="mt-auto">
           <Link to={`/course/${course.courseId}`}>
-            <button className="w-full bg-gradient-to-r from-blue-600 to-violet-600 text-white px-5 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-violet-400 transition-all duration-300 hover:scale-105 shadow-lg">
+            <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-5 py-3 rounded-xl font-semibold hover:from-blue-600 hover:to-violet-400 transition-all duration-300 hover:scale-105 shadow-lg">
               View Details →
             </button>
           </Link>
@@ -114,7 +114,7 @@ const CourseCard = ({ course }) => {
       </div>
 
       {/* Hover Border */}
-      <div className="absolute inset-0 border-2 border-transparent rounded-2xl group-hover:border-teal-300 transition-all duration-300 pointer-events-none"></div>
+      <div className="absolute inset-0 border-2 border-transparent rounded-2xl group-hover:border-blue-300 transition-all duration-300 pointer-events-none"></div>
     </div>
   );
 };

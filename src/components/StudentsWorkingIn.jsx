@@ -40,19 +40,19 @@ const StudentsWorkingIn = () => {
   return (
     <section className=" bg-white min-h-screen">
       <div className=" bg-white  mx-auto  py-15 text-center">
-         <h1 className="text-5xl font-extrabold text-teal-600 drop-shadow-md mb-10">Our Students Are Working In</h1>
-        <p className="text-xl text-teal-500 mb-16 max-w-4xl mx-auto">
+         <h1 className="text-5xl font-extrabold text-gradient drop-shadow-md p-5 mb-5">Our Students Are Working In</h1>
+        <p className="text-lg sm:text-base md:text-lg text-sub mb-12 px-4 max-w-2xl mx-auto">
           Discover the top IT companies where our graduates are making an impact.
         </p>
 
-        {/* Scrolling Logos Section */}
+        {/* Scrolling Logos Section */}       
         <div className="relative overflow-hidden space-y-2">
           {/* Row 1 - Scroll Right */}
           <div className="flex gap-4 p-5 animate-scroll-right">
             {companies.concat(companies).map((company, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-teal-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-blue-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>
@@ -64,7 +64,7 @@ const StudentsWorkingIn = () => {
             {companies1.concat(companies1).map((company, index) => (
               <div
                 key={index + companies.length}
-                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-teal-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
+                className="flex-shrink-0 w-40 h-30 bg-white rounded-xl shadow-2xl border border-blue-600 flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
               >
                 <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
               </div>

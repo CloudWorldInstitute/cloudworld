@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-b from-teal-950 to-gray-950 text-white relative overflow-hidden">
+      <footer className="bg-gradient-to-b from-blue-950 to-zinc-950 text-white relative overflow-hidden">
 
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:bg-white/30 transition-all duration-300">
                   <img src="logo.png" alt="CloudWorld Logo" className="w-7 h-7 object-contain" />
                 </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-teal-500 to-teal-500 bg-clip-text text-transparent">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-blue-500 bg-clip-text text-transparent">
                   CloudWorld
                 </h3>
               </div>
@@ -49,7 +49,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4">
                 <Link to="/upcoming-batches">
-                  <button className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                  <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
                     Upcoming Batches
                   </button>
                 </Link>
@@ -64,8 +64,8 @@ const Footer = () => {
                   href="mailto:info@cloudworld.co.in"
                   className="flex items-center group hover:text-cyan-300 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-red-800 rounded-xl flex items-center justify-center mr-4 group-hover:bg-blue-500/30 transition-colors">
-                    <FaEnvelope className="text-2xl text-blue-400" />
+                  <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center mr-4 group-hover:bg-blue-500/30 transition-colors">
+                    <FaEnvelope className="text-2xl text-rose-400" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
@@ -88,7 +88,7 @@ const Footer = () => {
 
                 <div className="flex items-start group hover:text-cyan-300 transition-colors">
                   <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4 group-hover:bg-purple-500/30 transition-colors">
-                    <FaMapMarkerAlt className="text-2xl text-purple-400" />
+                    <FaMapMarkerAlt className="text-2xl text-yellow-400" />
                   </div>
                   <p className="text-gray-300 text-sm leading-relaxed group-hover:text-cyan-300">
                     102,103 Thite Vasti,

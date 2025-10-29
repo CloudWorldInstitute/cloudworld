@@ -17,8 +17,8 @@ const journeyData = [
     subtitle: "From Classrooms to Careers",
     description:
       "Our focus on hands-on training and real-world projects helped hundreds of learners secure their first IT jobs. We launched our flagship Cloud + DevOps Combo Program, which quickly became one of the most popular and trusted career-building courses. To make opportunities accessible to all, we introduced our unique 'Pay After Placement' model — allowing students to start their journey with just ₹5000.",
-    icon: <FaRocket className="w-8 h-8 text-cyan-500" />,
-    color: "from-blue-50 to-cyan-50",
+    icon: <FaRocket className="w-8 h-8 text-indigo-500" />,
+    color: "from-blue-50 to-indigo-50",
   },
   {
     year: "2024",
@@ -45,7 +45,7 @@ const JourneySection = () => {
   return (
     <section className="py-20 bg-white">
 
-       <h2 className="text-5xl font-extrabold text-center text-primary mb-10 drop-shadow-md">
+       <h2 className="text-5xl font-extrabold text-center text-gradient mb-10 drop-shadow-md">
           Our Journey Through the Years
         </h2>
         <p className="text-lg sm:text-xl text-center text-sub max-w-4xl mx-auto leading-relaxed">
@@ -71,7 +71,7 @@ const JourneySection = () => {
               {/* Content */}
               <div className="bg-white p-7 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-                  <h3 className="text-3xl font-bold text-cyan-700 leading-tight">
+                  <h3 className="text-3xl font-bold text-indigo-700 leading-tight">
                     {item.title}
                   </h3>
                   <span className="text-xl font-bold text-gray-700 md:ml-6 mt-2 md:mt-0">
@@ -88,7 +88,7 @@ const JourneySection = () => {
                     {item.programs.map((prog, i) => (
                       <span
                         key={i}
-                        className="bg-cyan-100 text-cyan-700 font-semibold text-sm px-4 py-1 rounded-full drop-shadow-sm"
+                        className="bg-indigo-100 text-indigo-700 font-semibold text-sm px-4 py-1 rounded-full drop-shadow-sm"
                       >
                         {prog}
                       </span>

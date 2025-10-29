@@ -37,7 +37,7 @@ const NonITCareerSection = () => {
       icon: <Award className="w-8 h-8 text-white" />,
       title: "Skill over Degree",
       desc: "Companies value practical skills and real-world projects more than degrees.",
-      color: "from-teal-500 to-red-500",
+      color: "from-blue-500 to-red-500",
     },
   ];
 
@@ -75,7 +75,7 @@ const NonITCareerSection = () => {
             {benefits.map((item, index) => (
               <div
                 key={index}
-                className="group bg-teal-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-teal-400"
+                className="group bg-blue-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-transparent hover:border-blue-400"
               >
                 <div
                   className={`inline-flex items-center justify-center w-16 h-16 mb-5 rounded-xl bg-gradient-to-br ${item.color} shadow-md group-hover:scale-110 transition-transform duration-300`}
@@ -89,7 +89,7 @@ const NonITCareerSection = () => {
           </div>
 
           {/* Bridge Section */}
-          <div className="bg-gradient-to-r from-blue-500 to-purple-700 rounded-3xl p-10 md:p-14 text-center shadow-2xl text-white mb-20">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-3xl p-10 md:p-14 text-center shadow-2xl text-white mb-20">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">We Help You Bridge the Gap</h3>
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-4">
               At <span className="font-bold">CloudWorld</span>, we transform non-IT students into confident IT professionals.
@@ -124,7 +124,7 @@ const NonITCareerSection = () => {
             </h3>
             <button
               onClick={handleEnrollClick}
-              className="group relative px-10 py-4 bg-gradient-to-r from-purple-600 via-indigo-700 to-violet-600 text-white font-bold text-lg md:text-xl rounded-full shadow-2xl hover:shadow-teal-500/40 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+              className="group relative px-10 py-4 bg-gradient-to-r from-blue-500 via-indigo-700 to-blue-600 text-white font-bold text-lg md:text-xl rounded-full shadow-2xl hover:shadow-blue-500/40 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 group-hover:animate-shimmer"></span>
               <span className="relative flex items-center justify-center gap-3">

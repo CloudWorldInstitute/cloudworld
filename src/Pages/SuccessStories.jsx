@@ -125,10 +125,10 @@ const SuccessStories = () => {
       {/* Statistics Section */}
       <section className="py-12 bg-white text-center">
         <div className=" mx-auto px-4 max-w-7xl">
-          <h2 className="text-5xl font-extrabold text-teal-700 mb-6 flex items-center justify-center">
+          <h2 className="text-5xl font-extrabold text-gradient mb-6 flex items-center justify-center">
              Why CloudWorld Success Stories Matter
           </h2>
-          <p className="text-primary mb-8 max-w-4xl mx-auto">
+          <p className="text-sub mb-8 max-w-4xl mx-auto">
             At CloudWorld, we're proud of our track record. Over 1,000 professionals have graduated from our programs, with a 98% placement rate. Here's a snapshot:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
@@ -141,7 +141,7 @@ const SuccessStories = () => {
             ].map(({ value, label, color }, idx) => (
               <div
                 key={idx}
-                className={`p-4 bg-teal-100 rounded-lg shadow-md border-teal-600 hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
+                className={`p-4 bg-blue-100 rounded-lg shadow-md border-blue-600 hover:shadow-md transition ${color.replace('text-', 'bg-').replace('-600', '-100')}`}
               >
                 <h3 className={`text-3xl  font-bold ${color}`}>{value}</h3>
                 <p className={color}>{label}</p>
@@ -154,7 +154,7 @@ const SuccessStories = () => {
       {/* Alumni Spotlight Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h2 className="text-5xl font-extrabold text-center text-teal-700 mb-6">Alumni Spotlight</h2>
+          <h2 className="text-5xl font-extrabold text-center text-blue-700 mb-6">Alumni Spotlight</h2>
           <p className="text-gray-800 text-center mb-8 max-w-2xl mx-auto">
             Quick highlights from our top alumni—see how they're making an impact!
           </p>
@@ -162,20 +162,20 @@ const SuccessStories = () => {
             {spotlightStories.map((story) => (
               <div
                 key={story.id}
-                className="bg-teal-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-teal-300"
+                className="bg-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-300"
               >
                 <div className="flex items-center mb-4">
                   <img
                     src={story.image}
                     alt={`Profile of ${story.name}`}
-                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-teal-400"
+                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-blue-400"
                   />
                   <div>
-                    <h3 className="text-xl font-bold text-teal-600">{story.name}</h3>
-                    <p className="text-teal-700 text-sm">{story.role} ({story.year})</p>
+                    <h3 className="text-xl font-bold text-blue-600">{story.name}</h3>
+                    <p className="text-blue-700 text-sm">{story.role} ({story.year})</p>
                   </div>
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed italic border-l-4 border-teal-400 pl-4">
+                <p className="text-gray-700 text-sm leading-relaxed italic border-l-4 border-blue-400 pl-4">
                   "{story.story.substring(0, 100)}..."
                 </p>
               </div>
@@ -187,11 +187,11 @@ const SuccessStories = () => {
       {/* Stories Grid Section with Filter */}
       <section className="py-16" id="stories">
         <div className="container mx-auto px-4 rounded-2xl max-w-7xl">
-          <h2 className="text-5xl font-extrabold text-center text-teal-700 mb-6">Featured Alumni Stories</h2>
+          <h2 className="text-5xl font-extrabold text-center text-blue-700 mb-6">Featured Alumni Stories</h2>
           <div className="mb-8 text-center flex justify-center items-center">
-            <FaSearch className="mr-2 text-teal-600" />
+            <FaSearch className="mr-2 text-blue-600" />
             <select
-              className="px-4 py-2 border border-teal-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="px-4 py-2 border border-blue-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
               onChange={(e) => setFilter(e.target.value)}
               value={filter}
               aria-label="Filter success stories"
@@ -207,23 +207,23 @@ const SuccessStories = () => {
             {filteredStories.map((story) => (
               <article
                 key={story.id}
-                className="bg-gradient-to-br from-teal-50 to-teal-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 animate-fade-in-up"
+                className="bg-gradient-to-br from-blue-50 to-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${story.id * 100}ms` }}
               >
                 <div className="flex items-center mb-4">
                   <img
                     src={story.image}
                     alt={`Profile of ${story.name}`}
-                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-teal-300"
+                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-blue-300"
                   />
                   <div>
-                    <h3 className="text-xl font-bold text-teal-600">{story.name}</h3>
-                    <p className="text-teal-700 text-sm flex items-center gap-1">
+                    <h3 className="text-xl font-bold text-blue-600">{story.name}</h3>
+                    <p className="text-blue-700 text-sm flex items-center gap-1">
                       <FaBriefcase className="mr-1" /> {story.role} | {story.course} ({story.year})
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-700 leading-relaxed italic border-l-4 border-teal-400 pl-4">
+                <p className="text-gray-700 leading-relaxed italic border-l-4 border-blue-400 pl-4">
                   "{story.story}"
                 </p>
               </article>
@@ -233,38 +233,38 @@ const SuccessStories = () => {
       </section>
 
       {/* Submit Your Story Section */}
-<section className="py-12 sm:py-16 bg-cover bg-center" style={{ backgroundImage: "url(/formBg.webp)" }}>
+<section className="py-12 sm:py-16 bg-cover bg-center" style={{ backgroundImage: "url(/formBg.jpg)" }}>
         <div className="container bg-backdrop-blur-3xl mx-auto px-4  max-w-md text-center rounded-2xl shadow-2xl p-10">
-          <h2 className="text-3xl font-bold text-teal-950 mb-6 flex justify-center items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex justify-center items-center gap-2">
             <FaEdit /> Share Your Success Story
           </h2>
-          <p className="text-teal-950 mb-8 max-w-2xl mx-auto">
+          <p className="text-white mb-8 max-w-2xl mx-auto">
             Have a story to share? Tell us how CloudWorld helped you succeed, and inspire others!
           </p>
           <form className="max-w-sm mx-auto" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full px-4 py-2 mb-4 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-2 mb-4 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-100"
               aria-label="Your Name"
               required
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full px-4 py-2 mb-4 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-2 mb-4 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-100"
               aria-label="Your Email"
               required
             />
             <textarea
               placeholder="Your Story"
-              className="w-full px-4 py-2 mb-6 border border-teal-950 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 h-32"
+              className="w-full px-4 py-2 mb-6 border border-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-100 h-32"
               aria-label="Your Story"
               required
             />
             <button
               type="submit"
-              className="bg-gradient-to-r from-teal-500 to-teal-500 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
               aria-label="Submit your story"
             >
               Submit Story
@@ -274,23 +274,23 @@ const SuccessStories = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-white text-teal-700 text-center">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl text-teal-600 md:text-4xl font-bold mb-4">Ready to Write Your Success Story?</h2>
-          <p className="text-xl mb-8 opacity-90">
+      <section className="py-20  text-blue-700 text-center">
+        <div className="container bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-2xl p-8 mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl text-white md:text-4xl font-bold mb-4">Ready to Write Your Success Story?</h2>
+          <p className="text-xl mb-8 text-white">
             Join thousands of professionals who've advanced their careers with CloudWorld. Enroll today and take the first step!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="#enroll"
-              className="bg-teal-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-teal-700 shadow-md hover:shadow-lg transition"
+              className="bg-white text-blue-500 px-8 py-4 rounded-xl font-bold hover:bg-blue-700 shadow-md hover:shadow-lg transition"
               aria-label="Enroll now"
             >
               Enroll Now
             </a>
             <a
               href="#contact"
-              className="border-2 border-teal-600 text-teal-600 px-8 py-4 rounded-xl font-bold hover:bg-teal-600 hover:text-white transition"
+              className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 hover:text-white transition"
               aria-label="Contact us for more info"
             >
               Contact Us

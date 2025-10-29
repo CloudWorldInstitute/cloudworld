@@ -31,7 +31,7 @@ const Home = () => {
 
             <h1
               id="hero-title"
-              className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from bg-primary to bg-secondary bg-clip-text text-transparent leading-tight"
+              className="text-5xl sm:text-5xl lg:text-5xl font-bold mb-6 text-gradient leading-tight"
             >
               <TypewriterText
                 texts={[
@@ -55,7 +55,7 @@ const Home = () => {
                   const element = document.getElementById('non-it-section');
                   element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
-                className="relative overflow-hidden group border-2 border-purple-600 bg-gradient-to-r from bg-primary to-cyan-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-teal-600/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
+                className="relative overflow-hidden group border-2 border-blue-300 bg-gradient-to-r from bg-primary to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-2xl hover:shadow-blue-600/50 transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 animate-pulse-slow"
                 aria-label="Start your journey with CloudWorld"
               >
                 {/* Shimmer Effect */}
@@ -64,7 +64,7 @@ const Home = () => {
                 {/* Button Text */}
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Non-IT background?
-                 
+
                 </span>
 
                 {/* Glow Effect */}
@@ -111,7 +111,7 @@ const Home = () => {
 
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
-<h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gradient ">
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-gradient ">
 
               Our Core Services
             </h2>
@@ -168,7 +168,7 @@ const Home = () => {
                   {service.desc}
                 </p>
 
-              
+
 
                 {/* Decorative Corner Element */}
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-teal-200 to-transparent opacity-0 group-hover:opacity-30 rounded-full blur-2xl transition-opacity duration-500"></div>
@@ -188,41 +188,50 @@ const Home = () => {
       <AlumniTestimonials />
 
       {/* Stats Section - Enhanced Design */}
-      <section className="relative py-12 md:py-24 bg-white text-primary overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6 lg:px-12 text-center">
+  <section className="relative py-12 md:py-24 bg-white text-primary overflow-hidden">
+  <div className="container mx-auto px-4 md:px-6 lg:px-12 text-center">
 
-          {/* Heading */}
-          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 md:mb-12 text-primary px-2">
-            Our Achievements at a Glance
-          </h2>
+    {/* Heading */}
+    <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 text-primary px-2">
+      Our Achievements at a Glance
+    </h2>
 
-          {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
-            {[
-              { num: "1,000+", label: "Trained Professionals" },
-              { num: "100+", label: "Partner Companies" },
-              { num: "98%", label: "Placement Success" },
-              { num: "7+", label: "Years of Excellence" }
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="bg-indigo-100 backdrop-blur-md rounded-lg md:rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center justify-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-1 md:mb-2 leading-tight">
-                  {stat.num}
-                </div>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-700 leading-snug break-words text-center px-1">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+    {/* Subheading */}
+    <p className="text-lg sm:text-base md:text-lg text-sub mb-12 px-4 max-w-2xl mx-auto">
+      Celebrating milestones that highlight our dedication, growth, and success in delivering outstanding outcomes.
+    </p>
+
+    {/* Stats Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+      {[
+        { num: "1,000+", label: "Trained Professionals", color: "red" },
+        { num: "100+", label: "Partner Companies", color: "yellow" },
+        { num: "98%", label: "Placement Success", color: "pink" },
+        { num: "7+", label: "Years of Excellence", color: "green" }
+      ].map((stat, index) => (
+        <div
+          key={index}
+          className="bg-blue-100 backdrop-blur-md rounded-lg md:rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center justify-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]"
+          style={{ animationDelay: `${index * 150}ms` }}
+        >
+          <div
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2 leading-tight text-${stat.color ? stat.color : "green"}-500`}
+          >
+            {stat.num}
           </div>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-700 leading-snug break-words text-center px-1">
+            {stat.label}
+          </p>
         </div>
+      ))}
+    </div>
 
-        {/* Decorative Background Element */}
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.2)_0%,_rgba(0,0,0,0)_70%)]"></div>
-      </section>
+  </div>
+
+  {/* Decorative Background Element */}
+  <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.2)_0%,_rgba(0,0,0,0)_70%)]"></div>
+</section>
+
 
 
 
@@ -231,7 +240,7 @@ const Home = () => {
       {/* Final CTA Section */}
       <section className="py-24 bg-zinc-950 text-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-whites rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         </div>
         <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
           <h2 className="text-5xl font-bold mb-6">Ready to Elevate Your Career?</h2>

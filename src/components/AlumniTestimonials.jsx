@@ -69,10 +69,10 @@ const AlumniTestimonials = () => {
  <section className="relative mt-3 py-14 bg-white overflow-hidden">
   <div className="container mx-auto px-4 max-w-7xl relative z-10">
     <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-gradient mb-4">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gradient mb-6">
         Hear From Our Proud Alumni
       </h2>
-      <p className="text-secondary max-w-2xl mx-auto">
+      <p className="text-lg sm:text-base md:text-lg text-sub mb-12 px-6 max-w-2xl mx-auto">
         Transforming careers and empowering learners to achieve their IT dreams.
       </p>
     </div>
