@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/", // 👈 important for Vercel deployments
+  base: "/", 
 })
 
