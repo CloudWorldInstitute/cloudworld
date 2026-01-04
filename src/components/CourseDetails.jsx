@@ -1,12 +1,13 @@
+import { CreditCardIcon, CheckCircleIcon, ClockIcon, BookOpenIcon, StarIcon, WrenchIcon, BriefcaseIcon, ChatBubbleLeftIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import coursesData from "../data/courseDetails.json";
+import { CodeIcon, TargetIcon } from 'lucide-react';
 
 const CourseDetails = () => {
   const { courseId } = useParams();
   const navigate = useNavigate();
 
-  // Find course by courseId string
   const course = coursesData.courses.find(c => c.courseId === courseId);
 
   if (!course) {
@@ -16,8 +17,9 @@ const CourseDetails = () => {
           <h2 className="text-2xl font-bold text-emerald-700 mb-4">Course Not Found</h2>
           <button
             onClick={() => navigate("/")}
-            className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform"
+            className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform flex items-center gap-2 mx-auto"
           >
+            <ArrowLeftIcon className="w-5 h-5" />
             Back to Courses
           </button>
         </div>
@@ -32,9 +34,10 @@ const CourseDetails = () => {
         <div className="mt-20 container mx-auto px-4 py-4">
           <button
             onClick={() => navigate("/")}
-            className="flex items-center text-teal-600 hover:text-emerald-600 font-semibold"
+            className="flex items-center text-teal-600 hover:text-emerald-600 font-semibold gap-2"
           >
-            ← Back to Courses
+            <ArrowLeftIcon className="w-5 h-5" />
+            Back to Courses
           </button>
         </div>
       </div>
@@ -45,9 +48,9 @@ const CourseDetails = () => {
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div className="flex-1">
               <div className="flex items-center mb-4">
-                <span className="text-4xl mr-4">🎓</span>
+                <BookOpenIcon className="w-12 h-12 text-teal-500 mr-4" />
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  {course.category || "Category"}
+                  {course.category || null}
                 </span>
               </div>
 
@@ -59,29 +62,49 @@ const CourseDetails = () => {
               {/* Course Info */}
               <div className="flex flex-wrap gap-6 text-sm text-gray-600 mb-8">
                 <span className="flex items-center gap-2">
-                  <span className="text-teal-500">⏱️</span> {`${course.duration.months} Months (${course.duration.weeks} Weeks)`}
+                  <ClockIcon className="w-5 h-5 text-teal-500" />
+                  {`${course.duration.months} Months (${course.duration.weeks} Weeks)`}
                 </span>
                 <span className="flex items-center gap-2">
-                  <span className="text-emerald-500">🔢</span> {course.totalHours} Hours Total
+                  <ClockIcon className="w-5 h-5 text-emerald-500" />
+                  {course.totalHours} Hours Total
                 </span>
                 <span className="flex items-center gap-2">
-                  <span className="text-emerald-500">📁</span> {course.projects} Projects
+                  <BookOpenIcon className="w-5 h-5 text-emerald-500" />
+                  {course.projects} Projects
                 </span>
                 <span className="flex items-center gap-2">
-                  <span className="text-yellow-500">🌟</span> {course.level}
+                  <StarIcon className="w-5 h-5 text-yellow-500" />
+                  {course.level}
                 </span>
                 {course.technologies && (
                   <span className="flex items-center gap-2">
-                    <span className="text-teal-400">🛠️</span> {course.technologies.join(", ")}
+                    <WrenchIcon className="w-5 h-5 text-teal-400" />
+                    {course.technologies.join(", ")}
                   </span>
                 )}
               </div>
 
+              {/* EMI & Placement */}
+              <div className="mt-4 text-sm text-gray-700 space-y-3">
+                <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-xl border-l-4 border-blue-500">
+                  <CreditCardIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>EMI Options Available</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-green-50 rounded-xl border-l-4 border-green-500">
+                  <CheckCircleIcon className="w-6 h-6 text-green-600 flex-shrink-0" />
+                  <span>100% Placement Support</span>
+                </div>
+              </div>
+
               {/* Career Outcomes */}
               {course.careerOutcomes && course.careerOutcomes.length > 0 && (
-                <div className="mb-6">
-                  <h3 className="text-xl font-semibold text-emerald-700 mb-3">Career Outcomes</h3>
-                  <ul className="list-disc list-inside text-gray-700">
+                <div className="mb-6 mt-8">
+                  <h3 className="text-xl font-semibold text-emerald-700 mb-3 flex items-center gap-2">
+                    <BriefcaseIcon className="w-6 h-6" />
+                    Career Outcomes
+                  </h3>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
                     {course.careerOutcomes.map((outcome, idx) => (
                       <li key={idx}>{outcome}</li>
                     ))}
@@ -92,8 +115,11 @@ const CourseDetails = () => {
               {/* Skills Gained */}
               {course.skillsGained && course.skillsGained.length > 0 && (
                 <div className="mb-6">
-                  <h3 className="text-xl font-semibold text-emerald-700 mb-3">Skills Gained</h3>
-                  <ul className="list-disc list-inside text-gray-700">
+                  <h3 className="text-xl font-semibold text-emerald-700 mb-3 flex items-center gap-2">
+                    <CodeIcon className="w-6 h-6" />
+                    Skills Gained
+                  </h3>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
                     {course.skillsGained.map((skill, idx) => (
                       <li key={idx}>{skill}</li>
                     ))}
@@ -103,7 +129,7 @@ const CourseDetails = () => {
             </div>
 
             {/* Pricing Card */}
-            <div className="bg-gradient-to-br from-emerald-100 to-teal-100 max-w-150 rounded-2xl p-6 shadow-md text-center h-fit">
+            <div className="bg-gradient-to-br from-emerald-100 to-teal-100 max-w-md rounded-2xl p-6 shadow-md text-center h-fit">
               {course.price ? (
                 <>
                   <span className="text-3xl font-bold text-teal-700">
@@ -114,20 +140,21 @@ const CourseDetails = () => {
                   </span>
                 </>
               ) : (
-                <span className="text-lg font-semibold  text-teal-700">For course pricing and payment options, please contact our admissions office directly.</span>
+                <span className="text-lg font-semibold text-teal-700">
+                  For course pricing and payment options, please contact our admissions office directly.
+                </span>
               )}
 
-              <button className="w-full bg-gradient-to-r from-teal-500 via-emerald-500 to-emerald-500 text-white py-3 rounded-lg mt-6 font-semibold hover:scale-105 transition-transform">
+              <button
+                className="w-full bg-gradient-to-r from-teal-500 via-emerald-500 to-emerald-500 text-white py-3 rounded-lg mt-6 font-semibold hover:scale-105 transition-transform"
+                onClick={() => window.open('https://forms.eduqfix.com/cloudf/add', '_blank')}
+              >
                 Enroll Now
               </button>
+
               <button className="w-full mt-3 border-2 border-emerald-400 text-emerald-600 py-3 rounded-lg font-semibold hover:bg-emerald-50">
                 Download Syllabus
               </button>
-
-              <div className="mt-4 text-sm text-gray-700">
-                <p>💳 EMI Options Available</p>
-                <p>🎯 100% Placement Support</p>
-              </div>
             </div>
           </div>
         </div>
@@ -135,7 +162,10 @@ const CourseDetails = () => {
         {/* Curriculum Section */}
         {course.modules && course.modules.length > 0 && (
           <div className="bg-white rounded-3xl shadow-lg p-8 mb-10 border-l-4 border-teal-300">
-            <h2 className="text-3xl font-bold text-emerald-800 mb-8 text-center">Course Curriculum</h2>
+            <h2 className="text-3xl font-bold text-emerald-800 mb-8 text-center flex items-center justify-center gap-3 mx-auto">
+              <BookOpenIcon className="w-12 h-12" />
+              Course Curriculum
+            </h2>
             <div className="space-y-8">
               {course.modules.map((month, index) => (
                 <div key={index} className="border-l-4 border-emerald-400 pl-6 relative">
@@ -163,7 +193,10 @@ const CourseDetails = () => {
         {/* Projects Section */}
         {course.projects && (
           <div className="bg-gradient-to-br from-emerald-50 via-yellow-50 to-teal-50 rounded-3xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-center text-emerald-700 mb-4">Real-World Projects</h2>
+            <h2 className="text-3xl font-bold text-center text-emerald-700 mb-4 flex items-center justify-center gap-3 mx-auto">
+              <CodeIcon className="w-12 h-12" />
+              Real-World Projects
+            </h2>
             <p className="text-gray-700 text-center mb-8 max-w-3xl mx-auto">
               Apply what you've learned with hands-on projects that strengthen your confidence and resume.
             </p>
@@ -184,28 +217,31 @@ const CourseDetails = () => {
 
         {/* Learning & CTA */}
         <div className="mt-10 bg-white border-t-4 border-emerald-400 rounded-2xl p-8 shadow-lg">
-          <h3 className="text-3xl font-bold text-center text-teal-700 mb-8">How You'll Learn & Grow</h3>
+          <h3 className="text-3xl font-bold text-center text-teal-700 mb-8 flex items-center justify-center gap-3 mx-auto">
+            <ChatBubbleLeftIcon className="w-12 h-12" />
+            How You'll Learn & Grow
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
               {
-                icon: "👨‍💻",
+                icon: CodeIcon,
                 title: "Hands-On Learning",
                 desc: "Learn through projects that simulate real-world IT scenarios.",
               },
               {
-                icon: "🤝",
+                icon: ChatBubbleLeftIcon,
                 title: "Guided Mentorship",
                 desc: "Receive dedicated coaching from industry-certified experts.",
               },
               {
-                icon: "🎯",
+                icon: TargetIcon,
                 title: "Career-Oriented",
                 desc: "Get placement assistance and build a strong professional portfolio.",
               },
-            ].map(({ icon, title, desc }, idx) => (
+            ].map(({ icon: Icon, title, desc }, idx) => (
               <div key={idx} className="p-6 hover:scale-105 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl shadow-sm transition">
-                <div className="text-4xl mb-3">{icon}</div>
+                <Icon className="w-12 h-12 text-teal-600 mx-auto mb-3" />
                 <h4 className="text-xl font-semibold text-emerald-700 mb-2">{title}</h4>
                 <p className="text-gray-700 text-sm">{desc}</p>
               </div>
@@ -214,7 +250,7 @@ const CourseDetails = () => {
 
           <div className="mt-10 text-center">
             <p className="text-xl text-gray-800 mb-6 font-semibold">
-              Ready to transform your career with {course.courseName}?
+              Ready to transform your career with <span className="text-teal-600">{course.courseName}</span>?
             </p>
             <button className="bg-gradient-to-r from-teal-500 via-emerald-500 to-emerald-500 text-white px-12 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-lg">
               Start Your Journey Today

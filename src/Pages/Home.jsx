@@ -254,13 +254,13 @@ const Home = () => {
             >
               Contact Us Now
             </a>
-            <a
+            {/* <a
               href="https://cloudworld.co.in/"
               className="border-2 border-primary text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300"
               target="_blank" rel="noopener noreferrer"
             >
               Visit Website
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

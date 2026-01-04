@@ -38,8 +38,8 @@ const Navbar = () => {
         </NavLink>
 
         {/* Desktop Navigation - Always visible on medium screens and up */}
-        <div className="hidden md:flex  rounded-2xl items-center space-x-2">
-          <div className="  rounded-2xl items-center p-3 space-x-1">
+        <div className="hidden lg:flex  rounded-2xl items-center space-x-3">
+          <div className="  rounded-2xl items-center p-2 space-x-1">
             {navItems.map((item) => (
   <NavLink
     key={item.path}
@@ -82,7 +82,7 @@ const Navbar = () => {
           aria-controls="navbar-sticky"
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center justify-center p-2 w-10 h-10 text-blue-500 rounded-lg md:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+          className="inline-flex items-center justify-center p-2 w-10 h-10 text-blue-500 rounded-lg lg:hidden hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -103,7 +103,7 @@ const Navbar = () => {
         {/* Mobile Navigation Menu - Only shows on mobile */}
         <div
           id="navbar-sticky"
-          className={`w-full md:hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          className={`w-full lg:hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             } overflow-hidden`}
         >
           <ul className="flex flex-col mt-3 font-medium bg-gray-800/95 backdrop-blur-md rounded-lg p-2 border border-gray-700 space-y-3">

@@ -1,3 +1,4 @@
+import { Goal, Lock, LockIcon } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
@@ -108,7 +109,7 @@ const CareerGuidanceModal = () => {
           <div className="relative flex justify-between items-start">
             <div>
               <h2 className="text-2xl font-bold text-white mb-2">
-                🎯 Get Career Guidance
+                 Get Career Guidance
               </h2>
               <p className="text-blue-100 text-sm">
                 Let our experts guide your tech journey
@@ -224,9 +225,11 @@ const CareerGuidanceModal = () => {
             )}
           </button>
 
-          <p className="text-xs text-gray-500 text-center mt-4">
-            🔒 Your information is safe and will not be shared
-          </p>
+         <div className="flex items-center gap-2 text-sm text-gray-600">
+  <LockIcon className="w-4 h-4 text-green-500" />
+  <span>Your information is safe and will not be shared</span>
+</div>
+
         </form>
       </div>
 
