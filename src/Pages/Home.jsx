@@ -252,7 +252,7 @@ const Home = () => {
               href="#contact"
               className="bg-primary text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-light transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
-              Contact Us Now
+              Contact Us Now 
             </a>
             {/* <a
               href="https://cloudworld.co.in/"
